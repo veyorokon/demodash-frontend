@@ -134,7 +134,7 @@ class Hero extends React.Component {
             h="100%"
             p={r("2 ----> 4")}
           >
-            <LeftBox w={r("100% ------> 45%")}>
+            <LeftBox w={r("100% ------> 50%")}>
               <Text
                 width="100%"
                 mb={3}
@@ -155,7 +155,7 @@ class Hero extends React.Component {
                 fw={700}
                 fs={r("3rem --> 3.5rem 4rem ---> 5rem")}
               >
-                Get your product demo into small businesses.
+                Find a storefront for your product demo.
               </Text>
               <Text
                 mt={3}

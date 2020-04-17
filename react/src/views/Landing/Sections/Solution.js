@@ -12,22 +12,20 @@ class Solution extends React.Component {
           backgroundSize={r("cover  ------> contain")}
           backgroundPosition={"bottom"}
           backgroundImage={`url(${mobileMedia})`}
-          pt={5}
+          pt={r("4 --> 5")}
         >
           <Flex
+            p={r("0 1 --> 2")}
             mb={r("1 ----> 2 -> 5")}
-            ml={r("1 ----> 2 -> 5")}
-            mr={r("1 ----> 2 -> 5")}
             justifyContent="flex-start"
             flexDirection="column"
             alignItems="center"
           >
             <Title
-              mt={2}
               textAlign="center"
               lineHeight={"1.5"}
               as="h2"
-              fw={600}
+              fw={r("400 --> 600")}
               fs={"3.6rem"}
               color="navys.0"
             >
