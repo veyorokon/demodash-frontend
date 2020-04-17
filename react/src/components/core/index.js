@@ -62,4 +62,10 @@ const Video = themedComponent(
   `
 );
 
-export {Text, Box, Button, Flex, Input, Video};
+const Image = themedComponent(
+  styled.img`
+    ${borderRadius}
+  `
+);
+
+export {Text, Box, Button, Flex, Input, Video, Image};

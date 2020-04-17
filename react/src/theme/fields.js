@@ -95,8 +95,11 @@ const positionFields = compose(
   bottom,
   left
 );
+const border = configure("border");
+const display = configure("display");
 
 const generics = compose(
+  border,
   overflow,
   typography,
   margin,
@@ -111,7 +114,8 @@ const generics = compose(
   maxHeight,
   textAlign,
   minWidth,
-  maxWidth
+  maxWidth,
+  display
 );
 
 const animationDuration = configure("animationDuration");
@@ -126,7 +130,6 @@ const animationFields = compose(
   animationFillMode
 );
 
-const display = configure("display");
 const flexGrow = configure("flexGrow");
 const flexDirection = configure("flexDirection");
 const flexWrap = configure("flexWrap");
@@ -201,5 +204,6 @@ export {
   justifyContent,
   alignItems,
   minWidth,
-  maxWidth
+  maxWidth,
+  border
 };

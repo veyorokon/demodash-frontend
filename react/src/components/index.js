@@ -1,4 +1,4 @@
-import {Flex, Box, Button, Input, Text, Video} from "./core";
+import {Flex, Image, Box, Button, Input, Text, Video} from "./core";
 
 import Animate, {appear} from "./core/animation";
 import Hidden from "./core/hidden";
@@ -10,6 +10,8 @@ import {
   Tab,
   Panel
 } from "./composite/tabs";
+import LeftCallOut from "./composite/leftCallout";
+
 import ImageUploader from "./composite/ImageUploader";
 import {
   ImageBox,
@@ -23,6 +25,7 @@ import {
 export {
   Text,
   Box,
+  Image,
   Flex,
   Animate,
   Hidden,
@@ -43,5 +46,6 @@ export {
   Header,
   Label,
   TabComponent,
+  LeftCallOut,
   appear
 };

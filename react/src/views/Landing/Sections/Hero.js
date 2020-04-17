@@ -1,25 +1,10 @@
 import React from "react";
-import {Box, Flex, Section, Button, ImageBox, Text} from "components";
+import {Box, Flex, Section, Button, ImageBox, Text, Hidden} from "components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
-import Signin from "./components/Signin";
-
-import {ReactComponent as BgSVG} from "assets/svg/anchor-pattern.svg";
-import {ReactComponent as LogoSVG} from "assets/svg/anchor.svg";
-
-const StyledBGSvg = styled(BgSVG)`
-  height: 100%;
-  width: auto;
-  position: absolute;
-  padding: 3rem;
-  top: 25px;
-`;
-
-const StyledLogoSvg = styled(LogoSVG)`
-  height: 2.65rem;
-  width: auto;
-  margin: 0 1rem 0 2rem;
-`;
+// import Signin from "./components/Signin";
+import desktopMedia from "assets/images/products-shelf.jpg";
+import mobileMedia from "assets/images/products-mobile.jpg";
 
 const Nav = styled(Box)`
   background-color: white;
@@ -34,118 +19,163 @@ const Nav = styled(Box)`
   }
 `;
 
-const NavButton = styled(Button)`
-  height: 100%;
-  background: unset;
-  border-color: unset;
-  border: none;
-  cursor: pointer;
-  width: 6rem;
-  min-width: fit-content;
-  outline: none;
-  letter-spacing: 0.2px;
-  transition: color 0.3s ease-in-out;
-  &:hover {
-    color: #8be48c;
-  }
-`;
-
 const NavBar = () => (
   <Nav>
-    <Flex
-      p={"2px 16px"}
-      justifyContent="flex-end"
-      alignItems="center"
-      w="100%"
-      h={"4"}
-    >
-      <NavButton
-        hoverColor={"greens.2"}
-        fw={600}
-        color={"greys.0"}
-        fs={"1.2rem"}
+    <Flex alignItems="center" w="100%" h={5}>
+      <Text
+        ml={3}
+        lineHeight={"1.5"}
+        as="p"
+        fw={300}
+        fs={"2.4rem"}
+        color="navys.0"
       >
-        Sign in
-      </NavButton>
-    </Flex>
-    <Flex alignItems="center" w="100%" h={"5"}>
-      <StyledLogoSvg />
-      <Text lineHeight={"1.5"} as="p" fw={300} fs={"2.4rem"} color="navys.0">
-        KubeShare
+        DemoDash
       </Text>
     </Flex>
   </Nav>
 );
 
-const Wrapper = styled(Box)`
-  z-index: 10;
-`;
 const Container = styled(Flex)`
   align-items: center;
 `;
 const LeftBox = styled(Box)`
   padding: 1rem;
-  padding-right: 3rem;
+  z-index: 10;
 `;
 
 const RightBox = styled(Box)``;
 
+const CallToAction = styled(Button)`
+  height: 5rem;
+  width: 16rem;
+  cursor: pointer;
+  min-width: fit-content;
+  border: none;
+  outline: none;
+  letter-spacing: 0.2px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: black;
+    background: #f3bd4e;
+  }
+`;
+
+const WrapperDesktop = styled(Box)`
+  z-index: 10;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    background: #fff none repeat scroll 0 0;
+    opacity: 0.85;
+    -webkit-clip-path: polygon(0 0, 90% 0, 70% 100%, 0 100%);
+    clip-path: polygon(0 0, 90% 0, 70% 100%, 0 100%);
+  }
+`;
+
+const WrapperMobile = styled(Box)`
+  z-index: 10;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff none repeat scroll 0 0;
+    opacity: 0.85;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+`;
+const SmartWrapper = props => {
+  return (
+    <>
+      <Hidden down={props.breakPoint - 1}>
+        <ImageBox
+          overflow={"hidden"}
+          backgroundPosition={"right"}
+          backgroundImage={`url(${desktopMedia})`}
+          pt={5}
+        >
+          <WrapperDesktop {...props}>{props.children}</WrapperDesktop>
+        </ImageBox>
+      </Hidden>
+      <Hidden up={props.breakPoint}>
+        <ImageBox
+          overflow={"hidden"}
+          backgroundPosition={"left"}
+          backgroundImage={`url(${mobileMedia})`}
+          pt={5}
+        >
+          <WrapperMobile {...props}>{props.children}</WrapperMobile>
+        </ImageBox>
+      </Hidden>
+    </>
+  );
+};
+
 class Hero extends React.Component {
   render() {
     return (
-      <Section
-        // p={r("2 ------> 3")}
-        height={r("110rem ------> 80rem")}
-        background={r("navys.1")}
-        overflow="hidden"
-      >
+      <Section height={r("70rem ------> 90rem")} overflow="hidden">
         <NavBar />
 
-        <ImageBox pt={"96px"}>
-          <StyledBGSvg />
-          <Wrapper w={"100%"} m={r("0 ------> 3")}>
-            <Container
-              flexDirection={r("column ------> row")}
-              justifyContent="center"
-              w={"100%"}
-              h="100%"
-              p={4}
-            >
-              <LeftBox w={r("100% ------> 50%")}>
-                <Text
-                  textAlign={r("center ------> left")}
-                  width="100%"
-                  mb={"1.5rem"}
-                  lineHeight={"1.18"}
-                  letterSpacing={"1px"}
-                  as="h1"
-                  fw={800}
-                  fs={"6rem"}
-                  color="whites.0"
-                >
-                  Shared Kubernetes
-                </Text>
-                <Text
-                  textAlign={r("center ------> left")}
-                  mt={3}
-                  mb={4}
-                  lineHeight={"1.87"}
-                  as="p"
-                  fw={300}
-                  fs={"2.4rem"}
-                  color="whites.0"
-                >
-                  From Docker to deployment in seconds - with shared Kubernetes
-                  you have scalability, convenience and security without the
-                  technical and financial overhead.
-                </Text>
-              </LeftBox>
-              <RightBox w={r("100% ------> 50%")}>
-                <Signin m="auto" mr={r("auto ------> unset")} />
-              </RightBox>
-            </Container>
-          </Wrapper>
-        </ImageBox>
+        <SmartWrapper h={"100%"} breakPoint={7} m={r("0 ------> 3")}>
+          <Container
+            flexDirection={r("column ------> row")}
+            justifyContent="center"
+            w={"100%"}
+            h="100%"
+            p={3}
+          >
+            <LeftBox paddingRight={"3rem"} w={r("100% ------> 45%")}>
+              <Text
+                width="100%"
+                mb={3}
+                lineHeight={"1.18"}
+                as="h3"
+                fw={700}
+                fs={r("1rem ---> 1.4rem")}
+              >
+                BRAND VISIBILITY
+              </Text>
+              <Text
+                width="100%"
+                mb={2}
+                mt={2}
+                lineHeight={"1.18"}
+                letterSpacing={"-.8px"}
+                as="h1"
+                fw={700}
+                fs={r("4rem ---> 5rem")}
+              >
+                DemoDash gets your product demo, into small businesses.
+              </Text>
+              <Text
+                mt={3}
+                mb={4}
+                lineHeight={"1.5"}
+                letterSpacing={"-.5px"}
+                as="p"
+                fw={300}
+                fs={r("2rem ---> 2.4rem")}
+              >
+                With your products in storefronts they can't help but be seen,
+                demoed and purchased by more users.
+              </Text>
+              <CallToAction bg={"yellows.0"} br={3}>
+                Get Started Today | Free
+              </CallToAction>
+            </LeftBox>
+            <RightBox w={r("100% ------> 50%")}></RightBox>
+          </Container>
+        </SmartWrapper>
       </Section>
     );
   }

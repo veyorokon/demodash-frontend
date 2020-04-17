@@ -18,17 +18,17 @@ const HiddenBox = styled.span`
 
 class Hidden extends React.Component {
   getDisplayList = () => {
-    const {down, bp} = this.props;
+    const {down, up} = this.props;
     var displayList = [];
     let i = 0;
     if (down) {
       displayList.push("none");
-      for (i = 0; i < bp; i++) {
+      for (i = 0; i < down; i++) {
         displayList.push("none");
       }
       displayList.push("initial");
     } else {
-      for (i = 0; i < bp; i++) {
+      for (i = 0; i < up; i++) {
         displayList.push("initial");
       }
       displayList.push("none");

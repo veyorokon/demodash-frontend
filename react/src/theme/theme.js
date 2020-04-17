@@ -22,12 +22,13 @@ const theme = {
     bold: 700
   },
   colors: {
-    blacks: ["#000", "#090909"],
-    whites: ["#fff", "#fafafa"],
+    blacks: ["#000", "#090909", "#111118"],
+    whites: ["#fff", "#fafafa", "#F5F1F0"],
     greys: ["#7D8B98", "#e6eaef", "#edeff0", "#F4F5F9"],
     oranges: ["#F87060"],
     greens: ["#596657", "#697268", "#8BE48C"],
     navys: ["#212C39", "#112237", "#525F81"],
+    yellows: ["#FFC651"],
     blues: ["#1C47F5"]
   },
   radii: [0, 2, 4],
