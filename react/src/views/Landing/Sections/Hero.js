@@ -109,7 +109,7 @@ const SmartWrapper = props => {
       <Hidden up={props.breakPoint}>
         <ImageBox
           overflow={"hidden"}
-          backgroundPosition={"left"}
+          backgroundPosition={"right"}
           backgroundImage={`url(${mobileMedia})`}
           pt={5}
         >
@@ -123,7 +123,7 @@ const SmartWrapper = props => {
 class Hero extends React.Component {
   render() {
     return (
-      <Section height={r("70rem ------> 90rem")} overflow="hidden">
+      <Section height={r("70rem ------> 80rem -> 100rem")} overflow="hidden">
         <NavBar />
 
         <SmartWrapper h={"100%"} breakPoint={7} m={r("0 ------> 3")}>
@@ -132,9 +132,9 @@ class Hero extends React.Component {
             justifyContent="center"
             w={"100%"}
             h="100%"
-            p={3}
+            p={r("2 ----> 4")}
           >
-            <LeftBox paddingRight={"3rem"} w={r("100% ------> 45%")}>
+            <LeftBox w={r("100% ------> 45%")}>
               <Text
                 width="100%"
                 mb={3}
@@ -153,9 +153,9 @@ class Hero extends React.Component {
                 letterSpacing={"-.8px"}
                 as="h1"
                 fw={700}
-                fs={r("4rem ---> 5rem")}
+                fs={r("3rem --> 3.5rem 4rem ---> 5rem")}
               >
-                DemoDash gets your product demo, into small businesses.
+                Get your product demo into small businesses.
               </Text>
               <Text
                 mt={3}
