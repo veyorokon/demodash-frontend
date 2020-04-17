@@ -125,7 +125,6 @@ class Hero extends React.Component {
     return (
       <Section height={r("70rem ------> 80rem -> 100rem")} overflow="hidden">
         <NavBar />
-
         <SmartWrapper h={"100%"} breakPoint={7} m={r("0 ------> 3")}>
           <Container
             flexDirection={r("column ------> row")}

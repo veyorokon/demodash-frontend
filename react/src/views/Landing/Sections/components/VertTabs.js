@@ -76,11 +76,11 @@ const Header = styled(Text)`
   }
 `;
 
-export const TabPanel = ({children}) => {
+export const TabPanel = props => {
   return (
-    <Box width="100%" margin={"0 auto"}>
-      {children}
-    </Box>
+    <Flex width="100%" margin={"0 auto"} {...props}>
+      {props.children}
+    </Flex>
   );
 };
 
