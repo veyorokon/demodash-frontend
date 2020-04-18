@@ -57,8 +57,6 @@ const Panel = props => (
   </TabPanel>
 );
 
-// Ship demos to storefronts, process payments and commission, and ship purchases to customers.
-
 class HowItWorks extends React.Component {
   render() {
     return (
@@ -73,15 +71,18 @@ class HowItWorks extends React.Component {
           flexDirection="column"
           height="100%"
           width="100%"
-          pt={5}
-          pb={5}
+          pt={r("4 ----> 5")}
+          // pb={r("4 ----> 5")}
+          // pl={r("0 ----> 4 -> 5 6")}
+          // pr={r("0 ----> 4 -> 5 6")}
         >
           <Flex
+            // br={2}
             flexDirection="column"
             bg="whites.0"
             p={3}
-            pl={r("2 -----> 5")}
-            pr={r("2 -----> 5")}
+            pl={r("2 -----> 3 4 6 7")}
+            pr={r("2 -----> 3 4 6 7")}
             m={0}
             width="100%"
             height="100%"

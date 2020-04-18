@@ -103,7 +103,7 @@ class NavigationTabs extends React.Component {
           {this.props.tabHeaders.map((elem, index) => {
             const isActive = selected === index;
             const color = isActive ? "navys.0" : "greys.0";
-            const borderColor = isActive ? "#8be48c" : "#e5e8ed";
+            const borderColor = isActive ? "#ED8A70" : "#e5e8ed";
             return (
               <NavigationTabItem
                 borderRightColor={r("unset")}

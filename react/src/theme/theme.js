@@ -10,7 +10,7 @@ const theme = {
     "60.625em",
     "75em"
   ],
-  space: [0, 4, 8, 16, 32, 64, 128],
+  space: [0, 4, 8, 16, 32, 64, 128, 256],
   fonts: {
     sans:
       "-apple-system, BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, Fira Sans, system-ui, sans-serif",
