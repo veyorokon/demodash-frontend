@@ -27,13 +27,14 @@ const Panel = props => (
         lineHeight={"1.5"}
         as="p"
         fw={300}
-        fs={"2rem"}
+        fs={r("2rem ----> 2.6rem")}
         color="navys.0"
+        textAlign="center"
       >
         {props.title}
       </Text>
     </PanelTitle>
-    <Image h={"30rem"} src={props.svg} />
+    <Image maxWidth={"100%"} h={r("30rem ----> 38rem")} src={props.svg} />
     <PanelText justifyContent="center">
       <Text
         mt={3}
@@ -42,7 +43,8 @@ const Panel = props => (
         as="p"
         fw={300}
         fs={"2rem"}
-        color="navys.0"
+        color="navys.2"
+        textAlign={r("center ----> left")}
       >
         {props.text}
       </Text>
@@ -56,7 +58,7 @@ class HowItWorks extends React.Component {
   render() {
     return (
       <Section
-        height={r("75rem")}
+        height={r("80rem")}
         minHeight="fit-content"
         background={r("grey.1")}
         overflow="hidden"
@@ -81,8 +83,8 @@ class HowItWorks extends React.Component {
           >
             <VertTabs
               tabHeaders={["Demo", "Purchase", "Ship"]}
-              ml={3}
-              mr={3}
+              ml={r("0 3")}
+              mr={r("0 3")}
               height="100%"
             >
               <Panel

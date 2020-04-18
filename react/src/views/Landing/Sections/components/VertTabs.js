@@ -32,8 +32,6 @@ const Menu = styled(Flex)`
 `;
 
 const PanelNavigation = styled(Flex)`
-  height: 100%;
-  flex-direction: column;
   justify-content: end;
 `;
 
@@ -91,7 +89,7 @@ class NavigationTabs extends React.Component {
     return (
       <React.Fragment>
         <Navigation
-          flexDirection={r("row ----> column")}
+          flexDirection={r(" row ----> column")}
           w={r("100% ----> 9rem")}
           pt={r("3 ----> 5")}
           pb={r("3 ----> 5")}
