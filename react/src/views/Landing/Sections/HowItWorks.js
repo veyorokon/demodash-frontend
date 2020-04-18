@@ -4,7 +4,7 @@ import {responsive as r} from "lib";
 import styled from "styled-components";
 
 import StoreFront from "assets/svg/storefront-colour.svg";
-import AppUser from "assets/svg/app-user.svg";
+import AppUser from "assets/svg/app-user2.svg";
 import ShipPackage from "assets/svg/ship-package.svg";
 
 import VertTabs, {TabPanel} from "./components/VertTabs";
@@ -45,6 +45,7 @@ const Panel = props => (
         fs={"2rem"}
         color="navys.2"
         textAlign={r("center ----> left")}
+        letterSpacing="-0.5px"
       >
         {props.text}
       </Text>

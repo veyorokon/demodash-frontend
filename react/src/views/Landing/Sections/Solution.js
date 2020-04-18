@@ -36,6 +36,7 @@ class Solution extends React.Component {
               mt={3}
               mb={4}
               lineHeight={"1.5"}
+              letterSpacing={"-0.5px"}
               as="p"
               fw={300}
               fs={"2rem"}

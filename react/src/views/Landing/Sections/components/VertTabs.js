@@ -45,6 +45,7 @@ const NavigationTabItem = styled(Flex)`
   border-width: 3px;
   border-style: solid;
   border-color: unset;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 `;
 
 const Navigation = props => {
@@ -53,6 +54,8 @@ const Navigation = props => {
 
 const Header = styled(Text)`
   transition: all 0.3s ease-in-out;
+  outline: none;
+
   &:hover {
     color: #112237;
   }
@@ -91,8 +94,8 @@ class NavigationTabs extends React.Component {
         <Navigation
           flexDirection={r(" row ----> column")}
           w={r("100% ----> 9rem")}
-          pt={r("3 ----> 5")}
-          pb={r("3 ----> 5")}
+          pt={r("3 ----> 6")}
+          pb={r("3 ----> 6")}
           overflow="hidden"
           bg="white"
           h={r("3rem ----> 100%")}
