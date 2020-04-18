@@ -71,7 +71,6 @@ class HowItWorks extends React.Component {
           flexDirection="column"
           height="100%"
           width="100%"
-          pt={r("4 ----> 5")}
           // pb={r("4 ----> 5")}
           // pl={r("0 ----> 4 -> 5 6")}
           // pr={r("0 ----> 4 -> 5 6")}

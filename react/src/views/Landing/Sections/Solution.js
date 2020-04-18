@@ -12,10 +12,11 @@ class Solution extends React.Component {
           // backgroundSize={r("cover  ------> contain")}
           // backgroundPosition={"bottom"}
           // backgroundImage={`url(${mobileMedia})`}
-          pt={r("4 ----> 5")}
+          pt={r("5")}
+          pb={r("5")}
         >
           <Flex
-            p={r("1 2 ---> 3")}
+            // p={r("1 2 ---> 3")}
             pl={r("1 2 ---> 4 5 -> 6 7")}
             pr={r("1 2 ---> 4 5 -> 6 7")}
             justifyContent="flex-start"
@@ -35,7 +36,6 @@ class Solution extends React.Component {
             </Text>
             <Text
               mt={3}
-              mb={4}
               lineHeight={"1.5"}
               letterSpacing={"-0.5px"}
               as="p"
