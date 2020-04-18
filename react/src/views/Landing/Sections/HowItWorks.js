@@ -36,7 +36,7 @@ const Panel = props => (
     </PanelTitle>
     <Image
       maxWidth={"100%"}
-      h={r("20rem 24rem  30rem --> 38rem")}
+      h={r("20rem 24rem  28rem --> 38rem")}
       src={props.svg}
     />
     <PanelText justifyContent="center">
@@ -61,9 +61,8 @@ class HowItWorks extends React.Component {
   render() {
     return (
       <Section
-        height={r("60rem 70rem -> 80rem")}
+        height={r("60rem 70rem")}
         minHeight="fit-content"
-        background={r("grey.1")}
         overflow="hidden"
       >
         <Flex

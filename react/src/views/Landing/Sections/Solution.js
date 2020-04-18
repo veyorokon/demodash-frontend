@@ -4,6 +4,7 @@ import {responsive as r} from "lib";
 
 // import mobileMedia from "assets/images/generic-products.jpg";
 //height={r("48rem ----> 60rem")}
+
 class Solution extends React.Component {
   render() {
     return (
@@ -31,13 +32,14 @@ class Solution extends React.Component {
               fs={r("2.8rem --> 3rem ---> 3.4rem")}
               color="navys.0"
               mb={2}
+              letterSpacing={"-.8px"}
             >
-              From demo to user.
+              Demo to user
             </Text>
             <Text
               mt={3}
               lineHeight={"1.5"}
-              letterSpacing={"-0.5px"}
+              letterSpacing={"-.5px"}
               as="p"
               fw={300}
               fs={"2rem"}
