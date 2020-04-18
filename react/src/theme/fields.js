@@ -96,6 +96,16 @@ const positionFields = compose(
   left
 );
 const border = configure("border");
+const borderRight = configure("borderRight");
+const borderLeft = configure("borderLeft");
+const borderBottom = configure("borderBottom");
+const borderTop = configure("borderTop");
+
+const borderRightColor = configure("borderRightColor");
+const borderLeftColor = configure("borderLeftColor");
+const borderBottomColor = configure("borderBottomColor");
+const borderTopColor = configure("borderTopColor");
+
 const display = configure("display");
 
 const generics = compose(
@@ -115,7 +125,15 @@ const generics = compose(
   textAlign,
   minWidth,
   maxWidth,
-  display
+  display,
+  borderRightColor,
+  borderLeftColor,
+  borderBottomColor,
+  borderTopColor,
+  borderRight,
+  borderLeft,
+  borderBottom,
+  borderTop
 );
 
 const animationDuration = configure("animationDuration");
@@ -205,5 +223,13 @@ export {
   alignItems,
   minWidth,
   maxWidth,
-  border
+  borderRightColor,
+  borderLeftColor,
+  borderBottomColor,
+  borderTopColor,
+  border,
+  borderRight,
+  borderLeft,
+  borderBottom,
+  borderTop
 };

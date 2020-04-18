@@ -123,7 +123,7 @@ const SmartWrapper = props => {
 class Hero extends React.Component {
   render() {
     return (
-      <Section height={r("70rem ------> 80rem -> 100rem")} overflow="hidden">
+      <Section height={r("60rem ------> 80rem -> 100rem")} overflow="hidden">
         <NavBar />
         <SmartWrapper h={"100%"} breakPoint={7} m={r("0 ------> 3")}>
           <Container
@@ -140,7 +140,7 @@ class Hero extends React.Component {
                 lineHeight={"1.18"}
                 as="h3"
                 fw={700}
-                fs={r("1rem ---> 1.4rem")}
+                fs={r("1.4rem ---> 1.6rem")}
               >
                 BRAND VISIBILITY
               </Text>

@@ -1,5 +1,5 @@
 import React from "react";
-import {Flex, Section, ImageBox, Text, Title} from "components";
+import {Flex, Section, ImageBox, Text} from "components";
 import {responsive as r} from "lib";
 
 import mobileMedia from "assets/images/generic-products.jpg";
@@ -12,25 +12,26 @@ class Solution extends React.Component {
           backgroundSize={r("cover  ------> contain")}
           backgroundPosition={"bottom"}
           backgroundImage={`url(${mobileMedia})`}
-          pt={r("4 --> 5")}
+          pt={r("5")}
         >
           <Flex
-            p={r("0 1 --> 2")}
+            p={r("1 2 ---> 3")}
             mb={r("1 ----> 2 -> 5")}
             justifyContent="flex-start"
             flexDirection="column"
             alignItems="center"
           >
-            <Title
+            <Text
               textAlign="center"
               lineHeight={"1.5"}
               as="h2"
-              fw={r("400 --> 600")}
-              fs={"3.6rem"}
+              fw={r("600")}
+              fs={r("2.8rem --> 3rem ---> 3.4rem")}
               color="navys.0"
+              mb={2}
             >
-              Demo to dropshipping in one place.
-            </Title>
+              From demo to new user.
+            </Text>
             <Text
               mt={3}
               mb={4}
@@ -41,8 +42,7 @@ class Solution extends React.Component {
               color="navys.2"
               textAlign="center"
             >
-              Ship demos to storefronts, process payments and commission, and
-              ship purchases to customers.
+              Scale your business from demo to dropshipping - on one platform.
             </Text>
           </Flex>
         </ImageBox>
@@ -50,5 +50,4 @@ class Solution extends React.Component {
     );
   }
 }
-
 export default Solution;

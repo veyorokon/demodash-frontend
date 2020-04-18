@@ -54,7 +54,11 @@ import {
   justifyContent,
   alignItems,
   minWidth,
-  maxWidth
+  maxWidth,
+  borderRightColor,
+  borderLeftColor,
+  borderBottomColor,
+  borderTopColor
 } from "./fields";
 
 export default theme;
@@ -113,5 +117,9 @@ export {
   justifyContent,
   minWidth,
   maxWidth,
-  alignItems
+  alignItems,
+  borderRightColor,
+  borderLeftColor,
+  borderBottomColor,
+  borderTopColor
 };

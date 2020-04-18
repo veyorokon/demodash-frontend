@@ -10,8 +10,9 @@ import ShipPackage from "assets/svg/ship-package.svg";
 import VertTabs, {TabPanel} from "./components/VertTabs";
 
 const PanelTitle = styled(Box)``;
+const PanelText = styled(Box)``;
 
-const PanelOne = () => (
+const Panel = props => (
   <TabPanel
     height={"100%"}
     display="flex"
@@ -19,7 +20,6 @@ const PanelOne = () => (
     alignItems="center"
     justifyContent="space-around"
   >
-    <Image h={"30rem"} src={StoreFront} />
     <PanelTitle justifyContent="center">
       <Text
         mt={3}
@@ -28,74 +28,35 @@ const PanelOne = () => (
         as="p"
         fw={300}
         fs={"2rem"}
-        color="navys.2"
+        color="navys.0"
       >
-        Discover storefonts in your industry. Leverage their expertise as your
-        sales force.
+        {props.title}
       </Text>
     </PanelTitle>
-  </TabPanel>
-);
-
-const PanelTwo = () => (
-  <TabPanel
-    height={"100%"}
-    display="flex"
-    flexDirection="column"
-    alignItems="center"
-    justifyContent="space-around"
-  >
-    <Image h={"30rem"} src={AppUser} />
-    <PanelTitle justifyContent="center">
+    <Image h={"30rem"} src={props.svg} />
+    <PanelText justifyContent="center">
       <Text
-        textAlign="center"
         mt={3}
         mb={4}
         lineHeight={"1.5"}
         as="p"
         fw={300}
         fs={"2rem"}
-        color="navys.2"
+        color="navys.0"
       >
-        Discover storefonts in your industry. Leverage their expertise as your
-        sales force.
+        {props.text}
       </Text>
-    </PanelTitle>
+    </PanelText>
   </TabPanel>
 );
 
-const PanelThree = () => (
-  <TabPanel
-    height={"100%"}
-    display="flex"
-    flexDirection="column"
-    alignItems="center"
-    justifyContent="space-around"
-  >
-    <Image h={"30rem"} src={ShipPackage} />
-    <PanelTitle justifyContent="center">
-      <Text
-        textAlign="center"
-        mt={3}
-        mb={4}
-        lineHeight={"1.5"}
-        as="p"
-        fw={300}
-        fs={"2rem"}
-        color="navys.2"
-      >
-        Discover storefonts in your industry. Leverage their expertise as your
-        sales force.
-      </Text>
-    </PanelTitle>
-  </TabPanel>
-);
+// Ship demos to storefronts, process payments and commission, and ship purchases to customers.
 
 class HowItWorks extends React.Component {
   render() {
     return (
       <Section
-        height={r("65rem")}
+        height={r("75rem")}
         minHeight="fit-content"
         background={r("grey.1")}
         overflow="hidden"
@@ -112,8 +73,8 @@ class HowItWorks extends React.Component {
             flexDirection="column"
             bg="whites.0"
             p={3}
-            pl={5}
-            pr={5}
+            pl={r("2 -----> 5")}
+            pr={r("2 -----> 5")}
             m={0}
             width="100%"
             height="100%"
@@ -124,9 +85,27 @@ class HowItWorks extends React.Component {
               mr={3}
               height="100%"
             >
-              <PanelOne />
-              <PanelTwo />
-              <PanelThree />
+              <Panel
+                title={"Ship demos to storefronts"}
+                text={
+                  "Discover storefonts in your industry. Leverage their expertise as your sales force."
+                }
+                svg={StoreFront}
+              />
+              <Panel
+                title={"Process payments and commission"}
+                text={
+                  "Discover storefonts in your industry. Leverage their expertise as your sales force."
+                }
+                svg={AppUser}
+              />
+              <Panel
+                title={"Ship purchases to customers"}
+                text={
+                  "Discover storefonts in your industry. Leverage their expertise as your sales force."
+                }
+                svg={ShipPackage}
+              />
             </VertTabs>
           </Flex>
         </Flex>
