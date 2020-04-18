@@ -27,7 +27,7 @@ const Panel = props => (
         lineHeight={"1.5"}
         as="p"
         fw={300}
-        fs={r("2rem ----> 2.6rem")}
+        fs={r("2rem --> 2.6rem")}
         color="navys.0"
         textAlign="center"
       >
@@ -36,7 +36,7 @@ const Panel = props => (
     </PanelTitle>
     <Image
       maxWidth={"100%"}
-      h={r("24rem -> 30rem --> 38rem")}
+      h={r("20rem 24rem  30rem --> 38rem")}
       src={props.svg}
     />
     <PanelText justifyContent="center">
@@ -46,7 +46,7 @@ const Panel = props => (
         lineHeight={"1.5"}
         as="p"
         fw={300}
-        fs={"2rem"}
+        fs={r("1.8rem -> 2rem")}
         color="navys.2"
         textAlign={r("center")}
         letterSpacing="-0.5px"
@@ -61,7 +61,7 @@ class HowItWorks extends React.Component {
   render() {
     return (
       <Section
-        height={r("80rem")}
+        height={r("60rem 70rem -> 80rem")}
         minHeight="fit-content"
         background={r("grey.1")}
         overflow="hidden"

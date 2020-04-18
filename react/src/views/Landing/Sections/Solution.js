@@ -16,8 +16,8 @@ class Solution extends React.Component {
         >
           <Flex
             p={r("1 2 ---> 3")}
-            pl={r("1 2 ---> 4 6")}
-            pr={r("1 2 ---> 4 6")}
+            pl={r("1 2 ---> 4 5 -> 6 7")}
+            pr={r("1 2 ---> 4 5 -> 6 7")}
             justifyContent="flex-start"
             flexDirection="column"
             alignItems="center"
