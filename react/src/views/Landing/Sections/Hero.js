@@ -129,18 +129,18 @@ class Hero extends React.Component {
           <Container
             flexDirection={r("column ------> row")}
             justifyContent="center"
-            w={"100%"}
+            w={r("100% ------> 70%")}
             h="100%"
             p={r("2 ----> 4")}
           >
-            <LeftBox w={r("100% ------> 50%")}>
+            <LeftBox w={r("100%")}>
               <Text
                 width="100%"
                 mb={3}
                 lineHeight={"1.18"}
                 as="h3"
                 fw={700}
-                fs={r("1.4rem ---> 1.6rem")}
+                fs={r("1.4rem ---> 1.6rem ----> 1.8rem")}
               >
                 BRAND VISIBILITY
               </Text>
@@ -152,7 +152,7 @@ class Hero extends React.Component {
                 letterSpacing={"-.8px"}
                 as="h1"
                 fw={700}
-                fs={r("3rem --> 3.5rem 4rem ---> 5rem")}
+                fs={r("3rem --> 3.5rem 4rem ---> 4.8rem 5.5rem")}
               >
                 Find a storefront for your product demo.
               </Text>
@@ -163,7 +163,7 @@ class Hero extends React.Component {
                 letterSpacing={"-.5px"}
                 as="p"
                 fw={300}
-                fs={r("2rem ---> 2.4rem")}
+                fs={r("2rem ---> 2.4rem ----> 2.8rem")}
               >
                 With your products in storefronts they can't help but be seen,
                 demoed and purchased by more users.
