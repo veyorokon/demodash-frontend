@@ -34,7 +34,11 @@ const Panel = props => (
         {props.title}
       </Text>
     </PanelTitle>
-    <Image maxWidth={"100%"} h={r("30rem ----> 38rem")} src={props.svg} />
+    <Image
+      maxWidth={"100%"}
+      h={r("24rem -> 30rem --> 38rem")}
+      src={props.svg}
+    />
     <PanelText justifyContent="center">
       <Text
         mt={3}
@@ -44,7 +48,7 @@ const Panel = props => (
         fw={300}
         fs={"2rem"}
         color="navys.2"
-        textAlign={r("center ----> left")}
+        textAlign={r("center")}
         letterSpacing="-0.5px"
       >
         {props.text}
@@ -98,14 +102,14 @@ class HowItWorks extends React.Component {
               <Panel
                 title={"Process payments and commission"}
                 text={
-                  "Discover storefonts in your industry. Leverage their expertise as your sales force."
+                  "When a sale is made, payments are processed and commission is automatically paid to the store."
                 }
                 svg={AppUser}
               />
               <Panel
                 title={"Ship purchases to customers"}
                 text={
-                  "Discover storefonts in your industry. Leverage their expertise as your sales force."
+                  "You'll get notified of any new sales. Then, just ship purchased products directly to the end user!"
                 }
                 svg={ShipPackage}
               />

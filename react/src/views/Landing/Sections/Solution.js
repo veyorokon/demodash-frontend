@@ -7,12 +7,12 @@ import mobileMedia from "assets/images/generic-products.jpg";
 class Solution extends React.Component {
   render() {
     return (
-      <Section bg={"greys.3"} height={r(" 60rem")} overflow="hidden">
+      <Section bg={"greys.3"} height={r("48rem ----> 60rem")} overflow="hidden">
         <ImageBox
           backgroundSize={r("cover  ------> contain")}
           backgroundPosition={"bottom"}
           backgroundImage={`url(${mobileMedia})`}
-          pt={r("5")}
+          pt={r("4 ----> 5")}
         >
           <Flex
             p={r("1 2 ---> 3")}
