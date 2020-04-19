@@ -61,7 +61,7 @@ class HowItWorks extends React.Component {
   render() {
     return (
       <Section
-        height={r("50rem 58rem -> 60rem -> 70rem")}
+        height={r("52rem 58rem -> 60rem -> 70rem")}
         minHeight="fit-content"
         overflow="hidden"
       >

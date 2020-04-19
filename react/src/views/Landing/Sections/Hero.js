@@ -6,15 +6,14 @@ import {
   Button,
   ImageBox,
   Text,
-  Hidden,
-  Image
+  Hidden
+  // Image
 } from "components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
-// import Signin from "./components/Signin";
 import desktopMedia from "assets/images/products-shelf.jpg";
 import mobileMedia from "assets/images/products-mobile.jpg";
-import logo from "assets/svg/logo.svg";
+// import logo from "assets/svg/logo.svg";
 
 const Nav = styled(Box)`
   background-color: white;
@@ -29,15 +28,15 @@ const Nav = styled(Box)`
   }
 `;
 
-const Logo = styled(Image)`
-  height: 3.4rem;
-  margin-left: 4rem;
-`;
+// const Logo = styled(Image)`
+//   height: 3.4rem;
+//   margin-left: 4rem;
+// `;
 
 const NavBar = () => (
   <Nav>
     <Flex alignItems="center" w="100%" h={5}>
-      <Logo src={logo} />
+      {/*<Logo src={logo} />*/}
       <Text
         ml={3}
         lineHeight={"1.5"}
@@ -64,13 +63,14 @@ const RightBox = styled(Box)``;
 
 const CallToAction = styled(Button)`
   height: 5rem;
-  width: 16rem;
+  width: 20rem;
   cursor: pointer;
   min-width: fit-content;
   border: none;
   outline: none;
   letter-spacing: 0.2px;
   transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
 
   &:hover {
     color: black;
@@ -168,7 +168,7 @@ class Hero extends React.Component {
                 letterSpacing={"-.8px"}
                 as="h1"
                 fw={700}
-                fs={r("3rem --> 3.5rem 4rem ---> 4.8rem 5.5rem")}
+                fs={r("3rem --> 3.5rem 4rem ---> 4.7rem 5.5rem")}
               >
                 Find a storefront for your product demo
               </Text>
@@ -184,8 +184,8 @@ class Hero extends React.Component {
                 With your products in storefronts they can't help but be seen,
                 demoed and purchased by more users.
               </Text>
-              <CallToAction bg={"yellows.0"} br={3}>
-                Get Started Today | Free
+              <CallToAction fs={"1.4rem"} bg={"yellows.0"} br={4}>
+                Create Account
               </CallToAction>
             </LeftBox>
             <RightBox w={r("100% ------> 50%")}></RightBox>
