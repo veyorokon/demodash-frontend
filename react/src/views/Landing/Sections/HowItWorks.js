@@ -61,7 +61,7 @@ class HowItWorks extends React.Component {
   render() {
     return (
       <Section
-        height={r("52rem 58rem -> 60rem -> 70rem")}
+        height={r("65rem ----> 70rem")}
         minHeight="fit-content"
         overflow="hidden"
       >
@@ -85,21 +85,21 @@ class HowItWorks extends React.Component {
               <Panel
                 title={"Ship demos to storefronts"}
                 text={
-                  "Discover storefonts in your industry. Leverage their expertise as your sales force."
+                  "Discover storefonts in your industry to maximize targeting and sales conversion. Leverage their expertise as your sales force."
                 }
                 svg={StoreFront}
               />
               <Panel
                 title={"Process payments and commission"}
                 text={
-                  "When a sale is made, payments are processed and commission is automatically paid to the store."
+                  "Negotiate commission and set product prices. Payments and commission are processed on platform using Stripe with a 2.9% + 0.30 cent fee."
                 }
                 svg={AppUser}
               />
               <Panel
                 title={"Ship purchases to customers"}
                 text={
-                  "You'll get notified of any new sales. Then, just ship purchased products directly to the end user!"
+                  "You'll get notified of any new sales. When a sale goes through, you just ship the purchased products directly to the end user!"
                 }
                 svg={ShipPackage}
               />

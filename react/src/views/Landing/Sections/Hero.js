@@ -156,7 +156,7 @@ class Hero extends React.Component {
                 lineHeight={"1.18"}
                 as="h3"
                 fw={700}
-                fs={r("1.4rem ---> 1.6rem ----> 1.8rem")}
+                fs={r("1.4rem ---> 1.6rem")}
               >
                 BRAND VISIBILITY
               </Text>
@@ -185,7 +185,7 @@ class Hero extends React.Component {
                 demoed and purchased by more users.
               </Text>
               <CallToAction fs={"1.4rem"} bg={"yellows.0"} br={4}>
-                Create Account
+                Start Now
               </CallToAction>
             </LeftBox>
             <RightBox w={r("100% ------> 50%")}></RightBox>
