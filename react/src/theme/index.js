@@ -59,7 +59,8 @@ import {
   borderLeftColor,
   borderBottomColor,
   borderTopColor,
-  letterSpacing
+  letterSpacing,
+  borderStyle
 } from "./fields";
 
 export default theme;
@@ -123,5 +124,6 @@ export {
   borderLeftColor,
   borderBottomColor,
   borderTopColor,
-  letterSpacing
+  letterSpacing,
+  borderStyle
 };

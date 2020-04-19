@@ -96,19 +96,21 @@ const positionFields = compose(
   left
 );
 const border = configure("border");
+const borderStyle = configure("borderStyle");
 const borderRight = configure("borderRight");
 const borderLeft = configure("borderLeft");
 const borderBottom = configure("borderBottom");
 const borderTop = configure("borderTop");
 
-const borderRightColor = configure("borderRightColor");
-const borderLeftColor = configure("borderLeftColor");
-const borderBottomColor = configure("borderBottomColor");
-const borderTopColor = configure("borderTopColor");
+const borderRightColor = configure("borderRightColor", [], "colors");
+const borderLeftColor = configure("borderLeftColor", [], "colors");
+const borderBottomColor = configure("borderBottomColor", [], "colors");
+const borderTopColor = configure("borderTopColor", [], "colors");
 
 const display = configure("display");
 
 const generics = compose(
+  borderStyle,
   border,
   overflow,
   typography,
@@ -234,5 +236,6 @@ export {
   borderLeft,
   borderBottom,
   borderTop,
-  letterSpacing
+  letterSpacing,
+  borderStyle
 };

@@ -50,6 +50,7 @@ const Panel = props => (
         color="navys.2"
         textAlign={r("center")}
         letterSpacing="-0.5px"
+        maxWidth="60rem"
       >
         {props.text}
       </Text>
@@ -70,8 +71,8 @@ class HowItWorks extends React.Component {
             flexDirection="column"
             bg="whites.0"
             p={3}
-            pl={r("2 -----> 3 4 6 7")}
-            pr={r("2 -----> 3 4 6 7")}
+            pl={r("2 ----> 3 4 5 6 -> 8")}
+            pr={r("2 ----> 3 4 5 6 -> 8")}
             m={0}
             width="100%"
             height="100%"
@@ -92,7 +93,7 @@ class HowItWorks extends React.Component {
               <Panel
                 title={"Process payments and commission"}
                 text={
-                  "Negotiate commission and set product prices. Payments and commission are processed on platform using Stripe with a 2.9% + 0.30 cent fee."
+                  "You set commission rates and product prices. Payments and commission are processed on platform using Stripe with a 2.9% + 0.30 cent fee."
                 }
                 svg={AppUser}
               />

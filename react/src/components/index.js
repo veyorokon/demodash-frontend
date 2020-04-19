@@ -12,7 +12,6 @@ import {
 } from "./composite/tabs";
 import LeftCallOut from "./composite/leftCallout";
 
-import ImageUploader from "./composite/ImageUploader";
 import {
   ImageBox,
   Section,
@@ -42,7 +41,6 @@ export {
   Title,
   SubTitle,
   Grid,
-  ImageUploader,
   Header,
   Label,
   TabComponent,

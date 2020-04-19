@@ -139,7 +139,10 @@ const SmartWrapper = props => {
 class Hero extends React.Component {
   render() {
     return (
-      <Section height={r("60rem ------> 80rem -> 100rem")} overflow="hidden">
+      <Section
+        height={r("52rem --> 60rem ---> 80rem -> 85rem")}
+        overflow="hidden"
+      >
         <NavBar />
         <SmartWrapper h={"100%"} breakPoint={7} m={r("0 ------> 3")}>
           <Container

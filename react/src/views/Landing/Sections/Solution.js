@@ -1,15 +1,15 @@
 import React from "react";
-import {Flex, Section, ImageBox, Text} from "components";
+import {Flex, Section, Box, Text} from "components";
 import {responsive as r} from "lib";
 
 class Solution extends React.Component {
   render() {
     return (
       <Section bg={"greys.3"} height={"fit-content"} overflow="hidden">
-        <ImageBox pt={r("5")} pb={r("5")}>
+        <Box pt={r("5")} pb={r("5")}>
           <Flex
-            pl={r("2 3 ---> 4 5 -> 6 7")}
-            pr={r("2 3 ---> 4 5 -> 6 7")}
+            pl={r("2 --> 3 -> 4 5 -> 6 7")}
+            pr={r("2 --> 3 -> 4 5 -> 6 7")}
             justifyContent="flex-start"
             flexDirection="column"
             alignItems="center"
@@ -35,13 +35,14 @@ class Solution extends React.Component {
               fs={r("2rem -----> 2.2rem")}
               color="navys.2"
               textAlign="center"
+              maxWidth="80rem"
             >
               Scale your business from demo to dropshipping and handle
               everything in between like payment processing and commission - on
               one platform.
             </Text>
           </Flex>
-        </ImageBox>
+        </Box>
       </Section>
     );
   }
