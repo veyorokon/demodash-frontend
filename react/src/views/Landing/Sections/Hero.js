@@ -1,10 +1,20 @@
 import React from "react";
-import {Box, Flex, Section, Button, ImageBox, Text, Hidden} from "components";
+import {
+  Box,
+  Flex,
+  Section,
+  Button,
+  ImageBox,
+  Text,
+  Hidden,
+  Image
+} from "components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
 // import Signin from "./components/Signin";
 import desktopMedia from "assets/images/products-shelf.jpg";
 import mobileMedia from "assets/images/products-mobile.jpg";
+import logo from "assets/svg/logo.svg";
 
 const Nav = styled(Box)`
   background-color: white;
@@ -19,9 +29,15 @@ const Nav = styled(Box)`
   }
 `;
 
+const Logo = styled(Image)`
+  height: 3.4rem;
+  margin-left: 4rem;
+`;
+
 const NavBar = () => (
   <Nav>
     <Flex alignItems="center" w="100%" h={5}>
+      <Logo src={logo} />
       <Text
         ml={3}
         lineHeight={"1.5"}
@@ -30,7 +46,7 @@ const NavBar = () => (
         fs={"2.4rem"}
         color="navys.0"
       >
-        DemoDash
+        demodash
       </Text>
     </Flex>
   </Nav>
@@ -133,7 +149,7 @@ class Hero extends React.Component {
             h="100%"
             p={r("2 ----> 4")}
           >
-            <LeftBox pl={r("0 ------> 5% -> 10%")} w={r("100%")}>
+            <LeftBox pl={r("0 2 ----> 3% -> 5% 10%")} w={r("100%")}>
               <Text
                 width="100%"
                 mb={3}

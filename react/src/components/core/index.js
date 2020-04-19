@@ -5,7 +5,7 @@
 /*
     Imports
 */
-import {borderRadius, themedComponent, flexFields} from "theme";
+import {borderRadius, themedComponent, flexFields, letterSpacing} from "theme";
 import styled from "styled-components";
 
 const Box = themedComponent(
@@ -48,6 +48,7 @@ Input.defaultProps = {
 
 const Text = themedComponent(styled.p`
   margin: ${props => (props.p ? "1rem" : props.h1 ? "2rem" : "initial")};
+  ${letterSpacing}
 `);
 
 Text.defaultProps = {

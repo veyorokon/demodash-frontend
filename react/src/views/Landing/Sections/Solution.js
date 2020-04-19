@@ -2,24 +2,14 @@ import React from "react";
 import {Flex, Section, ImageBox, Text} from "components";
 import {responsive as r} from "lib";
 
-// import mobileMedia from "assets/images/generic-products.jpg";
-//height={r("48rem ----> 60rem")}
-
 class Solution extends React.Component {
   render() {
     return (
       <Section bg={"greys.3"} height={"fit-content"} overflow="hidden">
-        <ImageBox
-          // backgroundSize={r("cover  ------> contain")}
-          // backgroundPosition={"bottom"}
-          // backgroundImage={`url(${mobileMedia})`}
-          pt={r("5")}
-          pb={r("5")}
-        >
+        <ImageBox pt={r("5")} pb={r("5")}>
           <Flex
-            // p={r("1 2 ---> 3")}
-            pl={r("1 2 ---> 4 5 -> 6 7")}
-            pr={r("1 2 ---> 4 5 -> 6 7")}
+            pl={r("2 3 ---> 4 5 -> 6 7")}
+            pr={r("2 3 ---> 4 5 -> 6 7")}
             justifyContent="flex-start"
             flexDirection="column"
             alignItems="center"
@@ -39,10 +29,10 @@ class Solution extends React.Component {
             <Text
               mt={3}
               lineHeight={"1.5"}
-              letterSpacing={"-.5px"}
+              letterSpacing={"-.2px"}
               as="p"
               fw={300}
-              fs={"2rem"}
+              fs={r("2rem -----> 2.2rem")}
               color="navys.2"
               textAlign="center"
             >

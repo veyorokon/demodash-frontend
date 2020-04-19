@@ -168,6 +168,8 @@ const opacity = configure("opacity");
 
 const gridTemplateColumns = configure("gridTemplateColumns");
 
+const letterSpacing = configure("letterSpacing");
+
 export {
   generics,
   background,
@@ -231,5 +233,6 @@ export {
   borderRight,
   borderLeft,
   borderBottom,
-  borderTop
+  borderTop,
+  letterSpacing
 };
