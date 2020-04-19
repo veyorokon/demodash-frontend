@@ -152,7 +152,7 @@ class Hero extends React.Component {
             h="100%"
             p={r("2 ----> 4")}
           >
-            <LeftBox pl={r("0 2 ----> 3% -> 5% 10%")} w={r("100%")}>
+            <LeftBox ml={r("0 2 ----> 3% -> 5% 10% 20%")} w={r("100%")}>
               <Text
                 width="100%"
                 mb={3}

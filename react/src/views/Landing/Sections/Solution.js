@@ -5,11 +5,14 @@ import {responsive as r} from "lib";
 class Solution extends React.Component {
   render() {
     return (
-      <Section bg={"greys.3"} height={"fit-content"} overflow="hidden">
-        <Box pt={r("5")} pb={r("5")}>
+      <Section bg={"whites.0"} height={"fit-content"} overflow="hidden">
+        <Box
+          ml={r("2 ---> 3 -> 4 5 6 -> 7")}
+          mr={r("2 ---> 3 -> 4 5 6 -> 7")}
+          pt={r("5")}
+          pb={r("5")}
+        >
           <Flex
-            pl={r("2 --> 3 -> 4 5 -> 6 7")}
-            pr={r("2 --> 3 -> 4 5 -> 6 7")}
             justifyContent="flex-start"
             flexDirection="column"
             alignItems="center"

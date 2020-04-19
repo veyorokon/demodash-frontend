@@ -30,9 +30,9 @@ const FeatureBox = props => (
       as="h2"
       fw={500}
       fs={r("1.8rem 2.2rem")}
-      color="blacks.0"
       textAlign="center"
       letterSpacing={".05em"}
+      color="navys.0"
     >
       {props.title}
     </FeatureTitle>
@@ -42,6 +42,7 @@ const FeatureBox = props => (
       fontWeight={"400"}
       fontSize={r("1.6rem 1.7rem")}
       lineHeight={"2"}
+      color="navys.2"
     >
       {props.text}
     </Text>
@@ -51,13 +52,14 @@ const FeatureBox = props => (
 class Solution extends React.Component {
   render() {
     return (
-      <Section bg={"greys.3"} height={"fit-content"} overflow="hidden">
-        <Box pt={r("5")} pb={r("5")}>
-          <Features
-            flexDirection={r("column ------> row")}
-            ml={r("2 ---> 3 -> 4 5 6 -> 7")}
-            mr={r("2 ---> 3 -> 4 5 6 -> 7")}
-          >
+      <Section bg={"whites.0"} height={"fit-content"} overflow="hidden">
+        <Box
+          ml={r("2 ---> 3 -> 4 5 6 -> 7")}
+          mr={r("2 ---> 3 -> 4 5 6 -> 7")}
+          pt={r("5")}
+          pb={r("5")}
+        >
+          <Features flexDirection={r("column ------> row")}>
             <FeatureBox
               borderWidth={"3px"}
               borderTopColor="transparent"
