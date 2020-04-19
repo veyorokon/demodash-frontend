@@ -11,7 +11,7 @@ import {
 } from "components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
-import desktopMedia from "assets/images/products-shelf.jpg";
+import desktopMedia from "assets/images/products-desktop.jpg";
 import mobileMedia from "assets/images/products-mobile.jpg";
 // import logo from "assets/svg/logo.svg";
 
