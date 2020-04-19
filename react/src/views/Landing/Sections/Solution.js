@@ -27,7 +27,7 @@ class Solution extends React.Component {
               mb={2}
               letterSpacing={"-.8px"}
             >
-              Demo to user
+              Demos get users
             </Text>
             <Text
               mt={3}

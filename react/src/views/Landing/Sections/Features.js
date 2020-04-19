@@ -21,7 +21,7 @@ const FeatureTitle = styled(Text)`
 `;
 
 const FeatureBox = props => (
-  <Box p={r("2 -----> 3 --> 5")} mb={r("5 ------> 0")} {...props}>
+  <Box p={r("2 -----> 3 4 -> 5")} mb={r("5 ------> 0")} {...props}>
     <Image mb={3} h={r("6.6rem")} src={props.icon} />
     <FeatureTitle
       mt={3}
@@ -54,8 +54,8 @@ class Solution extends React.Component {
     return (
       <Section bg={"whites.0"} height={"fit-content"} overflow="hidden">
         <Box
-          ml={r("2 ---> 3 -> 4 5 6 -> 7")}
-          mr={r("2 ---> 3 -> 4 5 6 -> 7")}
+          ml={r("2 ---> 3 -> 4 5 -> 6 7")}
+          mr={r("2 ---> 3 -> 4 5 -> 6 7")}
           pt={r("5")}
           pb={r("5")}
         >

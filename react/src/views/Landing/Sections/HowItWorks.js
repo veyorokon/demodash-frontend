@@ -42,7 +42,6 @@ const Panel = props => (
     <PanelText justifyContent="center">
       <Text
         mt={3}
-        mb={4}
         lineHeight={"1.5"}
         as="p"
         fw={300}
