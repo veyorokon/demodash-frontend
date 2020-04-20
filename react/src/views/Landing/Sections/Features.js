@@ -31,7 +31,7 @@ const FeatureBox = props => (
       lineHeight={"1.5"}
       as="h2"
       fw={500}
-      fs={r("1.8rem 2.2rem")}
+      fs={r("2rem 2.6rem")}
       textAlign="center"
       letterSpacing={".05em"}
       color="navys.0"
@@ -69,7 +69,7 @@ class Solution extends React.Component {
               borderLeftColor="transparent"
               borderRightColor={r("transparent ------> greys.1")}
               borderStyle="solid"
-              title={"targeting"}
+              title={"Targeting"}
               icon={targeting}
               pl={r("8px!important ------> unset")}
               text={

@@ -37,7 +37,8 @@ const lineHeight = configure("lineHeight", "lh");
 const typography = compose(
   fontWeight,
   fontSize,
-  lineHeight
+  lineHeight,
+  textAlign
 );
 
 const marginTop = configure("marginTop", ["marginTop", "mt"], "space");
@@ -124,7 +125,6 @@ const generics = compose(
   positionFields,
   minHeight,
   maxHeight,
-  textAlign,
   minWidth,
   maxWidth,
   display,

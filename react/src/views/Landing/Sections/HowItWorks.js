@@ -87,7 +87,7 @@ class HowItWorks extends React.Component {
               <Panel
                 title={"Process payments and commission"}
                 text={
-                  "You set commission rates and product prices. Payments and commission are processed on platform using Stripe with a 2.9% + 0.30 cent fee."
+                  "You set product prices and commission rates to keep storefronts motivated. Sales happen at the storefront on demodash."
                 }
                 svg={AppUser}
               />

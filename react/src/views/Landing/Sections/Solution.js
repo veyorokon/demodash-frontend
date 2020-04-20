@@ -22,7 +22,7 @@ class Solution extends React.Component {
               lineHeight={"1.5"}
               as="h2"
               fw={r("600")}
-              fs={r("2.8rem --> 3rem ---> 3.4rem")}
+              fs={r("3rem --> 3.4rem ---> 4.4rem")}
               color="navys.0"
               mb={2}
               letterSpacing={"-.8px"}
