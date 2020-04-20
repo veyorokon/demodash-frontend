@@ -15,7 +15,7 @@ const CTAButton = styled(Button)`
 
   &:hover {
     color: black;
-    background: #f3bd4e;
+    background: #f7d590;
   }
 `;
 
