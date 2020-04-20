@@ -30,7 +30,7 @@ const theme = {
     oranges: ["#F87060"],
     greens: ["#596657", "#697268", "#8BE48C"],
     navys: ["#212C39", "#112237", "#525F81"],
-    yellows: ["#FFC651"],
+    yellows: ["#FFC651", "#F7D590"],
     blues: ["#1C47F5"]
   },
   radii: [0, 2, 4],

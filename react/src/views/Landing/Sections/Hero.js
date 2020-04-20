@@ -189,10 +189,10 @@ class Hero extends React.Component {
               <CallToAction
                 w={r("100% ---> 20rem")}
                 fs={"1.4rem"}
-                bg={"yellows.0"}
+                bg={"yellows.1"}
                 br={4}
               >
-                Start Now
+                Create Account
               </CallToAction>
             </LeftBox>
             <RightBox w={r("100% ------> 50%")}></RightBox>

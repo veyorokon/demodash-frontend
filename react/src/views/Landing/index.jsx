@@ -4,6 +4,7 @@ import Solution from "./Sections/Solution";
 import HowItWorks from "./Sections/HowItWorks";
 import Features from "./Sections/Features";
 import Testimonials from "./Sections/Testimonials";
+import CallToAction from "./Sections/CallToAction";
 
 export default () => {
   return (
@@ -13,6 +14,7 @@ export default () => {
       <HowItWorks />
       <Features />
       <Testimonials />
+      <CallToAction />
     </React.Fragment>
   );
 };

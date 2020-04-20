@@ -67,6 +67,7 @@ class Testimonials extends React.Component {
           <Card
             flexDirection={r("column -----> row")}
             m="0 auto"
+            mb={4} //UPDATE
             br={2}
             bg={"whites.0"}
             maxWidth={r("100% -----> 102rem")}
