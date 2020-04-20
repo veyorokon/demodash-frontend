@@ -35,11 +35,12 @@ const Panel = props => (
       </Text>
     </PanelTitle>
     <Image
+      mt={"-5rem"}
       maxWidth={"100%"}
       h={r("16rem 20rem  22rem --> 30rem")}
       src={props.svg}
     />
-    <PanelText justifyContent="center">
+    <PanelText mt={"-5rem"} justifyContent="center">
       <Text
         lineHeight={"1.5"}
         as="p"
