@@ -65,8 +65,8 @@ class HowItWorks extends React.Component {
           <Flex
             flexDirection="column"
             bg="whites.0"
-            pl={r("2 ----> 3 4 5 6 7 8")}
-            pr={r("2 ----> 3 4 5 6 7 8")}
+            pl={r("2 ----> 3 4 5 6 7 -> 8")}
+            pr={r("2 ----> 3 4 5 6 7 -> 8")}
             m={0}
             width="100%"
             height="100%"
