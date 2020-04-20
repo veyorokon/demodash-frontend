@@ -7,7 +7,15 @@ import bromane from "assets/testimonials/bromane.jpg";
 const TitleSection = styled(Flex)``;
 
 const CardImage = styled(Image)``;
-const Card = styled(Flex)``;
+const Card = styled(Flex)`
+  cursor: pointer;
+  transition: transform 0.2s;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  }
+`;
 const CardText = styled(Box)`
   font-style: italic;
   letter-spacing: 0.5px;
@@ -18,8 +26,8 @@ class Testimonials extends React.Component {
     return (
       <Section bg={"greys.3"} height={"fit-content"} overflow="hidden">
         <Box
-          ml={r("2 ---> 3 -> 4  -> 5 6 7")}
-          mr={r("2 ---> 3 -> 4  -> 5 6 7")}
+          pl={r("2 ---> 3 -> 4  -> 5 6 7")}
+          pr={r("2 ---> 3 -> 4  -> 5 6 7")}
           pt={r("5 ---------> 6")}
           pb={r("5 ---------> 6")}
         >
@@ -60,18 +68,14 @@ class Testimonials extends React.Component {
             m="0 auto"
             br={2}
             bg={"whites.0"}
-            maxWidth={"100% -----> 100rem"}
+            maxWidth={r("100% -----> 102rem")}
             h={r("auto -----> fit-content")}
             w={r("fit-content -----> auto")}
           >
-            <CardImage
-              width={r("7 -----> 8")}
-              height={r("7 -----> 8")}
-              src={bromane}
-            />
+            <CardImage width={r("7 ")} height={r("7 ")} src={bromane} />
             <Flex
               flexDirection="column"
-              p={r("3 ------> 4")}
+              p={r("3 -------> 4")}
               w={r("7 -----> 8")}
               h={r("40rem -----> auto")}
             >
