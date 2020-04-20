@@ -74,11 +74,15 @@ class Testimonials extends React.Component {
             h={r("auto -----> fit-content")}
             w={r("fit-content -----> auto")}
           >
-            <CardImage width={r("7 ")} height={r("7 ")} src={bromane} />
+            <CardImage
+              width={r("25rem 30rem ----> 7")}
+              height={r("7 ")}
+              src={bromane}
+            />
             <Flex
               flexDirection="column"
               p={r("3 -------> 4")}
-              w={r("7 -----> 8")}
+              w={r("25rem 30rem ----> 8")}
               h={r("40rem -----> auto")}
             >
               <CardText
