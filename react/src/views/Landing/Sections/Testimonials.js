@@ -60,7 +60,8 @@ class Testimonials extends React.Component {
               textAlign="center"
               maxWidth="80rem"
             >
-              Our beta users are seeing the difference.
+              Our beta users are seeing the difference that storefront presence
+              can make.
             </Text>
           </TitleSection>
           <Card
@@ -91,7 +92,7 @@ class Testimonials extends React.Component {
                 gives us the infrastructure to efficiently distribute them.”
               </CardText>
               <Text fs={r("1.8rem ------> 2rem")} fw={"bold"}>
-                Vahid Eyorokon
+                Vahid B. Eyorokon
               </Text>
               <Text mt={1} fw={300}>
                 founder, Bromane
