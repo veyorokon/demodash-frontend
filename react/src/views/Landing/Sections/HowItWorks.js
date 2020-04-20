@@ -22,8 +22,8 @@ const Panel = props => (
   >
     <PanelTitle justifyContent="center">
       <Text
-        mt={3}
-        mb={4}
+        mt={r("1 2 ----> 3")}
+        mb={r("1 2 ----> 3")}
         lineHeight={"1.5"}
         as="p"
         fw={300}
@@ -41,7 +41,6 @@ const Panel = props => (
     />
     <PanelText justifyContent="center">
       <Text
-        mt={3}
         lineHeight={"1.5"}
         as="p"
         fw={300}

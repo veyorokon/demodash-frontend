@@ -95,7 +95,7 @@ class NavigationTabs extends React.Component {
           flexDirection={r(" row ----> column")}
           w={r("100% ----> 9rem")}
           // pt={r("3 ----> 6")}
-          pb={r("3 ----> 6")}
+          pb={r("0 ----> 6")}
           overflow="hidden"
           bg="white"
           h={r("3rem ----> 100%")}

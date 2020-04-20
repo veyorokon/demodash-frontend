@@ -27,8 +27,8 @@ class CallToAction extends React.Component {
           ml={r("2 ---> 3 -> 4 5 6 -> 7")}
           mr={r("2 ---> 3 -> 4 5 6 -> 7")}
           p={r("2 ----> 4")}
-          mt={r("4")}
-          mb={r("4")}
+          mt={r("4 ------> 5")}
+          mb={r("4 ------> 5")}
         >
           <Flex
             justifyContent="center"
@@ -50,6 +50,7 @@ class CallToAction extends React.Component {
             <CTAButton
               w={r("100% -----> 30rem")}
               fs={"1.4rem"}
+              fw={600}
               bg={"whites.0"}
               br={4}
               color="navys.2"

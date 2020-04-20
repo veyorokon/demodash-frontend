@@ -3,8 +3,6 @@ import {Flex, Section, Box, Image, Text} from "components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
 
-// import dashboard from "assets/icons/dashboard.svg";
-// import targeting from "assets/icons/targeting.svg";
 import analytics from "assets/svg/analytics.svg";
 import targeting from "assets/svg/targeting.svg";
 
@@ -19,7 +17,7 @@ const Features = styled(Flex)`
 `;
 
 const FeatureTitle = styled(Text)`
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 `;
 
 const FeatureBox = props => (

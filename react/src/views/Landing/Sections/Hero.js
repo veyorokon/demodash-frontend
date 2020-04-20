@@ -191,6 +191,7 @@ class Hero extends React.Component {
                 fs={"1.4rem"}
                 bg={"yellows.1"}
                 br={4}
+                fw={600}
               >
                 Create Account
               </CallToAction>
