@@ -2,8 +2,11 @@ import React from "react";
 import {Flex, Section, Box, Text, Image} from "components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
+import bromane from "assets/testimonials/bromane.jpg";
 
 const TitleSection = styled(Flex)``;
+
+const CardImage = styled(Image)``;
 const Card = styled(Flex)``;
 const CardText = styled(Box)`
   font-style: italic;
@@ -15,8 +18,8 @@ class Testimonials extends React.Component {
     return (
       <Section bg={"greys.3"} height={"fit-content"} overflow="hidden">
         <Box
-          ml={r("2 ---> 3 -> 4 5 -> 6 7")}
-          mr={r("2 ---> 3 -> 4 5 -> 6 7")}
+          ml={r("2 ---> 3 -> 4  -> 5 6 7")}
+          mr={r("2 ---> 3 -> 4  -> 5 6 7")}
           pt={r("5 ---------> 6")}
           pb={r("5 ---------> 6")}
         >
@@ -57,24 +60,35 @@ class Testimonials extends React.Component {
             m="0 auto"
             br={2}
             bg={"whites.0"}
-            maxWidth={"auto -----> 100rem"}
+            maxWidth={"100% -----> 100rem"}
             h={r("auto -----> fit-content")}
             w={r("fit-content -----> auto")}
           >
-            <Image w={7} h={7} bg={"greys.0"} />
-            <Flex flexDirection="column" p={4} pt={4} w={r("7 -----> 8")}>
+            <CardImage
+              width={r("7 -----> 8")}
+              height={r("7 -----> 8")}
+              src={bromane}
+            />
+            <Flex
+              flexDirection="column"
+              p={r("3 ------> 4")}
+              w={r("7 -----> 8")}
+              h={r("40rem -----> auto")}
+            >
               <CardText
                 maxWidth={r("unset -----> 85%")}
-                fs={"1.8rem"}
+                fs={r("1.8rem ------> 1.9rem")}
                 mb={3}
                 lineHeight={1.6}
                 fw={400}
               >
-                “Our teams tell us they’re working together and solving problems
-                much faster, because although they are spread across the globe,
-                Slack makes it like you’re in the same room.”
+                “Simply put, demodash has doubled our sales volume. Product
+                demos are by far our most effective marketing tool and demodash
+                gives us the infrastructure to efficiently distribute them.”
               </CardText>
-              <Text fw={"bold"}>Vahid Eyorokon</Text>
+              <Text fs={r("1.8rem ------> 2rem")} fw={"bold"}>
+                Vahid Eyorokon
+              </Text>
               <Text mt={1} fw={300}>
                 founder, Bromane
               </Text>
