@@ -27,8 +27,8 @@ class CallToAction extends React.Component {
           ml={r("2 ---> 3 -> 4 5 6 -> 7")}
           mr={r("2 ---> 3 -> 4 5 6 -> 7")}
           p={r("2 ----> 4")}
-          mt={r("5")}
-          mb={r("5")}
+          mt={r("4")}
+          mb={r("4")}
         >
           <Flex
             justifyContent="center"
