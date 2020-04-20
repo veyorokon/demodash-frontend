@@ -9,11 +9,11 @@ const TitleSection = styled(Flex)``;
 const CardImage = styled(Image)``;
 const Card = styled(Flex)`
   cursor: pointer;
-  transition: transform 0.2s;
-  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s, box-shadow 0.1s;
+  box-shadow: 0 5px 20px 0 rgba(2, 2, 2, 0.08);
   &:hover {
     transform: scale(1.02);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1rem 2rem rgba(2, 2, 2, 0.09);
   }
 `;
 const CardText = styled(Box)`
