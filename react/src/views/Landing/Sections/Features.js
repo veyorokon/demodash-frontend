@@ -3,8 +3,10 @@ import {Flex, Section, Box, Image, Text} from "components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
 
-import dashboard from "assets/icons/dashboard.svg";
-import targeting from "assets/icons/targeting.svg";
+// import dashboard from "assets/icons/dashboard.svg";
+// import targeting from "assets/icons/targeting.svg";
+import analytics from "assets/svg/analytics.svg";
+import targeting from "assets/svg/targeting.svg";
 
 const Features = styled(Flex)`
   & > :first-child {
@@ -22,7 +24,7 @@ const FeatureTitle = styled(Text)`
 
 const FeatureBox = props => (
   <Box p={r("2 -----> 3 4 -> 5")} mb={r("5 ------> 0")} {...props}>
-    <Image mb={3} h={r("6.6rem")} src={props.icon} />
+    <Image mb={3} h={r("14rem ----> 18rem ---> 20rem")} src={props.icon} />
     <FeatureTitle
       mt={3}
       mb={4}
@@ -76,7 +78,7 @@ class Solution extends React.Component {
             />
             <FeatureBox
               title={"Analytics"}
-              icon={dashboard}
+              icon={analytics}
               text={
                 "Track sales and commission in real-time via the dashboard, so you see how each storefront performs. By leveraging real-time data, you have the information you need to maximize sales, build brand awareness and scale your demodash campaigns to drive sales and adoption."
               }

@@ -60,11 +60,7 @@ const Panel = props => (
 class HowItWorks extends React.Component {
   render() {
     return (
-      <Section
-        height={r("65rem ----> 70rem")}
-        minHeight="fit-content"
-        overflow="hidden"
-      >
+      <Section height={r("65rem")} minHeight="fit-content" overflow="hidden">
         <Flex bg="greys.3" flexDirection="column" height="100%" width="100%">
           <Flex
             flexDirection="column"
