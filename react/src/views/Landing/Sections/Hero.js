@@ -63,7 +63,6 @@ const RightBox = styled(Box)``;
 
 const CallToAction = styled(Button)`
   height: 5rem;
-  width: 20rem;
   cursor: pointer;
   min-width: fit-content;
   border: none;
@@ -140,7 +139,7 @@ class Hero extends React.Component {
   render() {
     return (
       <Section
-        height={r("52rem --> 60rem ---> 80rem -> 85rem")}
+        height={r("52rem --> 60rem ---> 80rem --> 85rem")}
         overflow="hidden"
       >
         <NavBar />
@@ -177,7 +176,7 @@ class Hero extends React.Component {
               </Text>
               <Text
                 mt={3}
-                mb={4}
+                mb={r("4")}
                 lineHeight={"1.5"}
                 letterSpacing={"-.5px"}
                 as="p"
@@ -187,7 +186,12 @@ class Hero extends React.Component {
                 With your products in storefronts they can't help but be seen,
                 demoed and purchased by more users.
               </Text>
-              <CallToAction fs={"1.4rem"} bg={"yellows.0"} br={4}>
+              <CallToAction
+                w={r("100% ---> 20rem")}
+                fs={"1.4rem"}
+                bg={"yellows.0"}
+                br={4}
+              >
                 Start Now
               </CallToAction>
             </LeftBox>
