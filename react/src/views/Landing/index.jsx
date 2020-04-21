@@ -5,7 +5,9 @@ import HowItWorks from "./Sections/HowItWorks";
 import Features from "./Sections/Features";
 import Testimonials from "./Sections/Testimonials";
 import CallToAction from "./Sections/CallToAction";
-import Footer from "./Sections/Footer";
+import FooterNav from "./Sections/FooterNav";
+import FooterMeta from "./Sections/FooterMeta";
+import FooterCopy from "./Sections/FooterCopy";
 
 export default () => {
   return (
@@ -16,7 +18,9 @@ export default () => {
       <Features />
       <Testimonials />
       <CallToAction />
-      <Footer />
+      <FooterNav />
+      <FooterMeta />
+      <FooterCopy />
     </React.Fragment>
   );
 };

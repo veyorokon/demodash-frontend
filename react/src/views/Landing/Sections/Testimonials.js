@@ -24,7 +24,7 @@ const CardText = styled(Box)`
 class Testimonials extends React.Component {
   render() {
     return (
-      <Section bg={"greys.3"} height={"fit-content"} overflow="hidden">
+      <Section bg={"greys.4"} height={"fit-content"} overflow="hidden">
         <Box
           pl={r("2 ---> 3 -> 4  -> 5 6 7")}
           pr={r("2 ---> 3 -> 4  -> 5 6 7")}
@@ -92,9 +92,9 @@ class Testimonials extends React.Component {
                 lineHeight={1.6}
                 fw={400}
               >
-                “Simply put, demodash has doubled our sales volume. Product
-                demos are by far our most effective marketing tool and demodash
-                gives us the infrastructure to efficiently distribute them.”
+                “demodash has doubled our sales volume. Product demos are by far
+                our most effective marketing tool and demodash gives us the
+                infrastructure to efficiently distribute them.”
               </CardText>
               <Text fs={r("1.8rem ------> 2rem")} fw={"bold"}>
                 Vahid B. Eyorokon

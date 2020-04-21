@@ -12,14 +12,29 @@ const GridItemFlex = styled(Flex)`
 `;
 const GridItem = props => (
   <GridItemFlex>
-    <Text textTransform={"uppercase"} m="unset" p="1rem 0">
+    <Text
+      color={"navys.0"}
+      fs={"1.4rem"}
+      textTransform={"uppercase"}
+      m="unset"
+      p={2}
+      pl="unset"
+      pr="unset"
+      fw={500}
+    >
       {props.title}
     </Text>
-    <Text>{props.text}</Text>
+    {props.links.map((link, index) => (
+      <Text color={"greys.0"} m="unset" p={2} pl="unset" pr="unset">
+        {link.text}
+      </Text>
+    ))}
   </GridItemFlex>
 );
 
-class Footer extends React.Component {
+const productLinks = [{text: "text", link: "/somelink"}];
+
+class FooterNav extends React.Component {
   render() {
     return (
       <Section bg={"whites.0"} height={"fit-content"} overflow="hidden">
@@ -27,22 +42,25 @@ class Footer extends React.Component {
           ml={r("2 ---> 3 -> 4 5 6 -> 7")}
           mr={r("2 ---> 3 -> 4 5 6 -> 7")}
           pt={r("5 -------> 6")}
-          pb={r("5")}
+          pb={r("5 -------> 6")}
         >
           <Flex
             flexDirection={r("column -----> row")}
             alignItems="flex-start"
             justifyContent="space-between"
           >
-            <Logo mb={4} mr={4} src={logo} w="8rem" h="8rem" />
+            <Logo
+              mb={4}
+              mr={4}
+              src={logo}
+              w={r("6rem -----> 7rem")}
+              h={r("6rem -----> 7rem")}
+            />
             <Grid
               gridTemplateColumns={r("repeat(2,1fr) ----> repeat(4,1fr)")}
-              w={"100%"}
+              w={r("100% -----> 65%")}
             >
-              <GridItem title="title1" text={"text"} />
-              <GridItem title="title1" text={"text"} />
-              <GridItem title="title1" text={"text"} />
-              <GridItem title="title1" text={"text"} />
+              <GridItem title="title1" links={productLinks} />
             </Grid>
           </Flex>
         </Box>
@@ -50,4 +68,4 @@ class Footer extends React.Component {
     );
   }
 }
-export default Footer;
+export default FooterNav;
