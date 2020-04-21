@@ -61,7 +61,8 @@ import {
   borderTopColor,
   letterSpacing,
   borderStyle,
-  textTransform
+  textTransform,
+  cursor
 } from "./fields";
 
 export default theme;
@@ -127,5 +128,6 @@ export {
   borderTopColor,
   letterSpacing,
   borderStyle,
-  textTransform
+  textTransform,
+  cursor
 };

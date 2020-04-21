@@ -36,12 +36,15 @@ const fontSize = configure("fontSize", "fs", "fontSizes");
 const lineHeight = configure("lineHeight", "lh");
 
 const textTransform = configure("textTransform");
+const cursor = configure("cursor");
+
 const typography = compose(
   fontWeight,
   fontSize,
   lineHeight,
   textAlign,
-  textTransform
+  textTransform,
+  cursor
 );
 
 const marginTop = configure("marginTop", ["marginTop", "mt"], "space");
@@ -241,5 +244,6 @@ export {
   borderTop,
   letterSpacing,
   borderStyle,
-  textTransform
+  textTransform,
+  cursor
 };

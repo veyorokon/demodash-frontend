@@ -2,6 +2,27 @@ import React from "react";
 import {Flex, Section, Box, Text} from "components";
 import {responsive as r} from "lib";
 
+const MetaTag = props => (
+  <Text
+    cursor={"pointer"}
+    lineHeight={"1.5"}
+    letterSpacing={"-.2px"}
+    as="p"
+    fw={500}
+    mr={3}
+    fs={"1.2rem"}
+    color="blacks.0"
+    textAlign={r("center ------> left")}
+  >
+    {props.text}
+  </Text>
+);
+
+let responsiveJustify = r("center ----> flex-start");
+responsiveJustify = responsiveJustify.map(function(item) {
+  return item === "flex" ? "flex-start" : item;
+});
+
 class FooterMeta extends React.Component {
   render() {
     return (
@@ -13,36 +34,12 @@ class FooterMeta extends React.Component {
           mr={r("2 ---> 3 -> 4 5")}
         >
           <Flex
-            justifyContent="flex-start"
+            justifyContent={responsiveJustify}
             flexDirection="row"
             alignItems="center"
           >
-            <Text
-              lineHeight={"1.5"}
-              letterSpacing={"-.2px"}
-              as="p"
-              fw={300}
-              mr={3}
-              fs={"1.2rem"}
-              color="blacks.0"
-              textAlign={r("center ------> left")}
-              maxWidth="80rem"
-            >
-              Privacy & Terms
-            </Text>
-            <Text
-              lineHeight={"1.5"}
-              letterSpacing={"-.2px"}
-              as="p"
-              fw={300}
-              mr={3}
-              fs={"1.2rem"}
-              color="blacks.0"
-              textAlign={r("center ------> left")}
-              maxWidth="80rem"
-            >
-              Contact Us
-            </Text>
+            <MetaTag text={"Privacy & Terms"} />
+            <MetaTag text={"Contact Us"} />
           </Flex>
         </Box>
       </Section>

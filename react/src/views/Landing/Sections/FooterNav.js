@@ -25,7 +25,7 @@ const GridItem = props => (
       {props.title}
     </Text>
     {props.links.map((link, index) => (
-      <Text color={"greys.0"} m="unset" p={2} pl="unset" pr="unset">
+      <Text key={index} color={"greys.0"} m="unset" p={2} pl="unset" pr="unset">
         {link.text}
       </Text>
     ))}
