@@ -34,7 +34,7 @@ class Footer extends React.Component {
             alignItems="flex-start"
             justifyContent="space-between"
           >
-            <Logo src={logo} w="6.8rem" h="6.8rem" />
+            <Logo mb={4} mr={4} src={logo} w="6.8rem" h="6.8rem" />
             <Grid
               gridTemplateColumns={r("repeat(2,1fr) ----> repeat(4,1fr)")}
               w={"100%"}
