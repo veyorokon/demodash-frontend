@@ -1,4 +1,4 @@
-import {Flex, Image, Box, Button, Input, Text, Video} from "./core";
+import {Flex, Image, Box, Button, Input, Text, Video, Grid} from "./core";
 
 import Animate, {appear} from "./core/animation";
 import Hidden from "./core/hidden";
@@ -12,15 +12,7 @@ import {
 } from "./composite/tabs";
 import LeftCallOut from "./composite/leftCallout";
 
-import {
-  ImageBox,
-  Section,
-  Title,
-  SubTitle,
-  Grid,
-  Header,
-  Label
-} from "./styled";
+import {ImageBox, Section, Title, SubTitle, Header, Label} from "./styled";
 export {
   Text,
   Box,

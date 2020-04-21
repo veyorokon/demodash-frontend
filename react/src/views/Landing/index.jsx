@@ -5,6 +5,7 @@ import HowItWorks from "./Sections/HowItWorks";
 import Features from "./Sections/Features";
 import Testimonials from "./Sections/Testimonials";
 import CallToAction from "./Sections/CallToAction";
+import Footer from "./Sections/Footer";
 
 export default () => {
   return (
@@ -15,6 +16,7 @@ export default () => {
       <Features />
       <Testimonials />
       <CallToAction />
+      <Footer />
     </React.Fragment>
   );
 };

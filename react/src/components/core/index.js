@@ -5,7 +5,13 @@
 /*
     Imports
 */
-import {borderRadius, themedComponent, flexFields, letterSpacing} from "theme";
+import {
+  borderRadius,
+  gridTemplateColumns,
+  themedComponent,
+  flexFields,
+  letterSpacing
+} from "theme";
 import styled from "styled-components";
 
 const Box = themedComponent(
@@ -69,4 +75,12 @@ const Image = themedComponent(
   `
 );
 
-export {Text, Box, Button, Flex, Input, Video, Image};
+const Grid = themedComponent(
+  styled.div`
+    display: grid;
+    position: relative;
+    ${gridTemplateColumns}
+  `
+);
+
+export {Text, Grid, Box, Button, Flex, Input, Video, Image};
