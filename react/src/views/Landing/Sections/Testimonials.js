@@ -76,7 +76,8 @@ class Testimonials extends React.Component {
           >
             <CardImage
               width={r("25rem 28rem 30rem ---> 7")}
-              height={r("7 ")}
+              maxWidth="100%"
+              height={r("auto 7")}
               src={bromane}
             />
             <Flex
@@ -84,6 +85,7 @@ class Testimonials extends React.Component {
               p={r("3 4 ----> 3 -> 4")}
               w={r("25rem 28rem 30rem ---> 8")}
               h={r("40rem -----> auto")}
+              maxWidth={r("100% -----> 85%")}
             >
               <CardText
                 maxWidth={r("unset -----> 85%")}
