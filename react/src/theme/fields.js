@@ -34,11 +34,14 @@ const color = configure("color", "color", "colors");
 const fontWeight = configure("fontWeight", "fw", "fontWeights");
 const fontSize = configure("fontSize", "fs", "fontSizes");
 const lineHeight = configure("lineHeight", "lh");
+
+const textTransform = configure("textTransform");
 const typography = compose(
   fontWeight,
   fontSize,
   lineHeight,
-  textAlign
+  textAlign,
+  textTransform
 );
 
 const marginTop = configure("marginTop", ["marginTop", "mt"], "space");
@@ -237,5 +240,6 @@ export {
   borderBottom,
   borderTop,
   letterSpacing,
-  borderStyle
+  borderStyle,
+  textTransform
 };

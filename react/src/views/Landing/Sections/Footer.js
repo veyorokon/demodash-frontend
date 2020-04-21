@@ -12,10 +12,10 @@ const GridItemFlex = styled(Flex)`
 `;
 const GridItem = props => (
   <GridItemFlex>
-    <Text m="unset" p="1rem 0">
-      TITLE
+    <Text textTransform={"uppercase"} m="unset" p="1rem 0">
+      {props.title}
     </Text>
-    <Text>Elem</Text>
+    <Text>{props.text}</Text>
   </GridItemFlex>
 );
 
@@ -34,15 +34,15 @@ class Footer extends React.Component {
             alignItems="flex-start"
             justifyContent="space-between"
           >
-            <Logo mb={4} mr={4} src={logo} w="6.8rem" h="6.8rem" />
+            <Logo mb={4} mr={4} src={logo} w="8rem" h="8rem" />
             <Grid
               gridTemplateColumns={r("repeat(2,1fr) ----> repeat(4,1fr)")}
               w={"100%"}
             >
-              <GridItem />
-              <GridItem />
-              <GridItem />
-              <GridItem />
+              <GridItem title="title1" text={"text"} />
+              <GridItem title="title1" text={"text"} />
+              <GridItem title="title1" text={"text"} />
+              <GridItem title="title1" text={"text"} />
             </Grid>
           </Flex>
         </Box>
