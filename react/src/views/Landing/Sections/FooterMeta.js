@@ -28,7 +28,7 @@ class FooterMeta extends React.Component {
     return (
       <Section bg={"whites.1"} height={"fit-content"} overflow="hidden">
         <Box
-          pt={r("4 ---------> 5")}
+          pt={r("4")}
           pb={r("4")}
           ml={r("2 ---> 3 -> 4 5")}
           mr={r("2 ---> 3 -> 4 5")}
