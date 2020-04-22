@@ -22,8 +22,8 @@ const Panel = props => (
   >
     <PanelTitle justifyContent="center">
       <Text
-        mt={3}
-        mb={4}
+        mt={r("1 2 ----> 3")}
+        mb={r("1 2 ----> 3")}
         lineHeight={"1.5"}
         as="p"
         fw={300}
@@ -35,14 +35,13 @@ const Panel = props => (
       </Text>
     </PanelTitle>
     <Image
+      mt={"-5rem"}
       maxWidth={"100%"}
       h={r("16rem 20rem  22rem --> 30rem")}
       src={props.svg}
     />
-    <PanelText justifyContent="center">
+    <PanelText mt={"-5rem"} justifyContent="center">
       <Text
-        mt={3}
-        mb={4}
         lineHeight={"1.5"}
         as="p"
         fw={300}
@@ -50,6 +49,7 @@ const Panel = props => (
         color="navys.2"
         textAlign={r("center")}
         letterSpacing="-0.5px"
+        maxWidth="60rem"
       >
         {props.text}
       </Text>
@@ -60,18 +60,13 @@ const Panel = props => (
 class HowItWorks extends React.Component {
   render() {
     return (
-      <Section
-        height={r("50rem 58rem -> 60rem -> 70rem")}
-        minHeight="fit-content"
-        overflow="hidden"
-      >
+      <Section height={r("65rem")} minHeight="fit-content" overflow="hidden">
         <Flex bg="greys.3" flexDirection="column" height="100%" width="100%">
           <Flex
             flexDirection="column"
             bg="whites.0"
-            p={3}
-            pl={r("2 -----> 3 4 6 7")}
-            pr={r("2 -----> 3 4 6 7")}
+            pl={r("2 ----> 3 4 5 6 7 -> 8")}
+            pr={r("2 ----> 3 4 5 6 7 -> 8")}
             m={0}
             width="100%"
             height="100%"
@@ -85,21 +80,21 @@ class HowItWorks extends React.Component {
               <Panel
                 title={"Ship demos to storefronts"}
                 text={
-                  "Discover storefonts in your industry. Leverage their expertise as your sales force."
+                  "Discover storefonts in your industry to maximize targeting and sales conversion. Leverage their expertise as your sales force."
                 }
                 svg={StoreFront}
               />
               <Panel
                 title={"Process payments and commission"}
                 text={
-                  "When a sale is made, payments are processed and commission is automatically paid to the store."
+                  "You set product prices and commission rates to keep storefronts motivated. Sales happen at the storefront on demodash."
                 }
                 svg={AppUser}
               />
               <Panel
                 title={"Ship purchases to customers"}
                 text={
-                  "You'll get notified of any new sales. Then, just ship purchased products directly to the end user!"
+                  "You'll get notified of any new sales. When a sale goes through, you just ship the purchased products directly to the end user!"
                 }
                 svg={ShipPackage}
               />

@@ -7,8 +7,17 @@
 */
 
 import Landing from "views/Landing";
+import Privacy from "views/Privacy";
 
 const routes = [
+  {
+    path: "/legal",
+    name: "Privacy",
+    rtlName: "Privacy",
+    icon: null,
+    component: Privacy,
+    layout: "/"
+  },
   {
     path: "/",
     name: "Landing",

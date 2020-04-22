@@ -39,3 +39,15 @@ export default function responsive(values) {
   });
   return output;
 }
+
+// function test() {
+//   var str = '1px 2rem -> 5% -> center ----> "flex-start"';
+//   let lastElem = str.match(/(".*?"|[^"-\s]+|[^a-zA-Z0-9 ])(?=\s*-|\s*$)/g);
+//   //let lastElem = str.match(/(".*?"|[^"-\s]+)(?=\s*-|\s*$)/g);
+//   lastElem = lastElem || [];
+//   for (var i = 0; i < lastElem.length; i++) {
+//     console.log(lastElem[i].replace(/(^"|"$)/g, ""));
+//   }
+// }
+//
+// test();

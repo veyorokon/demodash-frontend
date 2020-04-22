@@ -1,10 +1,10 @@
-# kubeshare / kubeshare
+# demodash / demodash
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/veyorokon/kubeshare-frontend)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/veyorokon/demodash-frontend)
 
-![](./git-assets/kubeshare.gif)
+![](./git-assets/demodash.gif)
 
-kubeshare is shared kubernetes.
+demodash is a platform for connecting product demos with storefronts and influencers.
 
 
 # New Features!
@@ -14,7 +14,7 @@ kubeshare is shared kubernetes.
 
 ### Tech
 
-kubeshare uses a number of open source and free tier projects to work properly:
+demodash uses a number of open source and free tier projects to work properly:
 
 * [ReactJS] - Front end JS framework.
 * [Django] - Backend framework built with python.
@@ -22,7 +22,7 @@ kubeshare uses a number of open source and free tier projects to work properly:
 
 ### Local Installation & Development
 
-kubeshare requires [Node.js](https://nodejs.org/) v12.5.0+ to run.
+demodash requires [Node.js](https://nodejs.org/) v12.5.0+ to run.
 
 Install the frontend dependencies and start the `frontend` server. Open a new terminal and run:
 

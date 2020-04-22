@@ -17,10 +17,10 @@ const textAlign = configure("textAlign");
 
 const width = configure("width", "w", "space");
 const height = configure("height", "h", "space");
-const minHeight = configure("minHeight");
-const maxHeight = configure("maxHeight");
-const minWidth = configure("minWidth");
-const maxWidth = configure("maxWidth");
+const minHeight = configure("minHeight", [], "space");
+const maxHeight = configure("maxHeight", [], "space");
+const minWidth = configure("minWidth", [], "space");
+const maxWidth = configure("maxWidth", [], "space");
 
 const background = configure("background", ["bg", "background"], "colors");
 const backgroundImage = configure("backgroundImage");
@@ -34,10 +34,17 @@ const color = configure("color", "color", "colors");
 const fontWeight = configure("fontWeight", "fw", "fontWeights");
 const fontSize = configure("fontSize", "fs", "fontSizes");
 const lineHeight = configure("lineHeight", "lh");
+
+const textTransform = configure("textTransform");
+const cursor = configure("cursor");
+
 const typography = compose(
   fontWeight,
   fontSize,
-  lineHeight
+  lineHeight,
+  textAlign,
+  textTransform,
+  cursor
 );
 
 const marginTop = configure("marginTop", ["marginTop", "mt"], "space");
@@ -96,19 +103,21 @@ const positionFields = compose(
   left
 );
 const border = configure("border");
+const borderStyle = configure("borderStyle");
 const borderRight = configure("borderRight");
 const borderLeft = configure("borderLeft");
 const borderBottom = configure("borderBottom");
 const borderTop = configure("borderTop");
 
-const borderRightColor = configure("borderRightColor");
-const borderLeftColor = configure("borderLeftColor");
-const borderBottomColor = configure("borderBottomColor");
-const borderTopColor = configure("borderTopColor");
+const borderRightColor = configure("borderRightColor", [], "colors");
+const borderLeftColor = configure("borderLeftColor", [], "colors");
+const borderBottomColor = configure("borderBottomColor", [], "colors");
+const borderTopColor = configure("borderTopColor", [], "colors");
 
 const display = configure("display");
 
 const generics = compose(
+  borderStyle,
   border,
   overflow,
   typography,
@@ -122,7 +131,6 @@ const generics = compose(
   positionFields,
   minHeight,
   maxHeight,
-  textAlign,
   minWidth,
   maxWidth,
   display,
@@ -234,5 +242,8 @@ export {
   borderLeft,
   borderBottom,
   borderTop,
-  letterSpacing
+  letterSpacing,
+  borderStyle,
+  textTransform,
+  cursor
 };

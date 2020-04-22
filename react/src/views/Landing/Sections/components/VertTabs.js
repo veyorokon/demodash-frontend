@@ -33,6 +33,7 @@ const Menu = styled(Flex)`
 
 const PanelNavigation = styled(Flex)`
   justify-content: end;
+  transition: padding 0.2s;
 `;
 
 const NavigationTabItem = styled(Flex)`
@@ -94,8 +95,8 @@ class NavigationTabs extends React.Component {
         <Navigation
           flexDirection={r(" row ----> column")}
           w={r("100% ----> 9rem")}
-          pt={r("3 ----> 6")}
-          pb={r("3 ----> 6")}
+          pt={r("0 --------> 6")}
+          pb={r("0 ----> 6")}
           overflow="hidden"
           bg="white"
           h={r("3rem ----> 100%")}
