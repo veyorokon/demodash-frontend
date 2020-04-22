@@ -29,8 +29,8 @@ class Privacy extends React.Component {
         <Box
           ml={r("2 ---> 3 -> 4 5 6 -> 7")}
           mr={r("2 ---> 3 -> 4 5 6 -> 7")}
-          pt={r("5 ---------> 6")}
-          pb={r("5")}
+          pt={r("6")}
+          pb={r("6")}
         >
           <Flex
             justifyContent="flex-start"
@@ -73,7 +73,7 @@ class Privacy extends React.Component {
             </Text>
             <TextBlock>
               By accessing this website we assume you accept these terms and
-              conditions in full.Do not continue to use{" "}
+              conditions in full. Do not continue to use{" "}
               <a href="https://demodash.com">demodash.com's</a> website if you
               do not accept all of the terms and conditions stated on this page.
             </TextBlock>
@@ -84,39 +84,38 @@ class Privacy extends React.Component {
               this website and accepting the Company 's terms and conditions.
               "The Company", "Ourselves", "We", "Our" and "Us", refers to our
               Company. "Party", "Parties", or "Us", refers to both the Client
-              and ourselves, or either the Client or ourselves.All terms refer
+              and ourselves, or either the Client or ourselves. All terms refer
               to the offer, acceptance and consideration of payment necessary to
               undertake the process of our assistance to the Client in the most
               appropriate manner, whether by formal meetings of a fixed
               duration, or any other means, for the express purpose of meeting
               the Client 's needs in respect of provision of the Company 's
               stated services/products, in accordance with and subject to,
-              prevailing law of United States.Any use of the above terminology
+              prevailing law of United States. Any use of the above terminology
               or other words in the singular, plural, capitalisation and / or he
               / she or they, are taken as interchangeable and therefore as
               referring to same.
             </TextBlock>
             <SubTitle>Cookies</SubTitle>
             <TextBlock>
-              We employ the use of cookies.By using demodash.com 's website you
+              We employ the use of cookies. By using demodash.com 's website you
               consent to the use of cookies in accordance with demodash.com 's
               privacy policy.
             </TextBlock>
             <TextBlock>
               Most of the modern day interactive web sites use cookies to enable
-              us to retrieve user details for each visit.Cookies are used in
+              us to retrieve user details for each visit. Cookies are used in
               some areas of our site to enable the functionality of this area
-              and ease of use for those people visiting.Some of our affiliate /
+              and ease of use for those people visiting. Some of our affiliate /
               advertising partners may also use cookies.
             </TextBlock>
             <SubTitle>License</SubTitle>
             <TextBlock>
               Unless otherwise stated, demodash.com and or it 's licensors own
-              the intellectual property rights for all material on
-              demodash.com.All intellectual property rights are reserved.You may
-              view and or print pages from https://demodash.com for your own
-              personal use subject to restrictions set in these terms and
-              conditions.
+              the intellectual property rights for all material on demodash.com.
+              All intellectual property rights are reserved. You may view and or
+              print pages from https://demodash.com for your own personal use
+              subject to restrictions set in these terms and conditions.
             </TextBlock>
             <TextBlock> You must not: </TextBlock>
             <ol>
@@ -184,7 +183,7 @@ class Privacy extends React.Component {
                     accounting, law and consulting firms whose primary clients
                     are businesses; and
                   </li>
-                  <li> educational institutions and trade associations. </li>
+                  <li> educational institutions and trade associations.</li>
                 </ol>
               </li>
             </ol>
@@ -224,8 +223,8 @@ class Privacy extends React.Component {
               information(such as a phone number and / or e - mail address) as
               well as the URL of your site, a list of any URLs from which you
               intend to link to our Web site, and a list of the URL(s) on our
-              site to which you would like to link.Allow 2 - 3 weeks for a
-              response.
+              site to which you would like to link. Allow for up to 2 - 3 weeks
+              for a response.
             </TextBlock>
             <TextBlock>
               Approved organizations may hyperlink to our Web site as follows:
@@ -257,16 +256,16 @@ class Privacy extends React.Component {
             <TextBlock>
               We reserve the right at any time and in its sole discretion to
               request that you remove all links or any particular link to our
-              Web site.You agree to immediately remove all links to our Web site
-              upon such request.We also reserve the right to amend these terms
-              and conditions and its linking policy at any time.By continuing to
-              link to our Web site, you agree to be bound to and abide by these
-              linking terms and conditions.
+              Web site. You agree to immediately remove all links to our Web
+              site upon such request. We also reserve the right to amend these
+              terms and conditions and its linking policy at any time. By
+              continuing to link to our Web site, you agree to be bound to and
+              abide by these linking terms and conditions.
             </TextBlock>
             <SubTitle> Removal of links from our website </SubTitle>
             <TextBlock>
               If you find any link on our Web site or any linked web site
-              objectionable for any reason, you may contact us about this.We
+              objectionable for any reason, you may contact us about this. We
               will consider requests to remove links but will have no obligation
               to do so or to respond directly to you.
             </TextBlock>
@@ -279,8 +278,8 @@ class Privacy extends React.Component {
             <SubTitle> Content Liability </SubTitle>
             <TextBlock>
               We shall have no responsibility or liability for any content
-              appearing on your Web site.You agree to indemnify and defend us
-              against all claims arising out of or based upon your Website.No
+              appearing on your Web site. You agree to indemnify and defend us
+              against all claims arising out of or based upon your Website. No
               link(s) may appear on any page on your Web site or within any
               context containing content or materials that may be interpreted as
               libelous, obscene or criminal, or which infringes, otherwise
@@ -294,7 +293,7 @@ class Privacy extends React.Component {
               and the use of this website(including, without limitation, any
               warranties implied by law in respect of satisfactory quality,
               fitness for purpose and / or the use of reasonable care and
-              skill).Nothing in this disclaimer will:
+              skill). Nothing in this disclaimer will:
             </TextBlock>
             <ol>
               <li>

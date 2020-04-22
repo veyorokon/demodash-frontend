@@ -30,8 +30,8 @@ class Privacy extends React.Component {
         <Box
           ml={r("2 ---> 3 -> 4 5 6 -> 7")}
           mr={r("2 ---> 3 -> 4 5 6 -> 7")}
-          pt={r("5 ---------> 6")}
-          pb={r("5")}
+          pt={r("6")}
+          pb={r("6")}
         >
           <Flex
             justifyContent="flex-start"
