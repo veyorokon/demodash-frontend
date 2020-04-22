@@ -31,6 +31,7 @@ const backgroundPositionY = configure("backgroundPositionY", "bpy");
 const backgroundSize = configure("backgroundSize");
 
 const color = configure("color", "color", "colors");
+const fill = configure("fill");
 
 const fontWeight = configure("fontWeight", "fw", "fontWeights");
 const fontSize = configure("fontSize", "fs", "fontSizes");
@@ -248,5 +249,6 @@ export {
   borderStyle,
   textTransform,
   cursor,
-  alignSelf
+  alignSelf,
+  fill
 };

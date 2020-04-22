@@ -10,7 +10,8 @@ import {
   gridTemplateColumns,
   themedComponent,
   flexFields,
-  letterSpacing
+  letterSpacing,
+  fill
 } from "theme";
 import styled from "styled-components";
 
@@ -72,6 +73,7 @@ const Video = themedComponent(
 const Image = themedComponent(
   styled.img`
     ${borderRadius}
+    ${fill}
   `
 );
 

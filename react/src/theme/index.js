@@ -63,7 +63,8 @@ import {
   borderStyle,
   textTransform,
   cursor,
-  alignSelf
+  alignSelf,
+  fill
 } from "./fields";
 
 export default theme;
@@ -131,5 +132,6 @@ export {
   borderStyle,
   textTransform,
   cursor,
-  alignSelf
+  alignSelf,
+  fill
 };
