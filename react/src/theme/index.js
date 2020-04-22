@@ -62,7 +62,8 @@ import {
   letterSpacing,
   borderStyle,
   textTransform,
-  cursor
+  cursor,
+  alignSelf
 } from "./fields";
 
 export default theme;
@@ -129,5 +130,6 @@ export {
   letterSpacing,
   borderStyle,
   textTransform,
-  cursor
+  cursor,
+  alignSelf
 };

@@ -13,7 +13,7 @@ const MetaTag = props => (
     pl="unset"
     pr="unset"
   >
-    <Link href={`${props.link}`}>{props.text}</Link>
+    <Link href={props.link}>{props.text}</Link>
   </Text>
 );
 

@@ -1,12 +1,12 @@
 import React from "react";
-import Solution from "./Sections/Solution";
+import Privacy from "./Sections/Privacy";
 import {NavBar, FooterNav, FooterMeta, FooterCopy} from "views/components";
 
 export default () => {
   return (
     <React.Fragment>
       <NavBar />
-      <Solution />
+      <Privacy />
       <FooterNav />
       <FooterMeta />
       <FooterCopy />

@@ -14,6 +14,7 @@ import {compose} from "styled-system";
  */
 const overflow = configure("overflow");
 const textAlign = configure("textAlign");
+const alignSelf = configure("alignSelf");
 
 const width = configure("width", "w", "space");
 const height = configure("height", "h", "space");
@@ -44,7 +45,8 @@ const typography = compose(
   lineHeight,
   textAlign,
   textTransform,
-  cursor
+  cursor,
+  alignSelf
 );
 
 const marginTop = configure("marginTop", ["marginTop", "mt"], "space");
@@ -245,5 +247,6 @@ export {
   letterSpacing,
   borderStyle,
   textTransform,
-  cursor
+  cursor,
+  alignSelf
 };
