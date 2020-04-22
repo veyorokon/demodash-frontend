@@ -3,7 +3,16 @@ import {Flex, Section, Box, Text, Link} from "components";
 import {responsive as r} from "lib";
 
 const MetaTag = props => (
-  <Text fw={500} color={"greys.0"} m="unset" mr={3} p={2} pl="unset" pr="unset">
+  <Text
+    fs={"1.4rem"}
+    fw={500}
+    color={"greys.0"}
+    m="unset"
+    mr={3}
+    p={2}
+    pl="unset"
+    pr="unset"
+  >
     <Link href={`${props.link}`}>{props.text}</Link>
   </Text>
 );

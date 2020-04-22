@@ -47,7 +47,7 @@ class CallToAction extends React.Component {
             >
               Get your product demos seen
             </Text>
-            <Link href="/link">
+            <Link w={r("100% -----> 30rem")} href="/link">
               <CTAButton
                 w={r("100% -----> 30rem")}
                 fs={"1.4rem"}
