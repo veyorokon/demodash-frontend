@@ -38,7 +38,15 @@ const productLinks = [{text: "text", link: "/somelink"}];
 export default class FooterNav extends React.Component {
   render() {
     return (
-      <Section bg={"whites.0"} height={"fit-content"} overflow="hidden">
+      <Section
+        border={"1px solid #eee"}
+        borderLeft="unset"
+        borderRight="unset"
+        borderBottom="unset"
+        bg={"whites.0"}
+        height={"fit-content"}
+        overflow="hidden"
+      >
         <Box
           ml={r("2 ---> 3 -> 4 5 6 ")}
           mr={r("2 ---> 3 -> 4 5 6 ")}

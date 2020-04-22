@@ -18,7 +18,7 @@ const SubTitle = props => (
 );
 
 const TextBlock = props => (
-  <Text fs={"1.6rem"} lineHeight={"1.5"} pt="5px">
+  <Text fs={r("1.4rem  -----> 1.6rem")} lineHeight={"1.5"} pt="5px">
     {props.children}
   </Text>
 );
@@ -76,15 +76,16 @@ class Privacy extends React.Component {
               information we may collect while operating our website. This
               Privacy Policy applies to{" "}
               <a href="https://demodash.com">https://demodash.com</a>{" "}
-              (hereinafter, "us", "we", or "https://demodash.com"). We respect
-              your privacy and are committed to protecting personally
+              (hereinafter, "our", "us", "we", or "https://demodash.com"). We
+              respect your privacy and are committed to protecting personally
               identifiable information you may provide us through the Website.
               We have adopted this privacy policy ("Privacy Policy") to explain
               what information may be collected on our Website, how we use this
               information, and under what circumstances we may disclose the
               information to third parties. This Privacy Policy applies only to
               information we collect through the Website and does not apply to
-              our collection of information from other sources.
+              our collection of information from other sources. These terms are
+              subject to change at our discretion.
             </TextBlock>
             <TextBlock>
               This Privacy Policy, together with the Terms and conditions posted
