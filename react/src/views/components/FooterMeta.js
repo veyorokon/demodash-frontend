@@ -37,6 +37,7 @@ class FooterMeta extends React.Component {
             flexDirection="row"
             alignItems="center"
           >
+            <MetaTag text={"Home"} link={"/"} />
             <MetaTag text={"Privacy"} link={"/legal/privacy"} />
             <MetaTag text={"Terms"} link={"/legal/terms"} />
             <MetaTag text={"Contact Us"} link={"/"} />

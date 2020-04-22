@@ -111,21 +111,21 @@ class Privacy extends React.Component {
             </TextBlock>
             <SubTitle>License</SubTitle>
             <TextBlock>
-              Unless otherwise stated, demodash.com and / or it 's licensors own
+              Unless otherwise stated, demodash.com and or it 's licensors own
               the intellectual property rights for all material on
               demodash.com.All intellectual property rights are reserved.You may
-              view and / or print pages from https: //demodash.com for your own
+              view and or print pages from https://demodash.com for your own
               personal use subject to restrictions set in these terms and
               conditions.
             </TextBlock>
             <TextBlock> You must not: </TextBlock>
             <ol>
-              <li>Republish material from https: //demodash.com</li>
+              <li>Republish material from https://demodash.com</li>
               <li>
-                Sell, rent or sub - license material from https: //demodash.com
+                Sell, rent or sub - license material from https://demodash.com
               </li>
               <li>
-                Reproduce, duplicate or copy material from https: //demodash.com
+                Reproduce, duplicate or copy material from https://demodash.com
               </li>
             </ol>
             <TextBlock>
