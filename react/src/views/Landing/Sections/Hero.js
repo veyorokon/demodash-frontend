@@ -70,7 +70,6 @@ const SmartWrapper = props => {
           overflow={"hidden"}
           backgroundPosition={"right"}
           backgroundImage={`url(${desktopMedia})`}
-          pt={5}
         >
           <WrapperDesktop {...props}>{props.children}</WrapperDesktop>
         </ImageBox>
@@ -80,7 +79,6 @@ const SmartWrapper = props => {
           overflow={"hidden"}
           backgroundPosition={"right"}
           backgroundImage={`url(${mobileMedia})`}
-          pt={5}
         >
           <WrapperMobile {...props}>{props.children}</WrapperMobile>
         </ImageBox>

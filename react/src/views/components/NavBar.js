@@ -14,6 +14,9 @@ const Nav = styled(Box)`
   div:first-child {
     border-bottom: 1px solid #e4e8e8;
   }
+  + section {
+    padding-top: 6.4rem;
+  }
 `;
 
 // const Logo = styled(Image)`
