@@ -86,8 +86,9 @@ const Grid = themedComponent(
 const Link = themedComponent(styled.a`
   width: fit-content;
   text-decoration: unset;
+  color: inherit;
   &:visited {
-    color: initial;
+    color: inherit;
   }
 `);
 
