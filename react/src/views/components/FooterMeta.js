@@ -1,20 +1,10 @@
 import React from "react";
-import {Flex, Section, Box, Text} from "components";
+import {Flex, Section, Box, Text, Link} from "components";
 import {responsive as r} from "lib";
 
 const MetaTag = props => (
-  <Text
-    cursor={"pointer"}
-    lineHeight={"1.5"}
-    letterSpacing={"-.2px"}
-    as="p"
-    fw={500}
-    mr={3}
-    fs={"1.2rem"}
-    color="blacks.0"
-    textAlign={r("center ------> left")}
-  >
-    {props.text}
+  <Text fw={500} color={"greys.0"} m="unset" mr={3} p={2} pl="unset" pr="unset">
+    <Link href={`${props.link}`}>{props.text}</Link>
   </Text>
 );
 
@@ -38,8 +28,8 @@ class FooterMeta extends React.Component {
             flexDirection="row"
             alignItems="center"
           >
-            <MetaTag text={"Privacy & Terms"} />
-            <MetaTag text={"Contact Us"} />
+            <MetaTag text={"Privacy & Terms"} link={"/legal"} />
+            <MetaTag text={"Contact Us"} link={"/"} />
           </Flex>
         </Box>
       </Section>

@@ -1,5 +1,5 @@
 import React from "react";
-import {Flex, Section, Box, Text, Button} from "components";
+import {Flex, Section, Box, Text, Button, Link} from "components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
 
@@ -47,16 +47,18 @@ class CallToAction extends React.Component {
             >
               Get your product demos seen
             </Text>
-            <CTAButton
-              w={r("100% -----> 30rem")}
-              fs={"1.4rem"}
-              fw={600}
-              bg={"whites.0"}
-              br={4}
-              color="navys.2"
-            >
-              Create Account
-            </CTAButton>
+            <Link href="/link">
+              <CTAButton
+                w={r("100% -----> 30rem")}
+                fs={"1.4rem"}
+                fw={600}
+                bg={"whites.0"}
+                br={4}
+                color="navys.2"
+              >
+                Create Account
+              </CTAButton>
+            </Link>
           </Flex>
         </Box>
       </Section>

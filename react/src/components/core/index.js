@@ -86,6 +86,9 @@ const Grid = themedComponent(
 const Link = themedComponent(styled.a`
   width: fit-content;
   text-decoration: unset;
+  &:visited {
+    color: initial;
+  }
 `);
 
 export {Text, Grid, Box, Button, Flex, Input, Video, Image, Link};

@@ -26,18 +26,9 @@ const GridItem = props => (
       {props.title}
     </Text>
     {props.links.map((link, index) => (
-      <Link href={`${link.link}`}>
-        <Text
-          key={index}
-          color={"greys.0"}
-          m="unset"
-          p={2}
-          pl="unset"
-          pr="unset"
-        >
-          {link.text}
-        </Text>
-      </Link>
+      <Text key={index} color={"greys.0"} m="unset" p={2} pl="unset" pr="unset">
+        <Link href={`${link.link}`}>{link.text}</Link>
+      </Text>
     ))}
   </GridItemFlex>
 );
