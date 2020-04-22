@@ -4,7 +4,7 @@ import {responsive as r} from "lib";
 
 const MetaTag = props => (
   <Text
-    fs={"1.4rem"}
+    fs={"1.2rem"}
     fw={500}
     color={"greys.0"}
     m="unset"
