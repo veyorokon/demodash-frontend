@@ -83,4 +83,9 @@ const Grid = themedComponent(
   `
 );
 
-export {Text, Grid, Box, Button, Flex, Input, Video, Image};
+const Link = themedComponent(styled.a`
+  width: fit-content;
+  text-decoration: unset;
+`);
+
+export {Text, Grid, Box, Button, Flex, Input, Video, Image, Link};

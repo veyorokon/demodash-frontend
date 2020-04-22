@@ -1,4 +1,4 @@
-import {Flex, Image, Box, Button, Input, Text, Video, Grid} from "./core";
+import {Flex, Image, Box, Button, Input, Text, Video, Grid, Link} from "./core";
 
 import Animate, {appear} from "./core/animation";
 import Hidden from "./core/hidden";
@@ -37,5 +37,6 @@ export {
   Label,
   TabComponent,
   LeftCallOut,
+  Link,
   appear
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import {Flex, Section, Box, Text, Grid, Image} from "components";
+import {Flex, Section, Box, Text, Grid, Image, Link} from "components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
 import logo from "assets/svg/logo.svg";
@@ -10,6 +10,7 @@ const GridItemFlex = styled(Flex)`
   flex: 1 1 auto;
   flex-direction: column;
 `;
+
 const GridItem = props => (
   <GridItemFlex>
     <Text
@@ -25,16 +26,25 @@ const GridItem = props => (
       {props.title}
     </Text>
     {props.links.map((link, index) => (
-      <Text key={index} color={"greys.0"} m="unset" p={2} pl="unset" pr="unset">
-        {link.text}
-      </Text>
+      <Link href={`${link.link}`}>
+        <Text
+          key={index}
+          color={"greys.0"}
+          m="unset"
+          p={2}
+          pl="unset"
+          pr="unset"
+        >
+          {link.text}
+        </Text>
+      </Link>
     ))}
   </GridItemFlex>
 );
 
 const productLinks = [{text: "text", link: "/somelink"}];
 
-class FooterNav extends React.Component {
+export default class FooterNav extends React.Component {
   render() {
     return (
       <Section bg={"whites.0"} height={"fit-content"} overflow="hidden">
@@ -60,7 +70,7 @@ class FooterNav extends React.Component {
               gridTemplateColumns={r("repeat(2,1fr) ----> repeat(4,1fr)")}
               w={r("100% -----> 65%")}
             >
-              <GridItem title="title1" links={productLinks} />
+              <GridItem title="title1" links={productLinks} {...this.props} />
             </Grid>
           </Flex>
         </Box>
@@ -68,4 +78,3 @@ class FooterNav extends React.Component {
     );
   }
 }
-export default FooterNav;
