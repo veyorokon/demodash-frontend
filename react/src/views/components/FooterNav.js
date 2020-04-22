@@ -48,8 +48,8 @@ export default class FooterNav extends React.Component {
         overflow="hidden"
       >
         <Box
-          ml={r("2 ---> 3 -> 4 5 6 ")}
-          mr={r("2 ---> 3 -> 4 5 6 ")}
+          ml={r("2 ---> 3 -> 4 5 -> 7")}
+          mr={r("2 ---> 3 -> 4 5 -> 7")}
           pt={r("5 -------> 6")}
           pb={r("5 -------> 6")}
         >

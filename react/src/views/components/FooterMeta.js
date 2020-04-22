@@ -17,9 +17,14 @@ let responsiveRowJustify = responsiveJustify.map(function(item) {
 });
 
 const Icon = styled(Image)``;
+const MetaText = styled(Text)`
+  &:hover {
+    color: black;
+  }
+`;
 
 const MetaTag = props => (
-  <Text
+  <MetaText
     fs={"1.2rem"}
     fw={500}
     color={"greys.0"}
@@ -30,7 +35,7 @@ const MetaTag = props => (
     pr="unset"
   >
     <Link href={props.link}>{props.text}</Link>
-  </Text>
+  </MetaText>
 );
 
 const MetaIcon = props => (
@@ -57,15 +62,15 @@ class FooterMeta extends React.Component {
         <Box
           pt={r("4")}
           pb={r("4")}
-          ml={r("2 ---> 3 -> 4 5")}
-          mr={r("2 ---> 3 -> 4 5")}
+          ml={r("2 ---> 3 -> 4 5 -> 7")}
+          mr={r("2 ---> 3 -> 4 5 -> 7")}
         >
           <Flex
             justifyContent={responsiveJustify}
             flexDirection={r("column -----> row")}
             alignItems="center"
           >
-            <MetaGroup>
+            <MetaGroup mb={r("2 ----> 3 0")}>
               <MetaTag text={"Home"} link={"/"} />
               <MetaTag text={"Privacy"} link={"/legal/privacy"} />
               <MetaTag text={"Terms"} link={"/legal/terms"} />
@@ -73,8 +78,8 @@ class FooterMeta extends React.Component {
             </MetaGroup>
             <MetaGroup justifyContent={responsiveRowJustify}>
               <MetaIcon icon={facebook} link={"https://facebook.com"} />
-              <MetaIcon icon={twitter} link={"https://facebook.com"} />
-              <MetaIcon icon={linkedin} link={"https://facebook.com"} />
+              <MetaIcon icon={twitter} link={"https://twitter.com"} />
+              <MetaIcon icon={linkedin} link={"https://linkedin.com"} />
             </MetaGroup>
           </Flex>
         </Box>
