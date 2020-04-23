@@ -5,7 +5,7 @@ import HowItWorks from "./Sections/HowItWorks";
 import Features from "./Sections/Features";
 import Testimonials from "./Sections/Testimonials";
 import CallToAction from "./Sections/CallToAction";
-import {NavBar, FooterNav, FooterMeta, FooterCopy} from "views/components";
+import {NavBar, FooterNav, FooterMeta, FooterCopy} from "views/_sections";
 
 export default () => {
   return (

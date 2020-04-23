@@ -9,8 +9,17 @@
 import Landing from "views/Landing";
 import Privacy from "views/Privacy";
 import Terms from "views/Terms";
+import HowItWorks from "views/HowItWorks";
 
 const routes = [
+  {
+    path: "/how-it-works",
+    name: "HowItWorks",
+    rtlName: "HowItWorks",
+    icon: null,
+    component: HowItWorks,
+    layout: "/"
+  },
   {
     path: "/legal/privacy",
     name: "Privacy",

@@ -20,7 +20,7 @@ class FooterCopy extends React.Component {
               lineHeight={"1.5"}
               letterSpacing={"-.2px"}
               as="p"
-              fw={300}
+              fw={400}
               width={"100%"}
               fs={"1.2rem"}
               color="blacks.0"

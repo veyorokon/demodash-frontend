@@ -1,6 +1,6 @@
 import React from "react";
 import Privacy from "./Sections/Privacy";
-import {NavBar, FooterNav, FooterMeta, FooterCopy} from "views/components";
+import {NavBar, FooterNav, FooterMeta, FooterCopy} from "views/_sections";
 
 export default () => {
   return (

@@ -41,7 +41,7 @@ const GridItem = props => (
   </GridItemFlex>
 );
 
-const productLinks = [{text: "text", link: "/somelink"}];
+const productLinks = [{text: "How it works", link: "/how-it-works"}];
 
 export default class FooterNav extends React.Component {
   render() {
@@ -77,7 +77,7 @@ export default class FooterNav extends React.Component {
               gridTemplateColumns={r("repeat(2,1fr) ----> repeat(4,1fr)")}
               w={r("100% -----> 65%")}
             >
-              <GridItem title="title1" links={productLinks} {...this.props} />
+              <GridItem title="products" links={productLinks} {...this.props} />
             </Grid>
           </Flex>
         </Box>
