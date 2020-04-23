@@ -1,3 +1,3 @@
-import {CallToActionButton} from "./CallToActionButton";
+import {CallToAction, CallToActionButton} from "./CallToActionButton";
 
-export {CallToActionButton};
+export {CallToAction, CallToActionButton};

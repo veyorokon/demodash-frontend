@@ -1,6 +1,9 @@
 import React from "react";
-import {Box, Flex, Text} from "components";
+import {Box, Flex, Text, Link} from "components";
 import styled from "styled-components";
+import {CallToAction} from "views/_components";
+import {responsive as r} from "lib";
+
 // import logo from "assets/svg/logo.svg";
 
 const Nav = styled(Box)`
@@ -11,9 +14,6 @@ const Nav = styled(Box)`
   top: 0;
   left: 0;
   width: 100%;
-  div:first-child {
-    border-bottom: 1px solid #e4e8e8;
-  }
   + section {
     padding-top: 6.4rem;
   }
@@ -24,21 +24,65 @@ const Nav = styled(Box)`
 //   margin-left: 4rem;
 // `;
 
+const NavFlex = styled(Flex)``;
+
+const NavContainer = styled(Flex)`
+  height: 100%;
+  align-items: center;
+  border-bottom: none;
+  & > div {
+  }
+`;
+
+const NavLink = props => (
+  <Text
+    fs={"1.2rem"}
+    fw={500}
+    color={"blacks.0"}
+    m="unset"
+    mr={3}
+    p={3}
+    pl="unset"
+    pr="unset"
+  >
+    <Link href={props.link}>{props.text}</Link>
+  </Text>
+);
+
 const NavBar = () => (
   <Nav>
-    <Flex alignItems="center" w="100%" h={5}>
+    <NavFlex
+      alignItems="center"
+      justifyContent={"space-between"}
+      w="auto"
+      h={5}
+      ml={r("4 ----> 5")}
+      mr={r("4 ----> 5")}
+    >
       {/*<Logo src={logo} />*/}
-      <Text
-        ml={3}
-        lineHeight={"1.5"}
-        as="p"
-        fw={300}
-        fs={"2.4rem"}
-        color="navys.0"
-      >
-        demodash
-      </Text>
-    </Flex>
+      <NavContainer>
+        <Text lineHeight={"1.5"} as="p" fw={300} fs={"2.4rem"} color="navys.0">
+          demodash
+        </Text>
+      </NavContainer>
+
+      <NavContainer justifyContent="flex-end">
+        <NavLink text="Sign In" link={"/"} />
+        <CallToAction
+          w={r("15rem")}
+          fs={"1.4rem"}
+          fw={600}
+          h="3.8rem"
+          bg={"oranges.1"}
+          hoverBg={"#212C39"}
+          hoverColor={"white"}
+          br={4}
+          color="whites.0"
+        >
+          Get Started
+        </CallToAction>
+      </NavContainer>
+    </NavFlex>
   </Nav>
 );
 
