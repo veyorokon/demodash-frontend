@@ -1,3 +1,9 @@
+/*
+  Author: Vahid Eyorokon
+
+  Utility function for parsing responsive syntax into lists for Styled System fields.
+*/
+
 function formatValues(values) {
   let fmt;
   fmt = values.replace(/x-/g, "x -");

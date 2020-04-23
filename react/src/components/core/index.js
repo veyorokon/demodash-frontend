@@ -89,6 +89,7 @@ const Link = themedComponent(styled.a`
   width: fit-content;
   text-decoration: unset;
   color: inherit;
+  font-weight: inherit;
   &:visited {
     color: inherit;
   }

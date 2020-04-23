@@ -110,7 +110,7 @@ class Privacy extends React.Component {
             <TextBlock>
               demodash.com also collects potentially personally-identifying
               information like Internet Protocol (IP) addresses for logged in
-              users and for users leaving comments on https://demodash.com blog
+              users and for users leaving comments on https://demodash.com
               posts. demodash.com only discloses logged in user and commenter IP
               addresses under the same circumstances that it uses and discloses
               personally-identifying information as described below.
@@ -121,8 +121,9 @@ class Privacy extends React.Component {
               with demodash.com in ways that require demodash.com to gather
               personally-identifying information. The amount and type of
               information that demodash.com gathers depends on the nature of the
-              interaction. For example, we ask visitors who sign up for a blog
-              at https://demodash.com to provide a username and email address.
+              interaction. For example, we ask visitors who sign up for an
+              account at https://demodash.com to provide a username and email
+              address and mailing address.
             </TextBlock>
             <SubTitle>Security</SubTitle>
             <TextBlock>

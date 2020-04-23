@@ -21,12 +21,20 @@ const GridItem = props => (
       p={2}
       pl="unset"
       pr="unset"
-      fw={500}
+      fw={600}
     >
       {props.title}
     </Text>
     {props.links.map((link, index) => (
-      <Text key={index} color={"greys.0"} m="unset" p={2} pl="unset" pr="unset">
+      <Text
+        fw={500}
+        key={index}
+        color={"greys.0"}
+        m="unset"
+        p={2}
+        pl="unset"
+        pr="unset"
+      >
         <Link href={`${link.link}`}>{link.text}</Link>
       </Text>
     ))}

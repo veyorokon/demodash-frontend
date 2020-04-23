@@ -26,7 +26,7 @@ const MetaText = styled(Text)`
 const MetaTag = props => (
   <MetaText
     fs={"1.2rem"}
-    fw={500}
+    fw={700}
     color={"greys.0"}
     m="unset"
     mr={3}
