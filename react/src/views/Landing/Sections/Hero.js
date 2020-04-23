@@ -1,5 +1,6 @@
 import React from "react";
-import {Box, Flex, Section, Button, ImageBox, Text, Hidden} from "components";
+import {Box, Flex, Section, ImageBox, Text, Hidden} from "components";
+import {CallToActionButton} from "views/_components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
 import desktopMedia from "assets/images/products-desktop.jpg";
@@ -14,22 +15,6 @@ const LeftBox = styled(Box)`
 `;
 
 const RightBox = styled(Box)``;
-
-const CallToAction = styled(Button)`
-  height: 5rem;
-  cursor: pointer;
-  min-width: fit-content;
-  border: none;
-  outline: none;
-  letter-spacing: 0.2px;
-  transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
-
-  &:hover {
-    color: black;
-    background: #f3bd4e;
-  }
-`;
 
 const WrapperDesktop = styled(Box)`
   z-index: 10;
@@ -70,7 +55,6 @@ const SmartWrapper = props => {
           overflow={"hidden"}
           backgroundPosition={"right"}
           backgroundImage={`url(${desktopMedia})`}
-          pt={5}
         >
           <WrapperDesktop {...props}>{props.children}</WrapperDesktop>
         </ImageBox>
@@ -80,7 +64,6 @@ const SmartWrapper = props => {
           overflow={"hidden"}
           backgroundPosition={"right"}
           backgroundImage={`url(${mobileMedia})`}
-          pt={5}
         >
           <WrapperMobile {...props}>{props.children}</WrapperMobile>
         </ImageBox>
@@ -139,7 +122,7 @@ class Hero extends React.Component {
                 With your products in storefronts they can't help but be seen,
                 demoed and purchased by more users.
               </Text>
-              <CallToAction
+              <CallToActionButton
                 w={r("100% ---> 20rem")}
                 fs={"1.4rem"}
                 bg={"yellows.1"}
@@ -147,7 +130,7 @@ class Hero extends React.Component {
                 fw={600}
               >
                 Create Account
-              </CallToAction>
+              </CallToActionButton>
             </LeftBox>
             <RightBox w={r("100% ------> 50%")}></RightBox>
           </Container>

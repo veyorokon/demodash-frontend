@@ -14,6 +14,7 @@ import {compose} from "styled-system";
  */
 const overflow = configure("overflow");
 const textAlign = configure("textAlign");
+const alignSelf = configure("alignSelf");
 
 const width = configure("width", "w", "space");
 const height = configure("height", "h", "space");
@@ -30,6 +31,7 @@ const backgroundPositionY = configure("backgroundPositionY", "bpy");
 const backgroundSize = configure("backgroundSize");
 
 const color = configure("color", "color", "colors");
+const fill = configure("fill");
 
 const fontWeight = configure("fontWeight", "fw", "fontWeights");
 const fontSize = configure("fontSize", "fs", "fontSizes");
@@ -44,7 +46,8 @@ const typography = compose(
   lineHeight,
   textAlign,
   textTransform,
-  cursor
+  cursor,
+  alignSelf
 );
 
 const marginTop = configure("marginTop", ["marginTop", "mt"], "space");
@@ -245,5 +248,7 @@ export {
   letterSpacing,
   borderStyle,
   textTransform,
-  cursor
+  cursor,
+  alignSelf,
+  fill
 };

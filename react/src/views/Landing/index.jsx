@@ -1,14 +1,11 @@
 import React from "react";
-import NavBar from "./Sections/NavBar";
 import Hero from "./Sections/Hero";
 import Solution from "./Sections/Solution";
 import HowItWorks from "./Sections/HowItWorks";
 import Features from "./Sections/Features";
 import Testimonials from "./Sections/Testimonials";
 import CallToAction from "./Sections/CallToAction";
-import FooterNav from "./Sections/FooterNav";
-import FooterMeta from "./Sections/FooterMeta";
-import FooterCopy from "./Sections/FooterCopy";
+import {NavBar, FooterNav, FooterMeta, FooterCopy} from "views/_sections";
 
 export default () => {
   return (

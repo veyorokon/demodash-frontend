@@ -10,7 +10,8 @@ import {
   gridTemplateColumns,
   themedComponent,
   flexFields,
-  letterSpacing
+  letterSpacing,
+  fill
 } from "theme";
 import styled from "styled-components";
 
@@ -72,6 +73,7 @@ const Video = themedComponent(
 const Image = themedComponent(
   styled.img`
     ${borderRadius}
+    ${fill}
   `
 );
 
@@ -83,4 +85,14 @@ const Grid = themedComponent(
   `
 );
 
-export {Text, Grid, Box, Button, Flex, Input, Video, Image};
+const Link = themedComponent(styled.a`
+  width: fit-content;
+  text-decoration: unset;
+  color: inherit;
+  font-weight: inherit;
+  &:visited {
+    color: inherit;
+  }
+`);
+
+export {Text, Grid, Box, Button, Flex, Input, Video, Image, Link};

@@ -1,23 +1,7 @@
 import React from "react";
-import {Flex, Section, Box, Text, Button} from "components";
+import {Flex, Section, Box, Text, Link} from "components";
+import {CallToActionButton} from "views/_components";
 import {responsive as r} from "lib";
-import styled from "styled-components";
-
-const CTAButton = styled(Button)`
-  height: 5rem;
-  cursor: pointer;
-  min-width: fit-content;
-  border: none;
-  outline: none;
-  letter-spacing: 0.2px;
-  transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
-
-  &:hover {
-    color: black;
-    background: #f7d590;
-  }
-`;
 
 class CallToAction extends React.Component {
   render() {
@@ -47,16 +31,18 @@ class CallToAction extends React.Component {
             >
               Get your product demos seen
             </Text>
-            <CTAButton
-              w={r("100% -----> 30rem")}
-              fs={"1.4rem"}
-              fw={600}
-              bg={"whites.0"}
-              br={4}
-              color="navys.2"
-            >
-              Create Account
-            </CTAButton>
+            <Link w={r("100% -----> 30rem")} href="/link">
+              <CallToActionButton
+                w={r("100% -----> 30rem")}
+                fs={"1.4rem"}
+                fw={600}
+                bg={"whites.0"}
+                br={4}
+                color="navys.2"
+              >
+                Create Account
+              </CallToActionButton>
+            </Link>
           </Flex>
         </Box>
       </Section>

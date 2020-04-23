@@ -2,7 +2,7 @@ import React from "react";
 import {Flex, Section, Box, Text} from "components";
 import {responsive as r} from "lib";
 
-class Solution extends React.Component {
+class Hero extends React.Component {
   render() {
     return (
       <Section bg={"whites.0"} height={"fit-content"} overflow="hidden">
@@ -50,4 +50,4 @@ class Solution extends React.Component {
     );
   }
 }
-export default Solution;
+export default Hero;
