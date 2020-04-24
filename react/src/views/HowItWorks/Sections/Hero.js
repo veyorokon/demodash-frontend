@@ -19,7 +19,7 @@ const FlexGrid = styled(Grid)`
 class Hero extends React.Component {
   render() {
     return (
-      <Section bg={"whites.0"} height={"fit-content"} overflow="hidden">
+      <Section bg={"blues.0"} height={"fit-content"} overflow="hidden">
         <Box
           ml={r("3 -----> 4 5 6 -> 7")}
           mr={r("3 -----> 4 5 6 -> 7")}
@@ -45,6 +45,7 @@ class Hero extends React.Component {
                   as="h3"
                   fw={700}
                   fs={r("1.4rem ---> 1.6rem")}
+                  color="whites.0"
                 >
                   PRODUCT DEMOS
                 </Text>
@@ -55,6 +56,7 @@ class Hero extends React.Component {
                   letterSpacing={"-.8px"}
                   as="h1"
                   fs={r("3.5rem ----> 4rem ----> 4.7rem")}
+                  color="whites.0"
                 >
                   Discover a new way to reach users
                 </Text>
@@ -66,6 +68,7 @@ class Hero extends React.Component {
                   as="p"
                   fw={300}
                   fs={r("2rem --------> 2.2rem")}
+                  color="whites.0"
                 >
                   A single demo can be experienced by dozens, sometimes hundreds
                   of people. Through our network of storefronts, you can reach

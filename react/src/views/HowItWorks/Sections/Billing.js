@@ -4,7 +4,7 @@ import {Flex, Section, Box, Text, Grid, Image} from "components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
 
-import interfaceSearch from "assets/svg/interface-search.svg";
+import billing from "assets/svg/billing.svg";
 
 const GridItemFlex = styled(Flex)`
   flex: 1 1 auto;
@@ -38,12 +38,7 @@ class Hero extends React.Component {
               w={r("100%")}
             >
               <GridItemFlex order={r("1 -----> 0")}>
-                <Image
-                  m="auto"
-                  src={interfaceSearch}
-                  maxWidth={"100%"}
-                  w={"40rem"}
-                />
+                <Image m="auto" src={billing} maxWidth={"100%"} w={"40rem"} />
               </GridItemFlex>
               <GridItemFlex justifyContent="center" mb={r("4 -----> 0")}>
                 <Text
@@ -55,7 +50,7 @@ class Hero extends React.Component {
                   fs={r("3rem ----> 3.8rem")}
                   color="navys.0"
                 >
-                  Search related storefronts
+                  Sales, payment processing and commission
                 </Text>
                 <Text
                   mt={3}
@@ -67,10 +62,11 @@ class Hero extends React.Component {
                   fs={r("2rem --------> 2.2rem")}
                   color="navys.2"
                 >
-                  When launching a product on demodash, you start by finding
-                  storefronts in an industry related to your product. You set a
-                  commission rate for your product and invite them to your
-                  demodash campaign.
+                  demodash handles payment processing. A standard 2.9% + 0.30
+                  cent fee is assessed for credit transactions and demodash
+                  charges a 0.99 cent fee per sale. The storefront earns the
+                  commission agreed upon and the balance of the sale is added to
+                  your account. Then, you're notified of the new sale!
                 </Text>
               </GridItemFlex>
             </FlexGrid>

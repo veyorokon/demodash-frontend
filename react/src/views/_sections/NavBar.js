@@ -64,7 +64,7 @@ const DesktopMenu = () => (
   </>
 );
 
-const TRANSITION = 7;
+const TRANSITION = 8;
 
 const NavBar = () => (
   <Nav>
@@ -77,7 +77,9 @@ const NavBar = () => (
       mr={r("4 -----> 5 ---> 6 7")}
     >
       <NavContainer alignItems="center" w={"12rem"}>
-        <Image mr={3} cursor="pointer" h={"3rem"} w={"auto"} src={logo} />
+        <Hidden alignItems="center" down={TRANSITION - 1}>
+          <Image mr={3} cursor="pointer" h={"3rem"} w={"auto"} src={logo} />
+        </Hidden>
         <Text lineHeight={"1.5"} as="p" fw={700} fs={"2.4rem"} color="navys.0">
           <Link href={"/"}>demodash</Link>
         </Text>

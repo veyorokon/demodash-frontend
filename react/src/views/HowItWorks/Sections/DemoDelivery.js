@@ -4,7 +4,7 @@ import {Flex, Section, Box, Text, Grid, Image} from "components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
 
-import interfaceSearch from "assets/svg/interface-search.svg";
+import storefrontWithProduct from "assets/svg/storefront-withproduct.svg";
 
 const GridItemFlex = styled(Flex)`
   flex: 1 1 auto;
@@ -37,14 +37,6 @@ class Hero extends React.Component {
               flexDirection="column"
               w={r("100%")}
             >
-              <GridItemFlex order={r("1 -----> 0")}>
-                <Image
-                  m="auto"
-                  src={interfaceSearch}
-                  maxWidth={"100%"}
-                  w={"40rem"}
-                />
-              </GridItemFlex>
               <GridItemFlex justifyContent="center" mb={r("4 -----> 0")}>
                 <Text
                   mb={2}
@@ -55,7 +47,7 @@ class Hero extends React.Component {
                   fs={r("3rem ----> 3.8rem")}
                   color="navys.0"
                 >
-                  Search related storefronts
+                  Ship your product demo
                 </Text>
                 <Text
                   mt={3}
@@ -67,11 +59,19 @@ class Hero extends React.Component {
                   fs={r("2rem --------> 2.2rem")}
                   color="navys.2"
                 >
-                  When launching a product on demodash, you start by finding
-                  storefronts in an industry related to your product. You set a
-                  commission rate for your product and invite them to your
-                  demodash campaign.
+                  For each store you choose to work with, you ship enough
+                  product for them to demo. The storefronts can now sell your
+                  product on their virtual demodash store - the commission you
+                  set keeps them motivated!
                 </Text>
+              </GridItemFlex>
+              <GridItemFlex order={r("1 -----> 0")}>
+                <Image
+                  m="auto"
+                  src={storefrontWithProduct}
+                  maxWidth={"100%"}
+                  w={"40rem"}
+                />
               </GridItemFlex>
             </FlexGrid>
           </Flex>
