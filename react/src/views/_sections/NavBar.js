@@ -40,6 +40,7 @@ const NavLink = props => (
     p={3}
     pl="unset"
     pr="unset"
+    width="9rem"
   >
     <Link href={props.link}>{props.text}</Link>
   </Text>

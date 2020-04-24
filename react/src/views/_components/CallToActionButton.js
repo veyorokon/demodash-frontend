@@ -20,7 +20,7 @@ export const CallToActionButton = styled(Button)`
 `;
 
 export const CallToAction = props => (
-  <Link href={props.link}>
+  <Link w="100%" href={props.link}>
     <CallToActionButton {...props}>{props.children}</CallToActionButton>
   </Link>
 );

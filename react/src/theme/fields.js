@@ -178,6 +178,14 @@ const borderRadius = configure("borderRadius", "br", "radii");
 const opacity = configure("opacity");
 
 const gridTemplateColumns = configure("gridTemplateColumns");
+const gridColumnGap = configure("gridColumnGap");
+const gridRowGap = configure("gridRowGap");
+
+const gridFields = compose(
+  gridTemplateColumns,
+  gridColumnGap,
+  gridRowGap
+);
 
 const letterSpacing = configure("letterSpacing");
 
@@ -230,7 +238,6 @@ export {
   minHeight,
   overflow,
   textAlign,
-  gridTemplateColumns,
   flexWrap,
   justifyContent,
   alignItems,
@@ -250,5 +257,9 @@ export {
   textTransform,
   cursor,
   alignSelf,
-  fill
+  fill,
+  gridTemplateColumns,
+  gridColumnGap,
+  gridRowGap,
+  gridFields
 };

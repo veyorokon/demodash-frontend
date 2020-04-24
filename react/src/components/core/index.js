@@ -7,7 +7,7 @@
 */
 import {
   borderRadius,
-  gridTemplateColumns,
+  gridFields,
   themedComponent,
   flexFields,
   letterSpacing,
@@ -81,7 +81,7 @@ const Grid = themedComponent(
   styled.div`
     display: grid;
     position: relative;
-    ${gridTemplateColumns}
+    ${gridFields}
   `
 );
 
