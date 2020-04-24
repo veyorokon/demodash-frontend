@@ -1,5 +1,5 @@
 import React from "react";
-import {Flex, Section, Box, Text, Grid, Image, Hidden} from "components";
+import {Flex, Section, Box, Text, Grid, Image} from "components";
 
 import {responsive as r} from "lib";
 import styled from "styled-components";
@@ -20,10 +20,10 @@ class Hero extends React.Component {
     return (
       <Section bg={"greys.1"} height={"fit-content"} overflow="hidden">
         <Box
-          ml={r("3 -----> 4 5 6 -> 7")}
-          mr={r("3 -----> 4 5 6 -> 7")}
-          pt={r("5 --------> 6")}
-          pb={r("5 --------> 6")}
+          ml={r("2 3 -----> 5 6 -> 7")}
+          mr={r("2 3 -----> 5 6 -> 7")}
+          pt={r("5 -------->  6")}
+          pb={r("5 -------->  6")}
         >
           <Flex
             justifyContent="flex-start"
@@ -31,22 +31,20 @@ class Hero extends React.Component {
             alignItems="center"
           >
             <FlexGrid
-              gridColumnGap={"5%"}
+              gridColumnGap={"10%"}
               gridTemplateColumns={r("repeat(2,1fr)")}
               display={r("flex -----> grid")}
               flexDirection="column"
               w={r("100%")}
             >
-              <Hidden alignItems="center" down={5}>
-                <GridItemFlex>
-                  <Image
-                    m="auto"
-                    src={interfaceSearch}
-                    maxWidth={"100%"}
-                    w={"50rem"}
-                  />
-                </GridItemFlex>
-              </Hidden>
+              <GridItemFlex order={r("1 -----> 0")}>
+                <Image
+                  m="auto"
+                  src={interfaceSearch}
+                  maxWidth={"100%"}
+                  w={"50rem"}
+                />
+              </GridItemFlex>
               <GridItemFlex justifyContent="center" mb={r("4 -----> 0")}>
                 <Text
                   mb={2}
@@ -54,33 +52,25 @@ class Hero extends React.Component {
                   lineHeight={"1.18"}
                   letterSpacing={"-.8px"}
                   as="h1"
-                  fs={r("3.5rem ----> 4rem ----> 4.7rem")}
+                  fs={r("3rem ----> 3.8rem")}
                 >
-                  Find a related storefront
+                  Search related storefronts
                 </Text>
                 <Text
                   mt={3}
-                  mb={r("4")}
+                  mb={4}
                   lineHeight={"1.3"}
                   letterSpacing={"-.5px"}
                   as="p"
                   fw={300}
-                  fs={r("2rem --------> 2.4rem")}
+                  fs={r("1.8rem --------> 2rem")}
                 >
-                  demodash lets you find related storefronts to your product's
-                  industry.
+                  Channels bring order and clarity to work — you can create them
+                  for every project, topic, or team. When there’s a channel for
+                  everything, you can focus on the conversations and work that
+                  matters most to you.
                 </Text>
               </GridItemFlex>
-              <Hidden alignItems="center" up={6}>
-                <GridItemFlex>
-                  <Image
-                    m="auto"
-                    src={interfaceSearch}
-                    maxWidth={"100%"}
-                    w={"50rem"}
-                  />
-                </GridItemFlex>
-              </Hidden>
             </FlexGrid>
           </Flex>
         </Box>

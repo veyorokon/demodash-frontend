@@ -26,8 +26,6 @@ const NavContainer = styled(Flex)`
   height: 100%;
   align-items: center;
   border-bottom: none;
-  & > div {
-  }
 `;
 
 const NavLink = props => (

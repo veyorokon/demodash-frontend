@@ -90,6 +90,7 @@ const Link = themedComponent(styled.a`
   text-decoration: unset;
   color: inherit;
   font-weight: inherit;
+  ${borderRadius}
   &:visited {
     color: inherit;
   }

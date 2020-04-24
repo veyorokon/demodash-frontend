@@ -65,14 +65,14 @@ class Hero extends React.Component {
                   letterSpacing={"-.5px"}
                   as="p"
                   fw={300}
-                  fs={r("2rem --------> 2.4rem")}
+                  fs={r("2rem --------> 2.2rem")}
                 >
                   A single demo can be experienced by dozens, sometimes hundreds
                   of people. Through our network of storefronts, you can reach
                   thousands of potential users.
                 </Text>
                 <CallToAction
-                  w={r("100% ---> 20rem")}
+                  width={r("100% ---> 20rem")}
                   fs={"1.4rem"}
                   bg={"yellows.1"}
                   br={4}

@@ -67,7 +67,8 @@ import {
   textTransform,
   cursor,
   alignSelf,
-  fill
+  fill,
+  order
 } from "./fields";
 
 export default theme;
@@ -139,5 +140,6 @@ export {
   textTransform,
   cursor,
   alignSelf,
-  fill
+  fill,
+  order
 };

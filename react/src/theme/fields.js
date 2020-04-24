@@ -159,6 +159,7 @@ const animationFields = compose(
   animationFillMode
 );
 
+const order = configure("order");
 const flexGrow = configure("flexGrow");
 const flexDirection = configure("flexDirection");
 const flexWrap = configure("flexWrap");
@@ -166,6 +167,7 @@ const justifyContent = configure("justifyContent");
 const alignItems = configure("alignItems");
 
 const flexFields = compose(
+  order,
   display,
   flexGrow,
   flexDirection,
@@ -261,5 +263,6 @@ export {
   gridTemplateColumns,
   gridColumnGap,
   gridRowGap,
-  gridFields
+  gridFields,
+  order
 };
