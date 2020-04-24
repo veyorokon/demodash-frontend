@@ -2,7 +2,7 @@ import React from "react";
 import {Flex, Section, Box, Text} from "components";
 import {responsive as r} from "lib";
 
-class Hero extends React.Component {
+class Solution extends React.Component {
   render() {
     return (
       <Section bg={"whites.0"} height={"fit-content"} overflow="hidden">
@@ -22,7 +22,7 @@ class Hero extends React.Component {
               lineHeight={"1.5"}
               as="h2"
               fw={r("600")}
-              fs={r("2.8rem --> 3rem ---> 3.4rem")}
+              fs={r("3rem --> 3.4rem ---> 4.4rem")}
               color="navys.0"
               mb={2}
               letterSpacing={"-.8px"}
@@ -50,4 +50,4 @@ class Hero extends React.Component {
     );
   }
 }
-export default Hero;
+export default Solution;

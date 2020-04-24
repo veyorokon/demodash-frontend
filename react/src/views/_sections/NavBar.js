@@ -38,9 +38,11 @@ const NavLink = props => (
     p={3}
     pl="unset"
     pr="unset"
-    width="9rem"
+    {...props}
   >
-    <Link href={props.link}>{props.text}</Link>
+    <Link href={props.link} {...props}>
+      {props.text}
+    </Link>
   </Text>
 );
 
@@ -87,7 +89,17 @@ const NavBar = () => (
 
       <NavContainer>
         <Hidden alignItems="center" down={TRANSITION - 1}>
-          <NavLink text="Learn More" link={"/how-it-works"} />
+          <NavLink
+            mr={4}
+            w={"10rem"}
+            text="For Products"
+            link={"/how-it-works"}
+          />
+          <NavLink
+            w={"10rem"}
+            text="Storefronts & Influencers"
+            link={"/how-it-works"}
+          />
         </Hidden>
       </NavContainer>
       <NavContainer justifyContent="flex-end">
