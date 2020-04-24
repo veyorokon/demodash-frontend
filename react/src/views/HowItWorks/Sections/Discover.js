@@ -55,7 +55,7 @@ class Hero extends React.Component {
                   fs={r("3rem ----> 3.8rem")}
                   color="navys.0"
                 >
-                  Search related storefronts
+                  Storefronts in your industry
                 </Text>
                 <Text
                   mt={3}
@@ -67,10 +67,10 @@ class Hero extends React.Component {
                   fs={r("2rem --------> 2.2rem")}
                   color="navys.2"
                 >
-                  When launching a product on demodash, you start by finding
-                  storefronts in an industry related to your product. You set a
-                  commission rate for your product and invite them to your
-                  demodash campaign.
+                  When launching a product on demodash, you start by being
+                  connected with storefronts related to your product's industry.
+                  You set a commission rate for your product and invite
+                  storefronts to your demodash campaign.
                 </Text>
               </GridItemFlex>
             </FlexGrid>

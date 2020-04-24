@@ -60,9 +60,9 @@ class Hero extends React.Component {
                   color="navys.2"
                 >
                   For each store you choose to work with, you ship enough
-                  product for them to demo. The storefronts can now sell your
-                  product on their virtual demodash store - the commission you
-                  set keeps them motivated!
+                  product for them to demo on users at their location.
+                  Storefronts can then sell your product on their virtual
+                  demodash store - the commission you set keeps them motivated!
                 </Text>
               </GridItemFlex>
               <GridItemFlex order={r("1 -----> 0")}>

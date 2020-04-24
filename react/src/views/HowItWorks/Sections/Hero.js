@@ -77,7 +77,7 @@ class Hero extends React.Component {
                 <CallToAction
                   width={r("100% ---> 20rem")}
                   fs={"1.4rem"}
-                  bg={"yellows.1"}
+                  bg={"yellows.0"}
                   br={4}
                   fw={600}
                   link="/register"

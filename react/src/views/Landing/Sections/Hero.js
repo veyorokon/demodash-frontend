@@ -87,7 +87,7 @@ class Hero extends React.Component {
             h="100%"
             p={r("2 ----> 4")}
           >
-            <LeftBox ml={r("0 2 ----> 3% -> 5% 10% 20%")} w={r("100%")}>
+            <LeftBox ml={r("0 2 ----> 3% -> 5% 10% 6 7")} w={r("100%")}>
               <Text
                 width="100%"
                 mb={3}
@@ -103,7 +103,7 @@ class Hero extends React.Component {
                 mb={2}
                 mt={2}
                 lineHeight={"1.18"}
-                letterSpacing={"-.8px"}
+                letterSpacing={"-0.8px"}
                 as="h1"
                 fw={700}
                 fs={r("3rem --> 3.5rem 4rem ---> 4.7rem 5.5rem")}
