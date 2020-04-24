@@ -128,6 +128,7 @@ class Hero extends React.Component {
                 bg={"yellows.1"}
                 br={4}
                 fw={600}
+                link="/register"
               >
                 Create Account
               </CallToAction>

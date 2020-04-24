@@ -8,17 +8,20 @@
 
 import React from "react";
 import styled from "styled-components";
-import {display, opacity} from "theme";
+import {display, opacity, flexFields} from "theme";
 
-const HiddenBox = styled.span`
+const HiddenBox = styled.div`
   ${display};
-  ${opacity}
+  ${opacity};
+  ${flexFields};
+  height: 100%;
   overflow: hidden;
 `;
 
 class Hidden extends React.Component {
   getDisplayList = () => {
     const {down, up} = this.props;
+    let display = this.props.display || "flex";
     var displayList = [];
     let i = 0;
     if (down) {
@@ -26,10 +29,10 @@ class Hidden extends React.Component {
       for (i = 0; i < down; i++) {
         displayList.push("none");
       }
-      displayList.push("initial");
+      displayList.push(display);
     } else {
       for (i = 0; i < up; i++) {
-        displayList.push("initial");
+        displayList.push(display);
       }
       displayList.push("none");
     }
@@ -38,9 +41,12 @@ class Hidden extends React.Component {
 
   render() {
     const {children} = this.props;
-
     const display = this.getDisplayList();
-    return <HiddenBox display={display}>{children}</HiddenBox>;
+    return (
+      <HiddenBox display={display} {...this.props}>
+        {children}
+      </HiddenBox>
+    );
   }
 }
 

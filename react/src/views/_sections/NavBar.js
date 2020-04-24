@@ -1,10 +1,11 @@
 import React from "react";
-import {Box, Flex, Text, Link} from "components";
+import {Box, Flex, Text, Link, Hidden, Image} from "components";
 import styled from "styled-components";
 import {CallToAction} from "views/_components";
 import {responsive as r} from "lib";
 
-// import logo from "assets/svg/logo.svg";
+import menu from "assets/icons/menu.svg";
+import logo from "assets/svg/logo.svg";
 
 const Nav = styled(Box)`
   background-color: white;
@@ -19,11 +20,6 @@ const Nav = styled(Box)`
   }
 `;
 
-// const Logo = styled(Image)`
-//   height: 3.4rem;
-//   margin-left: 4rem;
-// `;
-
 const NavFlex = styled(Flex)``;
 
 const NavContainer = styled(Flex)`
@@ -36,7 +32,7 @@ const NavContainer = styled(Flex)`
 
 const NavLink = props => (
   <Text
-    fs={"1.2rem"}
+    fs={"1.6rem"}
     fw={500}
     color={"blacks.0"}
     m="unset"
@@ -49,6 +45,28 @@ const NavLink = props => (
   </Text>
 );
 
+const DesktopMenu = () => (
+  <>
+    <NavLink text="Sign In" link={"/login"} />
+    <CallToAction
+      link={"/register"}
+      w={r("15rem")}
+      fs={"1.4rem"}
+      fw={600}
+      h="3.8rem"
+      bg={"oranges.1"}
+      hoverBg={"#212C39"}
+      hoverColor={"white"}
+      br={4}
+      color="whites.0"
+    >
+      Get Started
+    </CallToAction>
+  </>
+);
+
+const TRANSITION = 7;
+
 const NavBar = () => (
   <Nav>
     <NavFlex
@@ -56,31 +74,28 @@ const NavBar = () => (
       justifyContent={"space-between"}
       w="auto"
       h={5}
-      ml={r("4 ----> 5")}
-      mr={r("4 ----> 5")}
+      ml={r("4 -----> 5 ---> 6 7")}
+      mr={r("4 -----> 5 ---> 6 7")}
     >
-      {/*<Logo src={logo} />*/}
-      <NavContainer>
-        <Text lineHeight={"1.5"} as="p" fw={300} fs={"2.4rem"} color="navys.0">
-          demodash
+      <NavContainer alignItems="center" w={"12rem"}>
+        <Image mr={3} cursor="pointer" h={"3rem"} w={"auto"} src={logo} />
+        <Text lineHeight={"1.5"} as="p" fw={700} fs={"2.4rem"} color="navys.0">
+          <Link href={"/"}>demodash</Link>
         </Text>
       </NavContainer>
 
+      <NavContainer>
+        <Hidden alignItems="center" down={TRANSITION - 1}>
+          <NavLink text="Learn More" link={"/how-it-works"} />
+        </Hidden>
+      </NavContainer>
       <NavContainer justifyContent="flex-end">
-        <NavLink text="Sign In" link={"/"} />
-        <CallToAction
-          w={r("15rem")}
-          fs={"1.4rem"}
-          fw={600}
-          h="3.8rem"
-          bg={"oranges.1"}
-          hoverBg={"#212C39"}
-          hoverColor={"white"}
-          br={4}
-          color="whites.0"
-        >
-          Get Started
-        </CallToAction>
+        <Hidden alignItems="center" down={TRANSITION - 1}>
+          <DesktopMenu />
+        </Hidden>
+        <Hidden alignItems="center" up={TRANSITION}>
+          <Image cursor="pointer" h={"3rem"} w={"auto"} src={menu} />
+        </Hidden>
       </NavContainer>
     </NavFlex>
   </Nav>
