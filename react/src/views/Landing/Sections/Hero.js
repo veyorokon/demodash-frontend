@@ -1,6 +1,6 @@
 import React from "react";
 import {Box, Flex, Section, ImageBox, Text, Hidden} from "components";
-import {CallToActionButton} from "views/_components";
+import {CallToAction} from "views/_components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
 import desktopMedia from "assets/images/products-desktop.jpg";
@@ -122,15 +122,16 @@ class Hero extends React.Component {
                 With your products in storefronts they can't help but be seen,
                 demoed and purchased by more users.
               </Text>
-              <CallToActionButton
+              <CallToAction
                 w={r("100% ---> 20rem")}
                 fs={"1.4rem"}
                 bg={"yellows.1"}
                 br={4}
                 fw={600}
+                link="/register"
               >
                 Create Account
-              </CallToActionButton>
+              </CallToAction>
             </LeftBox>
             <RightBox w={r("100% ------> 50%")}></RightBox>
           </Container>

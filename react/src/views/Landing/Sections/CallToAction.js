@@ -1,6 +1,6 @@
 import React from "react";
 import {Flex, Section, Box, Text, Link} from "components";
-import {CallToActionButton} from "views/_components";
+import {CallToAction as CTAButton} from "views/_components";
 import {responsive as r} from "lib";
 
 class CallToAction extends React.Component {
@@ -32,7 +32,7 @@ class CallToAction extends React.Component {
               Get your product demos seen
             </Text>
             <Link w={r("100% -----> 30rem")} href="/link">
-              <CallToActionButton
+              <CTAButton
                 w={r("100% -----> 30rem")}
                 fs={"1.4rem"}
                 fw={600}
@@ -41,7 +41,7 @@ class CallToAction extends React.Component {
                 color="navys.2"
               >
                 Create Account
-              </CallToActionButton>
+              </CTAButton>
             </Link>
           </Flex>
         </Box>

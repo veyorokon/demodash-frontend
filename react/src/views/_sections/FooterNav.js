@@ -66,13 +66,15 @@ export default class FooterNav extends React.Component {
             alignItems="flex-start"
             justifyContent="space-between"
           >
-            <Logo
-              mb={4}
-              mr={4}
-              src={logo}
-              w={r("6rem -----> 7rem")}
-              h={r("6rem -----> 7rem")}
-            />
+            <Link href={"/"}>
+              <Logo
+                mb={4}
+                mr={4}
+                src={logo}
+                w={r("6rem -----> 7rem")}
+                h={r("6rem -----> 7rem")}
+              />
+            </Link>
             <Grid
               gridTemplateColumns={r("repeat(2,1fr) ----> repeat(4,1fr)")}
               w={r("100% -----> 65%")}
