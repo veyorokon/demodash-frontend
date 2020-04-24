@@ -69,8 +69,10 @@ class Hero extends React.Component {
                 >
                   When launching a product on demodash, you start by being
                   connected with storefronts related to your product's industry.
-                  You set a commission rate for your product and invite
-                  storefronts to your demodash campaign.
+                  Targeting improves conversion rates by ensuring the people
+                  most interested in your product are the ones who see the
+                  storefront demo. You set a commission rate for your product
+                  and invite storefronts to your demodash campaign.
                 </Text>
               </GridItemFlex>
             </FlexGrid>
