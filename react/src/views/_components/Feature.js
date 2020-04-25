@@ -58,7 +58,7 @@ function Feature(props) {
                   as="h3"
                   fw={700}
                   fs={r("1.4rem ---> 1.6rem")}
-                  color="whites.0"
+                  color={props.subTitleColor || "navys.2"}
                 >
                   {props.subTitle}
                 </Text>
@@ -94,7 +94,7 @@ function Feature(props) {
                   m="auto"
                   src={props.image}
                   maxWidth={"100%"}
-                  w={"40rem"}
+                  w={props.imageWidth || "40rem"}
                 />
               </GridItemFlex>
             )}

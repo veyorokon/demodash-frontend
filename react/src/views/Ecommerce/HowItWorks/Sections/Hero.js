@@ -9,6 +9,7 @@ function Discover(props) {
     <Feature
       bg={"blues.0"}
       subTitle={"PRODUCT DEMOS"}
+      subTitleColor={"whites.0"}
       image={deliveries}
       title={"Discover a new way to reach users"}
       titleColor="whites.0"
