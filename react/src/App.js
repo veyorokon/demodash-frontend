@@ -12,17 +12,23 @@ import {Router, Route} from "react-router-dom";
 import Editor from "layouts/Editor.jsx";
 import {createBrowserHistory} from "history";
 import {ThemeProvider} from "styled-components";
+import {Provider} from "react-redux";
+import store from "redux/store";
 
 import theme from "theme";
 const hist = createBrowserHistory();
 const App = () =>
   ReactDOM.render(
-    <ThemeProvider theme={theme}>
-      <Router history={hist}>
-        <Route path="/" component={Editor} />
-      </Router>
-    </ThemeProvider>,
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <Router history={hist}>
+          <Route path="/" component={Editor} />
+        </Router>
+      </ThemeProvider>
+    </Provider>,
     document.getElementById("root")
   );
+
+window.store = store;
 
 export default App;
