@@ -3,9 +3,23 @@ import {Box, Flex, Text, Link, Hidden, Image} from "components";
 import styled from "styled-components";
 import {CallToAction} from "views/_components";
 import {responsive as r} from "lib";
-
 import menu from "assets/icons/menu.svg";
 import logo from "assets/svg/logo.svg";
+
+import {connect} from "react-redux";
+import {toggleNav} from "redux/actions";
+
+const mapStateToProps = state => {
+  const {navOpen} = state;
+  return {
+    navOpen
+  };
+};
+function mapDispatchToProps(dispatch) {
+  return {
+    toggleNav: () => dispatch(toggleNav())
+  };
+}
 
 const Nav = styled(Box)`
   background-color: white;
@@ -68,42 +82,63 @@ const DesktopMenu = () => (
 
 const TRANSITION = 8;
 
-const NavBar = () => (
-  <Nav>
-    <NavFlex
-      alignItems="center"
-      justifyContent={"space-between"}
-      w="auto"
-      h={5}
-      ml={r("4 -----> 5 ---> 6 7")}
-      mr={r("4 -----> 5 ---> 6 7")}
-    >
-      <NavContainer alignItems="center" w={"10rem"}>
-        <Hidden alignItems="center" down={TRANSITION}>
-          <Image mr={3} cursor="pointer" h={"3rem"} w={"auto"} src={logo} />
-        </Hidden>
-        <Text lineHeight={"1.5"} as="p" fw={700} fs={"2.4rem"} color="navys.0">
-          <Link href={"/"}>demodash</Link>
-        </Text>
-      </NavContainer>
+const _NavBar = props => {
+  const {toggleNav} = props;
+  console.log(props);
+  return (
+    <Nav>
+      <NavFlex
+        alignItems="center"
+        justifyContent={"space-between"}
+        w="auto"
+        h={5}
+        ml={r("4 -----> 5 ---> 6 7")}
+        mr={r("4 -----> 5 ---> 6 7")}
+      >
+        <NavContainer alignItems="center" w={"10rem"}>
+          <Hidden alignItems="center" down={TRANSITION}>
+            <Image mr={3} cursor="pointer" h={"3rem"} w={"auto"} src={logo} />
+          </Hidden>
+          <Text
+            lineHeight={"1.5"}
+            as="p"
+            fw={700}
+            fs={"2.4rem"}
+            color="navys.0"
+          >
+            <Link href={"/"}>demodash</Link>
+          </Text>
+        </NavContainer>
 
-      <NavContainer justifyContent="space-around">
-        <Hidden alignItems="center" down={TRANSITION - 1}>
-          <NavLink text="For Products" link={"/ecommerce"} />
-          <NavLink text="For Storefronts" link={"/ecommerce"} />
-          <NavLink mr={0} text="For Influencers" link={"/ecommerce"} />
-        </Hidden>
-      </NavContainer>
-      <NavContainer justifyContent="flex-end">
-        <Hidden alignItems="center" down={TRANSITION - 1}>
-          <DesktopMenu />
-        </Hidden>
-        <Hidden alignItems="center" up={TRANSITION}>
-          <Image cursor="pointer" h={"3rem"} w={"auto"} src={menu} />
-        </Hidden>
-      </NavContainer>
-    </NavFlex>
-  </Nav>
-);
+        <NavContainer justifyContent="space-around">
+          <Hidden alignItems="center" down={TRANSITION - 1}>
+            <NavLink text="For Products" link={"/ecommerce"} />
+            <NavLink text="For Storefronts" link={"/ecommerce"} />
+            <NavLink mr={0} text="For Influencers" link={"/ecommerce"} />
+          </Hidden>
+        </NavContainer>
+        <NavContainer justifyContent="flex-end">
+          <Hidden alignItems="center" down={TRANSITION - 1}>
+            <DesktopMenu />
+          </Hidden>
+          <Hidden alignItems="center" up={TRANSITION}>
+            <Image
+              onClick={toggleNav}
+              cursor="pointer"
+              h={"3rem"}
+              w={"auto"}
+              src={menu}
+            />
+          </Hidden>
+        </NavContainer>
+      </NavFlex>
+    </Nav>
+  );
+};
+
+const NavBar = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(_NavBar);
 
 export default NavBar;
