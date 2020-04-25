@@ -1,10 +1,10 @@
 import React from "react";
-import {Feature} from "views/_components";
+import {ImageFeature} from "views/_components";
 import billing from "assets/svg/billing.svg";
 
 function Billing(props) {
   return (
-    <Feature
+    <ImageFeature
       imageAlign="left"
       image={billing}
       title={"Sales, payment processing and commission"}

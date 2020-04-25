@@ -1,10 +1,10 @@
 import React from "react";
-import {Feature} from "views/_components";
+import {ImageFeature} from "views/_components";
 import interfaceSearch from "assets/svg/interface-search.svg";
 
 function Discover(props) {
   return (
-    <Feature
+    <ImageFeature
       imageAlign="left"
       image={interfaceSearch}
       title={"Storefronts in your industry"}

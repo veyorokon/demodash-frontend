@@ -1,12 +1,12 @@
 import React from "react";
-import {Feature} from "views/_components";
+import {ImageFeature} from "views/_components";
 import deliveries from "assets/svg/deliveries.svg";
 import {CallToAction} from "views/_components";
 import {responsive as r} from "lib";
 
 function Discover(props) {
   return (
-    <Feature
+    <ImageFeature
       bg={"blues.0"}
       subTitle={"PRODUCT DEMOS"}
       subTitleColor={"whites.0"}
@@ -28,7 +28,7 @@ function Discover(props) {
       >
         Create Account
       </CallToAction>
-    </Feature>
+    </ImageFeature>
   );
 }
 export default Discover;

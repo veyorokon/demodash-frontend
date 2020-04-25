@@ -1,10 +1,10 @@
 import React from "react";
-import {Feature} from "views/_components";
+import {ImageFeature} from "views/_components";
 import storefrontWithProduct from "assets/svg/storefront-withproduct.svg";
 
 function DemoDelivery(props) {
   return (
-    <Feature
+    <ImageFeature
       image={storefrontWithProduct}
       title={"Ship your product demo"}
       text={`For each store you choose to work with, you ship enough product

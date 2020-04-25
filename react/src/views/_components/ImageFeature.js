@@ -12,7 +12,7 @@ export const FlexGrid = styled(Grid)`
   flex-direction: column;
 `;
 
-function Feature(props) {
+function ImageFeature(props) {
   return (
     <Section
       bg={"whites.0"}
@@ -104,4 +104,4 @@ function Feature(props) {
     </Section>
   );
 }
-export default Feature;
+export default ImageFeature;

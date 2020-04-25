@@ -1,10 +1,10 @@
 import React from "react";
-import {Feature} from "views/_components";
+import {ImageFeature} from "views/_components";
 import shipPackage from "assets/svg/ship-package.svg";
 
 function DemoDelivery(props) {
   return (
-    <Feature
+    <ImageFeature
       image={shipPackage}
       title={"Ship purchased products"}
       imageWidth={"30rem"}
