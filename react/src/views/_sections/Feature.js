@@ -2,9 +2,8 @@ import React from "react";
 import {Flex, Section, Box, Text, Image} from "components";
 import {GridItemFlex, FlexGrid} from "./components";
 import {responsive as r} from "lib";
-import billing from "assets/svg/billing.svg";
 
-function Billing(props) {
+function Feature(props) {
   return (
     <Section bg={"whites.0"} height={"fit-content"} overflow="hidden">
       <Box
@@ -27,7 +26,7 @@ function Billing(props) {
             w={r("100%")}
           >
             <GridItemFlex order={r("1 -----> 0")}>
-              <Image m="auto" src={billing} maxWidth={"100%"} w={"40rem"} />
+              <Image m="auto" src={props.image} maxWidth={"100%"} w={"40rem"} />
             </GridItemFlex>
             <GridItemFlex justifyContent="center" mb={r("4 -----> 0")}>
               <Text
@@ -39,7 +38,7 @@ function Billing(props) {
                 fs={r("3rem ----> 3.8rem")}
                 color="navys.0"
               >
-                Sales, payment processing and commission
+                {props.title}
               </Text>
               <Text
                 mt={3}
@@ -51,11 +50,7 @@ function Billing(props) {
                 fs={r("2rem --------> 2.2rem")}
                 color="navys.2"
               >
-                demodash handles payment processing. A standard 2.9% + 0.30 cent
-                fee is assessed for credit transactions and demodash charges a
-                0.99 cent fee per sale. The storefront earns the commission
-                agreed upon and the balance of the sale is added to your
-                account. You'll be notified of any new sale!
+                {props.text}
               </Text>
             </GridItemFlex>
           </FlexGrid>
@@ -64,4 +59,4 @@ function Billing(props) {
     </Section>
   );
 }
-export default Billing;
+export default Feature;

@@ -1,19 +1,8 @@
 import React from "react";
-import {Flex, Section, Box, Text, Grid, Image} from "components";
-
+import {Flex, Section, Box, Text, Image} from "components";
+import {GridItemFlex, FlexGrid} from "./components";
 import {responsive as r} from "lib";
-import styled from "styled-components";
-
 import shipPackage from "assets/svg/ship-package.svg";
-
-const GridItemFlex = styled(Flex)`
-  flex: 1 1 auto;
-  flex-direction: column;
-`;
-
-const FlexGrid = styled(Grid)`
-  flex-direction: column;
-`;
 
 class Hero extends React.Component {
   render() {
