@@ -12,7 +12,7 @@ const GridItemFlex = styled(Flex)`
 `;
 
 const GridItem = props => (
-  <GridItemFlex>
+  <GridItemFlex alignItems={r("center -----> initial")}>
     <Text
       color={"navys.0"}
       fs={"1.4rem"}
@@ -41,7 +41,20 @@ const GridItem = props => (
   </GridItemFlex>
 );
 
-const productLinks = [{text: "How it works", link: "/ecommerce/how-it-works"}];
+const ecommerceLinks = [
+  {text: "For Products", link: "/ecommerce"},
+  {text: "How it works", link: "/ecommerce/how-it-works"}
+];
+
+const storefrontLinks = [
+  {text: "Join demodash", link: "/storefront"},
+  {text: "How it works", link: "/storefront/how-it-works"}
+];
+
+const influencerLinks = [
+  {text: "Join demodash", link: "/influencer"},
+  {text: "How it works", link: "/influencer/how-it-works"}
+];
 
 export default class FooterNav extends React.Component {
   render() {
@@ -58,30 +71,41 @@ export default class FooterNav extends React.Component {
         <Box
           ml={r("2 ---> 3 -> 4 5 -> 7")}
           mr={r("2 ---> 3 -> 4 5 -> 7")}
-          pt={r("5 -------> 6")}
-          pb={r("5 -------> 6")}
+          pt={r("4 -----> 5")}
+          pb={r("4 -----> 5")}
         >
           <Flex
             flexDirection={r("column -----> row")}
-            alignItems="flex-start"
             justifyContent="space-between"
           >
             <Link href={"/"}>
               <Logo
                 mb={4}
-                mr={4}
                 src={logo}
                 w={r("6rem -----> 7rem")}
                 h={r("6rem -----> 7rem")}
               />
             </Link>
             <Grid
-              gridTemplateColumns={r("repeat(2,1fr) ----> repeat(4,1fr)")}
+              minHeight={r("30rem ----> initial")}
+              overflow="hidden"
+              gridRowGap="5%"
+              gridTemplateColumns={r("repeat(2,1fr) ----> repeat(3,1fr)")}
               w={r("100% -----> 65%")}
             >
               <GridItem
-                title="E-commerce"
-                links={productLinks}
+                title="Products"
+                links={ecommerceLinks}
+                {...this.props}
+              />
+              <GridItem
+                title="Storefronts"
+                links={storefrontLinks}
+                {...this.props}
+              />
+              <GridItem
+                title="Influencers"
+                links={influencerLinks}
                 {...this.props}
               />
             </Grid>

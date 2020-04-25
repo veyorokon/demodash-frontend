@@ -1,10 +1,10 @@
 import React from "react";
-import Hero from "./Sections/Hero";
+import Privacy from "./Sections/Privacy";
 
 export default () => {
   return (
     <>
-      <Hero />
+      <Privacy />
     </>
   );
 };

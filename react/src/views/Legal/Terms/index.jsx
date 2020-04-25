@@ -1,10 +1,10 @@
 import React from "react";
-import Hero from "./Sections/Hero";
+import Terms from "./Sections/Terms";
 
 export default () => {
   return (
     <>
-      <Hero />
+      <Terms />
     </>
   );
 };
