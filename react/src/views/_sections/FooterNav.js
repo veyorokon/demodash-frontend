@@ -41,7 +41,10 @@ const GridItem = props => (
   </GridItemFlex>
 );
 
-const productLinks = [{text: "How it works", link: "/ecommerce/how-it-works"}];
+const productLinks = [
+  {text: "For Products", link: "/ecommerce"},
+  {text: "How it works", link: "/ecommerce/how-it-works"}
+];
 
 export default class FooterNav extends React.Component {
   render() {
