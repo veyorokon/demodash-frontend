@@ -7,10 +7,10 @@
 */
 
 import Landing from "views/Landing";
-import LandingEcommerce from "views/LandingEcommerce";
-import Privacy from "views/Privacy";
-import Terms from "views/Terms";
-import HowItWorks from "views/HowItWorks";
+import Privacy from "views/Legal/Privacy";
+import Terms from "views/Legal/Terms";
+import HowItWorks from "views/Ecommerce/HowItWorks";
+import Ecommerce from "views/Ecommerce/Landing";
 
 const routes = [
   {
@@ -39,10 +39,10 @@ const routes = [
   },
   {
     path: "/ecommerce",
-    name: "LandingEcommerce",
-    rtlName: "LandingEcommerce",
+    name: "Ecommerce",
+    rtlName: "Ecommerce",
     icon: null,
-    component: LandingEcommerce,
+    component: Ecommerce,
     layout: "/"
   },
   {
