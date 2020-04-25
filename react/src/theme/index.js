@@ -50,6 +50,9 @@ import {
   backgroundPositionY,
   textAlign,
   gridTemplateColumns,
+  gridColumnGap,
+  gridRowGap,
+  gridFields,
   flexWrap,
   justifyContent,
   alignItems,
@@ -64,7 +67,8 @@ import {
   textTransform,
   cursor,
   alignSelf,
-  fill
+  fill,
+  order
 } from "./fields";
 
 export default theme;
@@ -119,6 +123,9 @@ export {
   backgroundPositionY,
   textAlign,
   gridTemplateColumns,
+  gridColumnGap,
+  gridRowGap,
+  gridFields,
   flexWrap,
   justifyContent,
   minWidth,
@@ -133,5 +140,6 @@ export {
   textTransform,
   cursor,
   alignSelf,
-  fill
+  fill,
+  order
 };

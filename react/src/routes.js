@@ -7,13 +7,14 @@
 */
 
 import Landing from "views/Landing";
+import LandingEcommerce from "views/LandingEcommerce";
 import Privacy from "views/Privacy";
 import Terms from "views/Terms";
 import HowItWorks from "views/HowItWorks";
 
 const routes = [
   {
-    path: "/how-it-works",
+    path: "/ecommerce/how-it-works",
     name: "HowItWorks",
     rtlName: "HowItWorks",
     icon: null,
@@ -34,6 +35,14 @@ const routes = [
     rtlName: "Terms",
     icon: null,
     component: Terms,
+    layout: "/"
+  },
+  {
+    path: "/ecommerce",
+    name: "LandingEcommerce",
+    rtlName: "LandingEcommerce",
+    icon: null,
+    component: LandingEcommerce,
     layout: "/"
   },
   {

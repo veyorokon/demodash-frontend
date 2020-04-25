@@ -7,7 +7,7 @@
 */
 import {
   borderRadius,
-  gridTemplateColumns,
+  gridFields,
   themedComponent,
   flexFields,
   letterSpacing,
@@ -81,7 +81,7 @@ const Grid = themedComponent(
   styled.div`
     display: grid;
     position: relative;
-    ${gridTemplateColumns}
+    ${gridFields}
   `
 );
 
@@ -90,6 +90,7 @@ const Link = themedComponent(styled.a`
   text-decoration: unset;
   color: inherit;
   font-weight: inherit;
+  ${borderRadius}
   &:visited {
     color: inherit;
   }

@@ -26,22 +26,23 @@ const NavContainer = styled(Flex)`
   height: 100%;
   align-items: center;
   border-bottom: none;
-  & > div {
-  }
 `;
 
 const NavLink = props => (
   <Text
-    fs={"1.6rem"}
+    fs={r("1.4rem --------> 1.6rem")}
     fw={500}
     color={"blacks.0"}
     m="unset"
-    mr={3}
+    mr={4}
     p={3}
     pl="unset"
     pr="unset"
+    {...props}
   >
-    <Link href={props.link}>{props.text}</Link>
+    <Link href={props.link} {...props}>
+      {props.text}
+    </Link>
   </Text>
 );
 
@@ -51,7 +52,7 @@ const DesktopMenu = () => (
     <CallToAction
       link={"/register"}
       w={r("15rem")}
-      fs={"1.4rem"}
+      fs={r("1.4rem")}
       fw={600}
       h="3.8rem"
       bg={"oranges.1"}
@@ -65,7 +66,7 @@ const DesktopMenu = () => (
   </>
 );
 
-const TRANSITION = 7;
+const TRANSITION = 8;
 
 const NavBar = () => (
   <Nav>
@@ -77,16 +78,20 @@ const NavBar = () => (
       ml={r("4 -----> 5 ---> 6 7")}
       mr={r("4 -----> 5 ---> 6 7")}
     >
-      <NavContainer alignItems="center" w={"12rem"}>
-        <Image mr={3} cursor="pointer" h={"3rem"} w={"auto"} src={logo} />
+      <NavContainer alignItems="center" w={"10rem"}>
+        <Hidden alignItems="center" down={TRANSITION}>
+          <Image mr={3} cursor="pointer" h={"3rem"} w={"auto"} src={logo} />
+        </Hidden>
         <Text lineHeight={"1.5"} as="p" fw={700} fs={"2.4rem"} color="navys.0">
           <Link href={"/"}>demodash</Link>
         </Text>
       </NavContainer>
 
-      <NavContainer>
+      <NavContainer justifyContent="space-around">
         <Hidden alignItems="center" down={TRANSITION - 1}>
-          <NavLink text="Learn More" link={"/how-it-works"} />
+          <NavLink text="For Products" link={"/ecommerce"} />
+          <NavLink text="For Storefronts" link={"/ecommerce"} />
+          <NavLink mr={0} text="For Influencers" link={"/ecommerce"} />
         </Hidden>
       </NavContainer>
       <NavContainer justifyContent="flex-end">
