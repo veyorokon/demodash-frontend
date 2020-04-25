@@ -9,12 +9,6 @@ import logo from "assets/svg/logo.svg";
 import {connect} from "react-redux";
 import {toggleNav} from "redux/actions";
 
-const mapStateToProps = state => {
-  const {navOpen} = state;
-  return {
-    navOpen
-  };
-};
 function mapDispatchToProps(dispatch) {
   return {
     toggleNav: () => dispatch(toggleNav())
@@ -25,7 +19,7 @@ const Nav = styled(Box)`
   background-color: white;
   box-shadow: 0 2px 4px rgba(3, 27, 78, 0.1);
   position: fixed;
-  z-index: 50;
+  z-index: 30;
   top: 0;
   left: 0;
   width: 100%;
@@ -84,7 +78,6 @@ const TRANSITION = 8;
 
 const _NavBar = props => {
   const {toggleNav} = props;
-  console.log(props);
   return (
     <Nav>
       <NavFlex
@@ -137,7 +130,7 @@ const _NavBar = props => {
 };
 
 const NavBar = connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
 )(_NavBar);
 

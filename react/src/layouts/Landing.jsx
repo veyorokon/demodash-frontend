@@ -12,7 +12,7 @@ const switchRoutes = (
 );
 
 function Landing() {
-  return <React.Fragment>{switchRoutes}</React.Fragment>;
+  return <>{switchRoutes}</>;
 }
 
 export default Landing;
