@@ -89,16 +89,11 @@ const NavBar = () => (
 
       <NavContainer>
         <Hidden alignItems="center" down={TRANSITION - 1}>
-          <NavLink
-            mr={4}
-            w={"10rem"}
-            text="For Products"
-            link={"/how-it-works"}
-          />
+          <NavLink mr={4} w={"10rem"} text="For Products" link={"/ecommerce"} />
           <NavLink
             w={"10rem"}
             text="Storefronts & Influencers"
-            link={"/how-it-works"}
+            link={"/ecommerce"}
           />
         </Hidden>
       </NavContainer>

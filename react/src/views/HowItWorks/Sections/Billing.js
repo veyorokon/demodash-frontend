@@ -66,7 +66,7 @@ class Hero extends React.Component {
                   cent fee is assessed for credit transactions and demodash
                   charges a 0.99 cent fee per sale. The storefront earns the
                   commission agreed upon and the balance of the sale is added to
-                  your account. Then, you're notified of the new sale!
+                  your account. You'll be notified of any new sale!
                 </Text>
               </GridItemFlex>
             </FlexGrid>

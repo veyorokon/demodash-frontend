@@ -128,9 +128,9 @@ class Hero extends React.Component {
                 bg={"yellows.1"}
                 br={4}
                 fw={600}
-                link="/register"
+                link="/ecommerce/how-it-works"
               >
-                Create Account
+                Learn More
               </CallToAction>
             </LeftBox>
             <RightBox w={r("100% ------> 50%")}></RightBox>
