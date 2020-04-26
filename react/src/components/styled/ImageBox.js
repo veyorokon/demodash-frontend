@@ -5,7 +5,8 @@ import {
   backgroundPosition,
   backgroundSize,
   backgroundPositionX,
-  backgroundPositionY
+  backgroundPositionY,
+  backgroundColor
 } from "theme/fields";
 
 const ImageBox = styled(Flex)`
@@ -19,6 +20,7 @@ const ImageBox = styled(Flex)`
   ${backgroundSize}
   ${backgroundPositionY}
   ${backgroundPositionX}
+  ${backgroundColor}
 `;
 
 export default ImageBox;

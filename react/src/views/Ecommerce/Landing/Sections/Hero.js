@@ -8,6 +8,7 @@ import mobileMedia from "assets/images/compressed/products-mobile.jpg";
 function Hero(props) {
   return (
     <HeroOverlay
+      backgroundColor="#dcd2ca"
       desktopMedia={desktopMedia}
       mobileMedia={mobileMedia}
       subTitle={"BRAND VISIBILITY"}

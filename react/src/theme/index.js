@@ -68,7 +68,8 @@ import {
   cursor,
   alignSelf,
   fill,
-  order
+  order,
+  backgroundColor
 } from "./fields";
 
 export default theme;
@@ -141,5 +142,6 @@ export {
   cursor,
   alignSelf,
   fill,
-  order
+  order,
+  backgroundColor
 };

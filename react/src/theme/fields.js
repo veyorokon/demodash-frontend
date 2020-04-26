@@ -24,6 +24,7 @@ const minWidth = configure("minWidth", [], "space");
 const maxWidth = configure("maxWidth", [], "space");
 
 const background = configure("background", ["bg", "background"], "colors");
+const backgroundColor = configure("backgroundColor", [], "colors");
 const backgroundImage = configure("backgroundImage");
 const backgroundPosition = configure("backgroundPosition");
 const backgroundPositionX = configure("backgroundPositionX", "bpx");
@@ -264,5 +265,6 @@ export {
   gridColumnGap,
   gridRowGap,
   gridFields,
-  order
+  order,
+  backgroundColor
 };
