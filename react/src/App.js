@@ -17,6 +17,7 @@ import store from "redux/store";
 
 import theme from "theme";
 const hist = createBrowserHistory();
+
 const App = () =>
   ReactDOM.render(
     <Provider store={store}>
@@ -30,5 +31,4 @@ const App = () =>
   );
 
 window.store = store;
-
 export default App;
