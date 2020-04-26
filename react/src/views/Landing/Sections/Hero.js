@@ -1,53 +1,32 @@
 import React from "react";
-import {Flex, Section, Box, Text} from "components";
+import {HeroOverlay, CallToAction} from "views/_components";
 import {responsive as r} from "lib";
 
-class Hero extends React.Component {
-  render() {
-    return (
-      <Section bg={"whites.0"} height={"fit-content"} overflow="hidden">
-        <Box
-          ml={r("2 ---> 3 -> 4 5 6 -> 7")}
-          mr={r("2 ---> 3 -> 4 5 6 -> 7")}
-          pt={r("5 ---------> 6")}
-          pb={r("5")}
-        >
-          <Flex
-            justifyContent="flex-start"
-            flexDirection="column"
-            alignItems="center"
-          >
-            <Text
-              textAlign="center"
-              lineHeight={"1.5"}
-              as="h2"
-              fw={r("600")}
-              fs={r("2.8rem --> 3rem ---> 3.4rem")}
-              color="navys.0"
-              mb={2}
-              letterSpacing={"-.8px"}
-            >
-              Demos get users
-            </Text>
-            <Text
-              mt={3}
-              lineHeight={"1.5"}
-              letterSpacing={"-.2px"}
-              as="p"
-              fw={300}
-              fs={r("2rem -----> 2.2rem")}
-              color="navys.2"
-              textAlign="center"
-              maxWidth="80rem"
-            >
-              Scale your business from demo to dropshipping and handle
-              everything in between like payment processing and commission - on
-              one platform.
-            </Text>
-          </Flex>
-        </Box>
-      </Section>
-    );
-  }
+import desktopMedia from "assets/images/products.jpg";
+import mobileMedia from "assets/images/products-mobile.jpg";
+
+function Hero(props) {
+  return (
+    <HeroOverlay
+      desktopMedia={desktopMedia}
+      mobileMedia={mobileMedia}
+      subTitle={"DEMOS GET USERS"}
+      title={"The product demo platform"}
+      text={`Scale your business from demo to dropshipping and handle
+        everything in between from payment processing and commission to
+        analytics - on one platform.`}
+    >
+      <CallToAction
+        width={r("100% ---> 20rem")}
+        fs={"1.4rem"}
+        bg={"yellows.0"}
+        br={4}
+        fw={600}
+        link="/register"
+      >
+        Create Account
+      </CallToAction>
+    </HeroOverlay>
+  );
 }
 export default Hero;

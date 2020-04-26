@@ -4,7 +4,7 @@ import deliveries from "assets/svg/deliveries.svg";
 import {CallToAction} from "views/_components";
 import {responsive as r} from "lib";
 
-function Discover(props) {
+function Hero(props) {
   return (
     <ImageFeature
       bg={"blues.0"}
@@ -31,4 +31,4 @@ function Discover(props) {
     </ImageFeature>
   );
 }
-export default Discover;
+export default Hero;

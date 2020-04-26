@@ -2,7 +2,7 @@ import React from "react";
 import {ImageFeature} from "views/_components";
 import shipPackage from "assets/svg/ship-package.svg";
 
-function DemoDelivery(props) {
+function ShipPurchase(props) {
   return (
     <ImageFeature
       image={shipPackage}
@@ -14,4 +14,4 @@ function DemoDelivery(props) {
     />
   );
 }
-export default DemoDelivery;
+export default ShipPurchase;

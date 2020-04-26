@@ -115,7 +115,15 @@ class HowItWorks extends React.Component {
                   "You'll get notified of any new sales. When a sale goes through, you just ship the purchased products directly to the end user!"
                 }
                 svg={ShipPackage}
-              />
+              >
+                <FeatureLink
+                  color={"oranges.0"}
+                  fw={400}
+                  href="/ecommerce/how-it-works"
+                >
+                  Learn more about demodash
+                </FeatureLink>
+              </Panel>
             </VertTabs>
           </Flex>
         </Flex>
