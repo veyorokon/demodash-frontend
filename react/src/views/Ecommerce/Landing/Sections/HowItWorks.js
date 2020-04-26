@@ -104,7 +104,7 @@ class HowItWorks extends React.Component {
                 <FeatureLink
                   color={"oranges.0"}
                   fw={400}
-                  href="/ecommerce/how-it-works"
+                  href="/ecommerce/how-it-works#billing"
                 >
                   Learn more about fees and commission
                 </FeatureLink>

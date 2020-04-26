@@ -5,6 +5,7 @@ import billing from "assets/svg/billing.svg";
 function Billing(props) {
   return (
     <ImageFeature
+      id={"billing"}
       imageAlign="left"
       image={billing}
       title={"Sales, payment processing and commission"}
