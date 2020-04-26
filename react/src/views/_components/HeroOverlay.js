@@ -50,7 +50,7 @@ const SmartWrapper = props => {
       <Hidden down={props.breakPoint - 1}>
         <ImageBox
           backgroundColor={props.backgroundColor}
-          backgroundSize={props.backgroundColor ? "contain" : "cover"}
+          backgroundSize={props.backgroundSize ? props.backgroundSize : "cover"}
           overflow={"hidden"}
           backgroundPosition={"right"}
           backgroundImage={`url(${props.desktopMedia})`}

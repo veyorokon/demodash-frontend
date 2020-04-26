@@ -9,6 +9,7 @@ function Hero(props) {
   return (
     <HeroOverlay
       backgroundColor="#dcd2ca"
+      backgroundSize={r("cover ---------> contain")}
       desktopMedia={desktopMedia}
       mobileMedia={mobileMedia}
       subTitle={"BRAND VISIBILITY"}
