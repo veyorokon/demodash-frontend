@@ -3,8 +3,8 @@ import {Box, Flex, Section, ImageBox, Text, Hidden} from "components";
 import {CallToAction} from "views/_components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
-import desktopMedia from "assets/images/products-desktop.jpg";
-import mobileMedia from "assets/images/products-mobile.jpg";
+import desktopMedia from "assets/images/compressed/products-desktop.jpg";
+import mobileMedia from "assets/images/compressed/products-mobile.jpg";
 
 const Container = styled(Flex)`
   align-items: center;
