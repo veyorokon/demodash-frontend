@@ -5,6 +5,7 @@ import interfaceSearch from "assets/svg/interface-search.svg";
 function Discover(props) {
   return (
     <ImageFeature
+      id={"targeting"}
       imageAlign="left"
       image={interfaceSearch}
       title={"Storefronts in your industry"}

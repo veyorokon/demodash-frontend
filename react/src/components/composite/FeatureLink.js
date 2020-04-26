@@ -2,6 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import {Link, Flex} from "components/core";
 
+const FlexWrapper = styled(Flex)`
+  max-width: 100%;
+  flex-wrap: wrap;
+  height: auto;
+`;
+
 const FeatureLinkText = styled(Link)`
   position: relative;
   cursor: pointer;
@@ -33,7 +39,7 @@ const FeatureLinkText = styled(Link)`
 `;
 
 const FeatureLink = props => (
-  <Flex
+  <FlexWrapper
     margin={"auto"}
     width="fit-content"
     justifyContent="center"
@@ -41,7 +47,7 @@ const FeatureLink = props => (
     {...props}
   >
     <FeatureLinkText {...props}>{props.children}</FeatureLinkText>
-  </Flex>
+  </FlexWrapper>
 );
 
 export default FeatureLink;

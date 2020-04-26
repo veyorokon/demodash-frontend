@@ -1,5 +1,5 @@
 import React from "react";
-import {Flex, Section, Box, Image, Text} from "components";
+import {Flex, Section, Box, Image, Text, FeatureLink} from "components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
 
@@ -16,9 +16,7 @@ const Features = styled(Flex)`
   }
 `;
 
-const FeatureTitle = styled(Text)`
-  /* text-transform: uppercase; */
-`;
+const FeatureTitle = styled(Text)``;
 
 const FeatureBox = props => (
   <Box p={r("2 -----> 3 4 -> 5")} mb={r("3 ----> 5 -> 0")} {...props}>
@@ -46,6 +44,7 @@ const FeatureBox = props => (
     >
       {props.text}
     </Text>
+    {props.children}
   </Box>
 );
 
@@ -70,17 +69,36 @@ class Solution extends React.Component {
               title={"Targeting"}
               icon={targeting}
               pl={r("8px!important ------> unset")}
+              pb={r("5 -------> initial")}
               text={
                 "We are constantly adding new storefronts, each attracting a highly targeted userbase. By matching your products with the best storefronts, the people most interested in your products are the ones who see and demo them, resulting in better sales and conversion rates."
               }
-            />
+            >
+              <FeatureLink
+                ml={0}
+                color={"oranges.0"}
+                fw={400}
+                href="/ecommerce/how-it-works#targeting"
+              >
+                The importance of targeting
+              </FeatureLink>
+            </FeatureBox>
             <FeatureBox
               title={"Analytics"}
               icon={analytics}
               text={
                 "Track sales and commission in real-time via the dashboard, so you see how each storefront performs. By leveraging real-time data, you have the information you need to maximize sales, build brand awareness and scale your demodash campaigns to drive sales and adoption."
               }
-            />
+            >
+              <FeatureLink
+                ml={0}
+                color={"oranges.0"}
+                fw={400}
+                href="/ecommerce/how-it-works"
+              >
+                Learn more about demodash
+              </FeatureLink>
+            </FeatureBox>
           </Features>
         </Box>
       </Section>
