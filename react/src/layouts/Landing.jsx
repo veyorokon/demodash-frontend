@@ -3,7 +3,6 @@ import {Switch, Route} from "react-router-dom";
 import {NavBar, FooterNav, FooterMeta, FooterCopy} from "views/_sections";
 import {Drawer} from "views/_components";
 import animateScrollTo from "animated-scroll-to";
-import {asciiLogo} from "assets/ascii/logo";
 
 import routes from "routes.js";
 
@@ -16,8 +15,6 @@ const switchRoutes = (
 );
 
 function Landing() {
-  console.clear();
-  console.log(asciiLogo);
   useEffect(() => {
     const anchor = window.location.hash.toLowerCase();
     if (anchor) {

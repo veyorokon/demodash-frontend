@@ -85,7 +85,7 @@ function HeroOverlay(props) {
           h="100%"
           p={r("2 ----> 4")}
         >
-          <LeftBox ml={r("0 2 ----> 3% unset 5% 10% 6 7")} w={r("100%")}>
+          <LeftBox ml={r("0 2 ----> 3% unset 5% 10% 6")} w={r("100%")}>
             <Text
               width="100%"
               mb={3}
