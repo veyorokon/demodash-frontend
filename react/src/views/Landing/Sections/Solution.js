@@ -35,7 +35,7 @@ class Solution extends React.Component {
               lineHeight={"1.5"}
               letterSpacing={"-.2px"}
               as="p"
-              fw={300}
+              fw={400}
               fs={r("2rem -----> 2.2rem")}
               color="navys.2"
               textAlign="center"

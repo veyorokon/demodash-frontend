@@ -114,7 +114,7 @@ function HeroOverlay(props) {
               lineHeight={"1.4"}
               letterSpacing={"-.5px"}
               as="p"
-              fw={300}
+              fw={400}
               fs={props.textSize || r("2rem ---> 2.4rem ----> 2.8rem")}
             >
               {props.text}
