@@ -9,13 +9,13 @@
 import Landing from "views/Landing";
 import Privacy from "views/Legal/Privacy";
 import Terms from "views/Legal/Terms";
-import HowItWorks from "views/Ecommerce/HowItWorks";
-import StorefrontDemos from "views/Ecommerce/StorefrontDemos";
-import InfluencerDemos from "views/Ecommerce/InfluencerDemos";
+import HowItWorks from "views/HowItWorks";
+import StorefrontDemos from "views/Demos/StorefrontDemos";
+import InfluencerDemos from "views/Demos/InfluencerDemos";
 
 const routes = [
   {
-    path: "/ecommerce/how-it-works",
+    path: "/how-it-works",
     name: "HowItWorks",
     rtlName: "HowItWorks",
     icon: null,

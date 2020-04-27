@@ -44,17 +44,17 @@ const GridItem = props => (
 const ecommerceLinks = [
   {text: "Storefront demos", link: "/demos/storefront"},
   {text: "Influencer demos", link: "/demos/influencer"},
-  {text: "How it works", link: "/ecommerce/how-it-works"}
+  {text: "How it works", link: "/how-it-works"}
 ];
 
 const storefrontLinks = [
   {text: "Join demodash", link: "/storefront"},
-  {text: "How it works", link: "/storefront/how-it-works"}
+  {text: "How it works", link: "/how-it-works"}
 ];
 
 const influencerLinks = [
   {text: "Join demodash", link: "/influencer"},
-  {text: "How it works", link: "/influencer/how-it-works"}
+  {text: "How it works", link: "/how-it-works"}
 ];
 
 export default class FooterNav extends React.Component {

@@ -90,7 +90,7 @@ class FeatureSection extends React.Component {
                 ml={0}
                 color={"oranges.0"}
                 fw={400}
-                href="/ecommerce/find-storefront"
+                href="/demos/storefront"
               >
                 Learn more about storefront demos.
               </FeatureLink>
@@ -106,7 +106,7 @@ class FeatureSection extends React.Component {
                 ml={0}
                 color={"oranges.0"}
                 fw={400}
-                href="/ecommerce/how-it-works"
+                href="/demos/influencer"
               >
                 Learn more about influencer demos.
               </FeatureLink>

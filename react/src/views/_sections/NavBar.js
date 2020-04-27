@@ -107,7 +107,8 @@ const _NavBar = props => {
           <Hidden alignItems="center" down={TRANSITION - 1}>
             <NavLink text="For Products" link={"/ecommerce"} />
             <NavLink text="For Storefronts" link={"/ecommerce"} />
-            <NavLink mr={0} text="For Influencers" link={"/ecommerce"} />
+            <NavLink text="For Influencers" link={"/ecommerce"} />
+            <NavLink mr={0} text="Pricing" link={"/how-it-works#billing"} />
           </Hidden>
         </NavContainer>
         <NavContainer justifyContent="flex-end">
