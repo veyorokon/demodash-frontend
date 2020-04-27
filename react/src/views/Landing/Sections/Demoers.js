@@ -3,8 +3,8 @@ import {Flex, Section, Box, Image, Text, FeatureLink} from "components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
 
-import analytics from "assets/svg/analytics.svg";
-import targeting from "assets/svg/targeting.svg";
+import influencer from "assets/svg/influencer.svg";
+import storefront from "assets/svg/storefront-withproduct.svg";
 
 const Features = styled(Flex)`
   & > :first-child {
@@ -53,7 +53,7 @@ const FeatureBox = props => (
   </Box>
 );
 
-class Solution extends React.Component {
+class FeatureSection extends React.Component {
   render() {
     return (
       <Section bg={"whites.0"} height={"fit-content"} overflow="hidden">
@@ -71,12 +71,12 @@ class Solution extends React.Component {
               borderLeftColor="transparent"
               borderRightColor={r("transparent ------> greys.1")}
               borderStyle="solid"
-              title={"Targeting"}
-              icon={targeting}
+              title={"Storefront"}
+              icon={storefront}
               pl={r("8px!important ------> unset")}
               pb={r("5 -------> initial")}
               text={
-                "We are constantly adding new storefronts, each attracting a highly targeted userbase. By matching your products with the best storefronts, the people most interested in your products are the ones who see and demo them, resulting in better sales and conversion rates."
+                "Get your product demos into storefronts that attract a highly targeted userbase!"
               }
             >
               <FeatureLink
@@ -89,10 +89,10 @@ class Solution extends React.Component {
               </FeatureLink>
             </FeatureBox>
             <FeatureBox
-              title={"Analytics"}
-              icon={analytics}
+              title={"Influencer"}
+              icon={influencer}
               text={
-                "Track sales and commission in real-time via the dashboard, so you see how each storefront performs. By leveraging real-time data, you have the information you need to maximize sales, build brand awareness and scale your demodash campaigns to drive sales and adoption."
+                "Get your product demos to influencers so they can show off how great it is!"
               }
             >
               <FeatureLink
@@ -110,4 +110,4 @@ class Solution extends React.Component {
     );
   }
 }
-export default Solution;
+export default FeatureSection;

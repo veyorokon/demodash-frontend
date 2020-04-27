@@ -14,9 +14,8 @@ function Hero(props) {
       mobileMedia={mobileMedia}
       subTitle={"DEMOS GET USERS"}
       title={"The product demo platform"}
-      text={`Scale your business from demo to dropshipping and handle
-        everything from payment processing and commission to
-        analytics - on one platform.`}
+      textSize={r("2rem ---> 2.2rem ----> 2.4rem")}
+      text={`demodash is the best platform for managing demo-based marketing campaigns. Scale your business from demo to dropshipping on demodash.`}
     >
       <CallToAction
         width={r("100% ---> 20rem")}
