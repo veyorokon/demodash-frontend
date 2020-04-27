@@ -19,13 +19,20 @@ const Features = styled(Flex)`
 const FeatureTitle = styled(Text)``;
 
 const FeatureBox = props => (
-  <Box
+  <Flex
+    flexDirection="column"
+    alignItems="flex-start"
     p={r("2 -----> 3 4 -> 5")}
     pt="0 !important"
     mb={r("3 ----> 5 -> 0")}
     {...props}
   >
-    <Image mb={3} h={r("14rem ----> 18rem ---> 20rem")} src={props.icon} />
+    <Image
+      maxWidth="100%"
+      mb={3}
+      h={r("14rem ----> 18rem ---> 20rem")}
+      src={props.icon}
+    />
     <FeatureTitle
       mt={3}
       mb={4}
@@ -50,7 +57,7 @@ const FeatureBox = props => (
       {props.text}
     </Text>
     {props.children}
-  </Box>
+  </Flex>
 );
 
 class FeatureSection extends React.Component {
@@ -71,28 +78,28 @@ class FeatureSection extends React.Component {
               borderLeftColor="transparent"
               borderRightColor={r("transparent ------> greys.1")}
               borderStyle="solid"
-              title={"Storefront"}
+              title={"Storefront demos"}
               icon={storefront}
               pl={r("8px!important ------> unset")}
               pb={r("5 -------> initial")}
               text={
-                "Get your product demos into storefronts that attract a highly targeted userbase!"
+                "Get your product demos into storefronts, each attracting a highly targeted userbase."
               }
             >
               <FeatureLink
                 ml={0}
                 color={"oranges.0"}
                 fw={400}
-                href="/ecommerce/how-it-works#targeting"
+                href="/ecommerce/find-storefront"
               >
-                The importance of targeting
+                Learn more about storefront demos.
               </FeatureLink>
             </FeatureBox>
             <FeatureBox
-              title={"Influencer"}
+              title={"Influencer demos"}
               icon={influencer}
               text={
-                "Get your product demos to influencers so they can show off how great it is!"
+                "Distribute your product demos to influencers for a massive boost in brand visibility."
               }
             >
               <FeatureLink
@@ -101,7 +108,7 @@ class FeatureSection extends React.Component {
                 fw={400}
                 href="/ecommerce/how-it-works"
               >
-                Learn more about demodash
+                Learn more about influencer demos.
               </FeatureLink>
             </FeatureBox>
           </Features>

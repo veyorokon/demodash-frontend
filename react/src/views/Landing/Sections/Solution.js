@@ -28,7 +28,7 @@ class Solution extends React.Component {
               mb={2}
               letterSpacing={"-.8px"}
             >
-              Experiences that scale
+              Demos are experiences that scale
             </Text>
             <Text
               mt={3}
@@ -41,8 +41,8 @@ class Solution extends React.Component {
               textAlign="center"
               maxWidth="80rem"
             >
-              Efficiently distribute product demos to the people who can demo
-              them for users at scale.
+              Efficiently distribute product demos where they can be seen and
+              demoed the most.
             </Text>
           </Flex>
         </Box>

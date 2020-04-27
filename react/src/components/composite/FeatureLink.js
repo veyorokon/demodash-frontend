@@ -46,7 +46,9 @@ const FeatureLink = props => (
     height={"2.5rem"}
     {...props}
   >
-    <FeatureLinkText {...props}>{props.children}</FeatureLinkText>
+    <FeatureLinkText {...props} h="fit-content">
+      {props.children}
+    </FeatureLinkText>
   </FlexWrapper>
 );
 

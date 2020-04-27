@@ -10,7 +10,7 @@ import Landing from "views/Landing";
 import Privacy from "views/Legal/Privacy";
 import Terms from "views/Legal/Terms";
 import HowItWorks from "views/Ecommerce/HowItWorks";
-import Ecommerce from "views/Ecommerce/Landing";
+import EcommerceStorefrontDemos from "views/Ecommerce/StorefrontDemos";
 
 const routes = [
   {
@@ -39,10 +39,10 @@ const routes = [
   },
   {
     path: "/ecommerce",
-    name: "Ecommerce",
-    rtlName: "Ecommerce",
+    name: "EcommerceStorefrontDemos",
+    rtlName: "EcommerceStorefrontDemos",
     icon: null,
-    component: Ecommerce,
+    component: EcommerceStorefrontDemos,
     layout: "/"
   },
   {

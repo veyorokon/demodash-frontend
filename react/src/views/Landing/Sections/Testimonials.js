@@ -60,8 +60,8 @@ class Testimonials extends React.Component {
               textAlign="center"
               maxWidth="80rem"
             >
-              Our beta users are seeing the difference that storefront presence
-              can make.
+              Our beta users are seeing the difference that demos at scale can
+              make.
             </Text>
           </TitleSection>
           <Card
@@ -94,9 +94,9 @@ class Testimonials extends React.Component {
                 lineHeight={1.6}
                 fw={400}
               >
-                “demodash has doubled our sales volume. Product demos are by far
-                our most effective marketing tool and demodash gives us the
-                infrastructure to efficiently distribute them.”
+                “With demodash, we have a powerful tool to scale our demo-based
+                marketing. Instead of sending demos/samples to individiual
+                users, they're sent to barbershops and demoed at scale.”
               </CardText>
               <Text fs={r("1.8rem ------> 2rem")} fw={"bold"}>
                 Vahid B. Eyorokon

@@ -42,7 +42,8 @@ const GridItem = props => (
 );
 
 const ecommerceLinks = [
-  {text: "For Products", link: "/ecommerce"},
+  {text: "Storefront demos", link: "/ecommerce"},
+  {text: "Influencer demos", link: "/ecommerce"},
   {text: "How it works", link: "/ecommerce/how-it-works"}
 ];
 
