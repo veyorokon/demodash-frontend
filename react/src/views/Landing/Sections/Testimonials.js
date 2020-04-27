@@ -82,7 +82,7 @@ class Testimonials extends React.Component {
             />
             <Flex
               flexDirection="column"
-              p={r("3 4 ----> 3 -> 4")}
+              p={r("3 4 ----> 3 --> 4")}
               w={r("25rem 28rem 30rem ---> 8")}
               h={r("40rem -----> auto")}
               maxWidth={r("100% -----> 85%")}
@@ -91,12 +91,13 @@ class Testimonials extends React.Component {
                 maxWidth={r("unset -----> 85%")}
                 fs={r("1.8rem ------> 1.9rem")}
                 mb={3}
-                lineHeight={1.6}
+                lineHeight={1.5}
                 fw={400}
               >
-                “With demodash, we have a powerful tool to scale our demo-based
-                marketing. Instead of sending demos/samples to individiual
-                users, they're sent to barbershops and demoed at scale.”
+                “The scope of our demo-based marketing has incresased by an
+                order of magnitude. Instead of sending demos/samples to
+                individiual users, they're sent to barbershops and used on
+                dozens.”
               </CardText>
               <Text fs={r("1.8rem ------> 2rem")} fw={"bold"}>
                 Vahid B. Eyorokon

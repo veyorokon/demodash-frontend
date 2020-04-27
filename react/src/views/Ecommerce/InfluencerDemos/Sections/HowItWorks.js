@@ -3,7 +3,7 @@ import {Flex, Box, Section, Text, Image, FeatureLink} from "components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
 
-import StoreFront from "assets/svg/storefront-colour.svg";
+import InfluencerProducts from "assets/svg/influencer-products.svg";
 import AppUser from "assets/svg/app-user2.svg";
 import ShipPackage from "assets/svg/ship-package.svg";
 
@@ -82,9 +82,9 @@ class HowItWorks extends React.Component {
               <Panel
                 title={"Ship demos to storefronts"}
                 text={
-                  "Discover storefonts in your industry to maximize targeting and sales conversion. Leverage their expertise as your sales force."
+                  "Discover influencers in your industry to maximize targeting and sales conversion. Leverage their expertise as your sales force."
                 }
-                svg={StoreFront}
+                svg={InfluencerProducts}
               >
                 <FeatureLink
                   color={"oranges.0"}
@@ -97,7 +97,7 @@ class HowItWorks extends React.Component {
               <Panel
                 title={"Process payments and commission"}
                 text={
-                  "You set product prices and commission rates to keep storefronts motivated. Sales happen at the storefront on demodash."
+                  "You set product prices and commission rates to keep influencers motivated. Sales happen on the influencer's demodash store."
                 }
                 svg={AppUser}
               >
