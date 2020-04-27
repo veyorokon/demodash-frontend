@@ -92,7 +92,7 @@ class Solution extends React.Component {
               title={"Analytics"}
               icon={analytics}
               text={
-                "Track sales and commission in real-time via the dashboard, so you see how each storefront performs. By leveraging real-time data, you have the information you need to maximize sales, build brand awareness and scale your demodash campaigns to drive sales and adoption."
+                "Track sales and commission in real-time via the dashboard, so you see how each influencer performs. By leveraging real-time data, you have the information you need to maximize sales, build brand awareness and scale your demodash campaigns to drive sales and adoption."
               }
             >
               <FeatureLink

@@ -48,12 +48,12 @@ const ecommerceLinks = [
 ];
 
 const storefrontLinks = [
-  {text: "Join demodash", link: "/storefront"},
+  {text: "Join demodash", link: "/register"},
   {text: "How it works", link: "/how-it-works"}
 ];
 
 const influencerLinks = [
-  {text: "Join demodash", link: "/influencer"},
+  {text: "Join demodash", link: "/register"},
   {text: "How it works", link: "/how-it-works"}
 ];
 

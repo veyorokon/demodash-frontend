@@ -80,7 +80,7 @@ class HowItWorks extends React.Component {
               height="100%"
             >
               <Panel
-                title={"Ship demos to storefronts"}
+                title={"Ship demos to influencers"}
                 text={
                   "Discover influencers in your industry to maximize targeting and sales conversion. Leverage their expertise as your sales force."
                 }
