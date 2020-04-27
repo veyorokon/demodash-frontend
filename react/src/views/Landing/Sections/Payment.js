@@ -16,7 +16,7 @@ function Payments(props) {
         ml={0}
         color={"oranges.0"}
         fw={400}
-        href="/ecommerce/how-it-works#billing"
+        href="/how-it-works#billing"
       >
         Learn more about billing and fees.
       </FeatureLink>
