@@ -13,7 +13,7 @@ function Hero(props) {
       desktopMedia={desktopMedia}
       mobileMedia={mobileMedia}
       subTitle={"BRAND VISIBILITY"}
-      title={"Find a storefront for your product demo"}
+      title={"Find storefronts for your product demo"}
       text={`With your products in storefronts they can't help but be seen,
       demoed and purchased by more users.`}
     >

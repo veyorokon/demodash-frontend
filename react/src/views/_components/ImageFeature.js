@@ -66,7 +66,7 @@ function ImageFeature(props) {
               <Text
                 mb={2}
                 mt={2}
-                lineHeight={"1.18"}
+                lineHeight={"1.3"}
                 letterSpacing={"-.8px"}
                 as="h1"
                 fs={r("3rem ----> 3.8rem")}
@@ -80,7 +80,7 @@ function ImageFeature(props) {
                 lineHeight={"1.3"}
                 letterSpacing={"-.5px"}
                 as="p"
-                fw={300}
+                fw={400}
                 fs={r("2rem --------> 2.2rem")}
                 color={props.textColor || "navys.2"}
               >

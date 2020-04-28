@@ -19,7 +19,12 @@ const Features = styled(Flex)`
 const FeatureTitle = styled(Text)``;
 
 const FeatureBox = props => (
-  <Box p={r("2 -----> 3 4 -> 5")} mb={r("3 ----> 5 -> 0")} {...props}>
+  <Box
+    p={r("2 -----> 3 4 -> 5")}
+    pt="0 !important"
+    mb={r("3 ----> 5 -> 0")}
+    {...props}
+  >
     <Image mb={3} h={r("14rem ----> 18rem ---> 20rem")} src={props.icon} />
     <FeatureTitle
       mt={3}
@@ -71,14 +76,14 @@ class Solution extends React.Component {
               pl={r("8px!important ------> unset")}
               pb={r("5 -------> initial")}
               text={
-                "We are constantly adding new storefronts, each attracting a highly targeted userbase. By matching your products with the best storefronts, the people most interested in your products are the ones who see and demo them, resulting in better sales and conversion rates."
+                "Influencers are always joining demodash, and each has a highly targeted following. By matching your products with the best influencers, the people most interested in your products are the ones who see the demo, resulting in better sales and conversion rates."
               }
             >
               <FeatureLink
                 ml={0}
                 color={"oranges.0"}
                 fw={400}
-                href="/ecommerce/how-it-works#targeting"
+                href="/how-it-works#targeting"
               >
                 The importance of targeting
               </FeatureLink>
@@ -87,14 +92,14 @@ class Solution extends React.Component {
               title={"Analytics"}
               icon={analytics}
               text={
-                "Track sales and commission in real-time via the dashboard, so you see how each storefront performs. By leveraging real-time data, you have the information you need to maximize sales, build brand awareness and scale your demodash campaigns to drive sales and adoption."
+                "Track sales and commission in real-time via the dashboard, so you see how each influencer performs. By leveraging real-time data, you have the information you need to maximize sales, build brand awareness and scale your demodash campaigns to drive sales and adoption."
               }
             >
               <FeatureLink
                 ml={0}
                 color={"oranges.0"}
                 fw={400}
-                href="/ecommerce/how-it-works"
+                href="/how-it-works"
               >
                 Learn more about demodash
               </FeatureLink>

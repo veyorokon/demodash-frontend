@@ -9,12 +9,13 @@
 import Landing from "views/Landing";
 import Privacy from "views/Legal/Privacy";
 import Terms from "views/Legal/Terms";
-import HowItWorks from "views/Ecommerce/HowItWorks";
-import Ecommerce from "views/Ecommerce/Landing";
+import HowItWorks from "views/HowItWorks";
+import StorefrontDemos from "views/Demos/StorefrontDemos";
+import InfluencerDemos from "views/Demos/InfluencerDemos";
 
 const routes = [
   {
-    path: "/ecommerce/how-it-works",
+    path: "/how-it-works",
     name: "HowItWorks",
     rtlName: "HowItWorks",
     icon: null,
@@ -38,11 +39,19 @@ const routes = [
     layout: "/"
   },
   {
-    path: "/ecommerce",
-    name: "Ecommerce",
-    rtlName: "Ecommerce",
+    path: "/demos/storefront",
+    name: "StorefrontDemos",
+    rtlName: "StorefrontDemos",
     icon: null,
-    component: Ecommerce,
+    component: StorefrontDemos,
+    layout: "/"
+  },
+  {
+    path: "/demos/influencer",
+    name: "InfluencerDemos",
+    rtlName: "InfluencerDemos",
+    icon: null,
+    component: InfluencerDemos,
     layout: "/"
   },
   {
