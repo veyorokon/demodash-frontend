@@ -28,7 +28,7 @@ function CallToAction(props) {
             mb={4}
             letterSpacing={"-.8px"}
           >
-            Get started today
+            Get started for free
           </Text>
           <Link w={r("100% -----> 30rem")} href="/register">
             <CTAButton
@@ -39,7 +39,7 @@ function CallToAction(props) {
               br={4}
               color="navys.2"
             >
-              Create Account
+              Try Demodash
             </CTAButton>
           </Link>
         </Flex>

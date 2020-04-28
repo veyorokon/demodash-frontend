@@ -83,7 +83,7 @@ class Solution extends React.Component {
                 ml={0}
                 color={"oranges.0"}
                 fw={400}
-                href="/ecommerce/how-it-works#targeting"
+                href="/how-it-works#targeting"
               >
                 The importance of targeting
               </FeatureLink>
@@ -99,7 +99,7 @@ class Solution extends React.Component {
                 ml={0}
                 color={"oranges.0"}
                 fw={400}
-                href="/ecommerce/how-it-works"
+                href="/how-it-works"
               >
                 Learn more about demodash
               </FeatureLink>

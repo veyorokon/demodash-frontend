@@ -86,11 +86,7 @@ class HowItWorks extends React.Component {
                 }
                 svg={InfluencerProducts}
               >
-                <FeatureLink
-                  color={"oranges.0"}
-                  fw={400}
-                  href="/ecommerce/how-it-works"
-                >
+                <FeatureLink color={"oranges.0"} fw={400} href="/how-it-works">
                   Learn more about how demodash works
                 </FeatureLink>
               </Panel>
@@ -104,7 +100,7 @@ class HowItWorks extends React.Component {
                 <FeatureLink
                   color={"oranges.0"}
                   fw={400}
-                  href="/ecommerce/how-it-works#billing"
+                  href="/how-it-works#billing"
                 >
                   Learn more about fees and commission
                 </FeatureLink>
@@ -116,11 +112,7 @@ class HowItWorks extends React.Component {
                 }
                 svg={ShipPackage}
               >
-                <FeatureLink
-                  color={"oranges.0"}
-                  fw={400}
-                  href="/ecommerce/how-it-works"
-                >
+                <FeatureLink color={"oranges.0"} fw={400} href="/how-it-works">
                   Learn more about demodash
                 </FeatureLink>
               </Panel>
