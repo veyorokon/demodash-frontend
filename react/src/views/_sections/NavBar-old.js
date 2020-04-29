@@ -48,58 +48,10 @@ const NavLink = props => (
     pr="unset"
     {...props}
   >
-    {props.text}
-  </Text>
-);
-
-const SubMenu = props => (
-  <Box>
-    <Text
-      fs={r("1.4rem --------> 1.6rem")}
-      fw={500}
-      color={"blacks.0"}
-      m="unset"
-      mr={4}
-      p={3}
-      pl="unset"
-      pr="unset"
-      {...props}
-    >
-      test
-    </Text>
-  </Box>
-);
-
-const StyledMenu = styled(Box)`
-  position: relative;
-  ${Box} {
-    display: none;
-  }
-  :hover {
-    ${Box} {
-      display: block;
-      position: absolute;
-    }
-  }
-`;
-
-const Menu = props => (
-  <StyledMenu>
-    <Text
-      fs={r("1.4rem --------> 1.6rem")}
-      fw={500}
-      color={"blacks.0"}
-      m="unset"
-      mr={4}
-      p={3}
-      pl="unset"
-      pr="unset"
-      {...props}
-    >
+    <Link href={props.link} {...props}>
       {props.text}
-    </Text>
-    {props.children}
-  </StyledMenu>
+    </Link>
+  </Text>
 );
 
 const DesktopMenu = () => (
@@ -153,11 +105,9 @@ const _NavBar = props => {
 
         <NavContainer justifyContent="space-around">
           <Hidden alignItems="center" down={TRANSITION - 1}>
-            <Menu text="For Products">
-              <SubMenu />
-            </Menu>
-            <Menu text="For Storefronts" />
-            <Menu text="For Influencers" />
+            <NavLink text="For Products" link={"/ecommerce"} />
+            <NavLink text="For Storefronts" link={"/ecommerce"} />
+            <NavLink text="For Influencers" link={"/ecommerce"} />
             <NavLink mr={0} text="Pricing" link={"/how-it-works#billing"} />
           </Hidden>
         </NavContainer>
