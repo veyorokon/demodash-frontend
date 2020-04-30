@@ -15,7 +15,6 @@ const HiddenBox = styled.div`
   ${opacity};
   ${flexFields};
   height: 100%;
-  overflow: hidden;
 `;
 
 class Hidden extends React.Component {

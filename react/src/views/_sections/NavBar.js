@@ -42,64 +42,17 @@ const NavLink = props => (
     fw={500}
     color={"blacks.0"}
     m="unset"
-    mr={4}
+    mr={3}
+    ml={3}
     p={3}
     pl="unset"
     pr="unset"
     {...props}
   >
-    {props.text}
-  </Text>
-);
-
-const SubMenu = props => (
-  <Box>
-    <Text
-      fs={r("1.4rem --------> 1.6rem")}
-      fw={500}
-      color={"blacks.0"}
-      m="unset"
-      mr={4}
-      p={3}
-      pl="unset"
-      pr="unset"
-      {...props}
-    >
-      test
-    </Text>
-  </Box>
-);
-
-const StyledMenu = styled(Box)`
-  position: relative;
-  ${Box} {
-    display: none;
-  }
-  :hover {
-    ${Box} {
-      display: block;
-      position: absolute;
-    }
-  }
-`;
-
-const Menu = props => (
-  <StyledMenu>
-    <Text
-      fs={r("1.4rem --------> 1.6rem")}
-      fw={500}
-      color={"blacks.0"}
-      m="unset"
-      mr={4}
-      p={3}
-      pl="unset"
-      pr="unset"
-      {...props}
-    >
+    <Link href={props.link} {...props}>
       {props.text}
-    </Text>
-    {props.children}
-  </StyledMenu>
+    </Link>
+  </Text>
 );
 
 const DesktopMenu = () => (
@@ -122,10 +75,67 @@ const DesktopMenu = () => (
   </>
 );
 
-const TRANSITION = 8;
+const DropdownContent = styled(Box)`
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(3, 27, 78, 0.1);
+  padding: 12px 16px;
+  z-index: 1;
+`;
+const DropdownContainer = styled(Flex)`
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  &:hover ${DropdownContent} {
+    display: block;
+  }
+  &:hover {
+    background-color: #f9f9f9;
+  }
+`;
+
+const DropdownTitle = styled(Text)`
+  display: flex;
+  align-items: center;
+`;
+
+const DropdownItem = props => (
+  <DropdownContainer cursor="default" alignItems="center">
+    <DropdownTitle
+      fs={r("1.4rem --------> 1.6rem")}
+      fw={500}
+      color={"blacks.0"}
+      m="unset"
+      mr={3}
+      ml={3}
+      p={3}
+      pl="unset"
+      pr="unset"
+      h="100%"
+    >
+      {props.title}
+    </DropdownTitle>
+    <DropdownContent w="20rem">
+      {props.links &&
+        props.links.map((link, index) => (
+          <Link display="block" w="100%" cursor="pointer" href={`${link.link}`}>
+            {link.text}
+          </Link>
+        ))}
+    </DropdownContent>
+  </DropdownContainer>
+);
+
+const ecommerceLinks = [
+  {text: "Storefront demos", link: "/demos/storefront"},
+  {text: "Influencer demos", link: "/demos/influencer"},
+  {text: "How it works", link: "/how-it-works"}
+];
 
 const _NavBar = props => {
   const {toggleNav} = props;
+  const TRANSITION = 8;
   return (
     <Nav>
       <NavFlex
@@ -152,12 +162,10 @@ const _NavBar = props => {
         </NavContainer>
 
         <NavContainer justifyContent="space-around">
-          <Hidden alignItems="center" down={TRANSITION - 1}>
-            <Menu text="For Products">
-              <SubMenu />
-            </Menu>
-            <Menu text="For Storefronts" />
-            <Menu text="For Influencers" />
+          <Hidden overflow="inherit" alignItems="center" down={TRANSITION - 1}>
+            <DropdownItem title="For Products" links={ecommerceLinks} />
+            <DropdownItem title="For Storefronts" links={ecommerceLinks} />
+            <DropdownItem title="For Influencers" links={ecommerceLinks} />
             <NavLink mr={0} text="Pricing" link={"/how-it-works#billing"} />
           </Hidden>
         </NavContainer>
