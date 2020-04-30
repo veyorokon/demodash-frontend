@@ -5,6 +5,8 @@ import {CallToAction} from "views/_components";
 import {responsive as r} from "lib";
 import menu from "assets/icons/menu.svg";
 import logo from "assets/svg/logo.svg";
+// import storefront from "assets/svg/nav/store.svg";
+// import influencer from "assets/svg/nav/influencer.svg";
 
 import {connect} from "react-redux";
 import {toggleNav} from "redux/actions";
@@ -100,6 +102,14 @@ const DropdownTitle = styled(Text)`
   align-items: center;
 `;
 
+const DropdownLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 const DropdownItem = props => (
   <DropdownContainer cursor="default" alignItems="center">
     <DropdownTitle
@@ -116,12 +126,33 @@ const DropdownItem = props => (
     >
       {props.title}
     </DropdownTitle>
-    <DropdownContent w="20rem">
+    <DropdownContent w="25rem">
       {props.links &&
         props.links.map((link, index) => (
-          <Link display="block" w="100%" cursor="pointer" href={`${link.link}`}>
+          <DropdownLink
+            fw={400}
+            pt={2}
+            pb={2}
+            mt={2}
+            w="100%"
+            cursor="pointer"
+            href={`${link.link}`}
+            key={index}
+          >
+            {link.icon && (
+              <Image
+                bg="navys.3"
+                br={"50%"}
+                mr={3}
+                p={"2px"}
+                cursor="pointer"
+                h={"3rem"}
+                w={"3rem"}
+                src={link.icon}
+              />
+            )}
             {link.text}
-          </Link>
+          </DropdownLink>
         ))}
     </DropdownContent>
   </DropdownContainer>

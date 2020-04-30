@@ -8,7 +8,7 @@ import mobileMedia from "assets/images/compressed/influencer-demo-mobile.jpg";
 function Hero(props) {
   return (
     <HeroOverlay
-      backgroundColor="#dcd2ca"
+      backgroundColor="#dadadc"
       backgroundSize={r("cover --------> contain")}
       desktopMedia={desktopMedia}
       mobileMedia={mobileMedia}
