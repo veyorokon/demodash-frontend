@@ -79,9 +79,10 @@ const DropdownContent = styled(Box)`
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  box-shadow: 0 2px 4px rgba(3, 27, 78, 0.1);
+  box-shadow: 0 3px 4px rgba(3, 27, 78, 0.1);
   padding: 12px 16px;
-  z-index: 1;
+  z-index: 10;
+  border-radius: 0 0 6px 6px;
 `;
 const DropdownContainer = styled(Flex)`
   position: relative;
@@ -94,7 +95,6 @@ const DropdownContainer = styled(Flex)`
     background-color: #f9f9f9;
   }
 `;
-
 const DropdownTitle = styled(Text)`
   display: flex;
   align-items: center;
@@ -133,6 +133,15 @@ const ecommerceLinks = [
   {text: "How it works", link: "/how-it-works"}
 ];
 
+const storefrontLinks = [
+  {text: "Join demodash", link: "/register"},
+  {text: "How it works", link: "/how-it-works"}
+];
+
+const influencerLinks = [
+  {text: "Join demodash", link: "/register"},
+  {text: "How it works", link: "/how-it-works"}
+];
 const _NavBar = props => {
   const {toggleNav} = props;
   const TRANSITION = 8;
@@ -164,8 +173,8 @@ const _NavBar = props => {
         <NavContainer justifyContent="space-around">
           <Hidden overflow="inherit" alignItems="center" down={TRANSITION - 1}>
             <DropdownItem title="For Products" links={ecommerceLinks} />
-            <DropdownItem title="For Storefronts" links={ecommerceLinks} />
-            <DropdownItem title="For Influencers" links={ecommerceLinks} />
+            <DropdownItem title="For Storefronts" links={storefrontLinks} />
+            <DropdownItem title="For Influencers" links={influencerLinks} />
             <NavLink mr={0} text="Pricing" link={"/how-it-works#billing"} />
           </Hidden>
         </NavContainer>
