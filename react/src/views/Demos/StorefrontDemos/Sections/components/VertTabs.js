@@ -124,7 +124,7 @@ class NavigationTabs extends React.Component {
           })}
         </Navigation>
         {this.props.children.map((elem, index) => (
-          <Hide key={index} showing={selected === index}>
+          <Hide animationDelay={"2s"} key={index} showing={selected === index}>
             {elem}
           </Hide>
         ))}

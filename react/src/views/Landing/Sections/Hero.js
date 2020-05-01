@@ -3,7 +3,7 @@ import {HeroOverlay, CallToAction} from "views/_components";
 import {responsive as r} from "lib";
 
 import desktopMedia from "assets/images/compressed/main-hero-desktop.jpg";
-import mobileMedia from "assets/images/compressed/main-hero-mobile.jpg";
+import mobileMedia from "assets/images/compressed/main-mobile.jpg";
 
 function Hero(props) {
   return (

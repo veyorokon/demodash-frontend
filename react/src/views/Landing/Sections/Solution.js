@@ -28,7 +28,7 @@ class Solution extends React.Component {
               mb={2}
               letterSpacing={"-.8px"}
             >
-              Demos are experiences that scale
+              Demos are experiences at scale
             </Text>
             <Text
               mt={3}

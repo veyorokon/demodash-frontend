@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="105px" height="65px" viewBox="0 0 105 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>storefront-colour</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-502.000000, -383.000000)">
+            <g id="storefront-colour" transform="translate(502.000000, 383.000000)">
+                <path d="M0,34.4 C0,27.0666667 3.01456311,26 3.01456311,21.4666667 C3.01456311,3.06666667 9.04368932,0 12.9757282,0 C20.4466019,0 19.607767,7.98533333 21.3640777,10.6666667 C25.2961165,16.6666667 27,21.0666667 27,25.2 C27,42 20.184466,52 14.4174757,52 C8.12621359,52 0,42.9426667 0,34.4 Z" id="Path" fill="#74D5DE" fill-rule="nonzero"></path>
+                <line x1="14" y1="23" x2="14" y2="64" id="Path" stroke="#FED892" stroke-width="2" stroke-linecap="round"></line>
+                <line x1="14" y1="32" x2="20" y2="26" id="Path" stroke="#FED892" stroke-linecap="round"></line>
+                <line x1="14" y1="43" x2="8" y2="37" id="Path" stroke="#FED892" stroke-linecap="round"></line>
+                <rect id="Rectangle" fill="#DE8E68" fill-rule="nonzero" x="23" y="3" width="75" height="57"></rect>
+                <rect id="Rectangle" fill="#D37C59" fill-rule="nonzero" x="21" y="55" width="79" height="5"></rect>
+                <rect id="Rectangle" fill="#ED6E58" fill-rule="nonzero" x="73" y="28" width="20" height="31"></rect>
+                <rect id="Rectangle" fill="#FED892" fill-rule="nonzero" x="28" y="29" width="37" height="18"></rect>
+                <rect id="Rectangle" fill="#FED892" fill-rule="nonzero" x="19" y="4" width="84" height="2"></rect>
+                <rect id="Rectangle" fill="#ED6E58" fill-rule="nonzero" x="16" y="20" width="89" height="4"></rect>
+                <polygon id="Path" fill="#FD8369" fill-rule="nonzero" points="105 20 97.9323529 6 23.0676471 6 16 20"></polygon>
+                <rect id="Rectangle" fill="#ED6E58" fill-rule="nonzero" x="23" y="6" width="2" height="14"></rect>
+                <rect id="Rectangle" fill="#ED6E58" fill-rule="nonzero" x="29" y="6" width="2" height="14"></rect>
+                <rect id="Rectangle" fill="#ED6E58" fill-rule="nonzero" x="35" y="6" width="2" height="14"></rect>
+                <rect id="Rectangle" fill="#ED6E58" fill-rule="nonzero" x="40" y="6" width="2" height="14"></rect>
+                <rect id="Rectangle" fill="#ED6E58" fill-rule="nonzero" x="46" y="6" width="2" height="14"></rect>
+                <rect id="Rectangle" fill="#ED6E58" fill-rule="nonzero" x="52" y="6" width="2" height="14"></rect>
+                <rect id="Rectangle" fill="#ED6E58" fill-rule="nonzero" x="57" y="6" width="2" height="14"></rect>
+                <rect id="Rectangle" fill="#ED6E58" fill-rule="nonzero" x="63" y="6" width="2" height="14"></rect>
+                <rect id="Rectangle" fill="#ED6E58" fill-rule="nonzero" x="68" y="6" width="2" height="14"></rect>
+                <rect id="Rectangle" fill="#ED6E58" fill-rule="nonzero" x="74" y="6" width="2" height="14"></rect>
+                <rect id="Rectangle" fill="#ED6E58" fill-rule="nonzero" x="79" y="6" width="2" height="14"></rect>
+                <rect id="Rectangle" fill="#ED6E58" fill-rule="nonzero" x="85" y="6" width="2" height="14"></rect>
+                <rect id="Rectangle" fill="#ED6E58" fill-rule="nonzero" x="91" y="6" width="2" height="14"></rect>
+                <rect id="Rectangle" fill="#ED6E58" fill-rule="nonzero" x="96" y="6" width="2" height="14"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="29" y="30" width="34" height="16"></rect>
+                <rect id="Rectangle" fill="#74D5DE" fill-rule="nonzero" x="74" y="29" width="18" height="30"></rect>
+                <rect id="Rectangle" fill="#ED6E58" fill-rule="nonzero" x="74" y="42" width="19" height="1"></rect>
+                <polygon id="Path" fill="#C7FCFF" fill-rule="nonzero" points="45.0100067 30 30 46 39.9899933 46 55 30"></polygon>
+                <polygon id="Path" fill="#C7FCFF" fill-rule="nonzero" points="44.0297262 46 60 30 57.9702738 30 42 46"></polygon>
+                <polygon id="Path" fill="#C7FCFF" fill-rule="nonzero" points="64 30 61.850079 30 46 46 50.7238654 46 64 32.5982906"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
