@@ -150,12 +150,14 @@ const _Drawer = props => {
           ))}
         </Flex>
         <Flex
-          flexDirection={r("column -> row")}
+          alignItems="center"
+          flexDirection={r("column --> row")}
           justifyContent={"space-around"}
         >
           <CallToAction
             link={"/register"}
-            w={r("15rem")}
+            mr={r("0 --> 2")}
+            w={r("100% ---> 15rem")}
             fs={r("1.4rem")}
             fw={600}
             h="3.8rem"
@@ -169,7 +171,7 @@ const _Drawer = props => {
           </CallToAction>
           <CallToAction
             link={"/register"}
-            w={r("15rem")}
+            w={r("100% ---> 15rem")}
             fs={r("1.4rem")}
             fw={600}
             h="3.8rem"

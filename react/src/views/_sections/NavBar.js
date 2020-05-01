@@ -170,11 +170,14 @@ const _NavBar = props => {
         justifyContent={"space-between"}
         w="auto"
         h={5}
-        ml={r("4 -----> 5 ---> 6 7")}
-        mr={r("4 -----> 5 ---> 6 7")}
+        ml={r("2 3 4 ---> 5 ---> 6 7")}
+        mr={r("2 3 4 ---> 5 ---> 6 7")}
       >
         <NavContainer alignItems="center" w={"10rem"}>
           <Hidden alignItems="center" down={TRANSITION}>
+            <Image mr={3} cursor="pointer" h={"3rem"} w={"auto"} src={logo} />
+          </Hidden>
+          <Hidden alignItems="center" up={8}>
             <Image mr={3} cursor="pointer" h={"3rem"} w={"auto"} src={logo} />
           </Hidden>
           <Text
@@ -188,7 +191,7 @@ const _NavBar = props => {
           </Text>
         </NavContainer>
 
-        <NavContainer justifyContent="space-around">
+        <NavContainer flexGrow={0} justifyContent="space-around">
           <Hidden overflow="inherit" alignItems="center" down={TRANSITION - 1}>
             <DropdownItem title="For Products" links={ecommerceLinks} />
             <DropdownItem title="For Storefronts" links={storefrontLinks} />
@@ -196,11 +199,11 @@ const _NavBar = props => {
             <NavLink mr={0} text="Pricing" link={"/how-it-works#billing"} />
           </Hidden>
         </NavContainer>
-        <NavContainer justifyContent="flex-end">
+        <NavContainer flexGrow={0} justifyContent="flex-end">
           <Hidden alignItems="center" down={TRANSITION - 1}>
             <LoginOptions />
           </Hidden>
-          <Hidden alignItems="center" up={TRANSITION}>
+          <Hidden flexGrow={0} alignItems="center" up={TRANSITION}>
             <Image
               onClick={toggleNav}
               cursor="pointer"
