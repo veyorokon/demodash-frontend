@@ -12,6 +12,7 @@ import Terms from "views/Legal/Terms";
 import HowItWorks from "views/HowItWorks";
 import StorefrontDemos from "views/Demos/StorefrontDemos";
 import InfluencerDemos from "views/Demos/InfluencerDemos";
+import Login from "views/Login";
 
 const routes = [
   {
@@ -52,6 +53,14 @@ const routes = [
     rtlName: "InfluencerDemos",
     icon: null,
     component: InfluencerDemos,
+    layout: "/"
+  },
+  {
+    path: "/login",
+    name: "Login",
+    rtlName: "Login",
+    icon: null,
+    component: Login,
     layout: "/"
   },
   {

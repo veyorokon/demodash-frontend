@@ -47,7 +47,7 @@ const NavLink = props => (
   <Text
     fs={r("1.4rem --------> 1.6rem")}
     fw={500}
-    color={"blacks.0"}
+    color={"navys.1"}
     m="unset"
     mr={3}
     ml={3}
@@ -63,7 +63,6 @@ const NavLink = props => (
 );
 const LoginOptions = () => (
   <>
-    <NavLink text="Sign In" link={"/login"} />
     <CallToAction
       link={"/register"}
       w={r("15rem")}
@@ -78,6 +77,7 @@ const LoginOptions = () => (
     >
       Get Started
     </CallToAction>
+    <NavLink text="Sign In &#x2192;" link={"/login"} />
   </>
 );
 const DropdownContent = styled(Box)`
@@ -117,7 +117,7 @@ const DropdownItem = props => (
     <DropdownTitle
       fs={r("1.4rem --------> 1.6rem")}
       fw={500}
-      color={"blacks.0"}
+      color={"navys.1"}
       m="unset"
       mr={3}
       ml={3}
