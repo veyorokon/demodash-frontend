@@ -1,5 +1,10 @@
 import React from "react";
 import {Flex, Section, Box, Text, Grid, Image, Link} from "components";
+import {
+  ecommerceLinks,
+  storefrontLinks,
+  influencerLinks
+} from "views/_constants";
 import {responsive as r} from "lib";
 import styled from "styled-components";
 import logo from "assets/svg/logo.svg";
@@ -40,22 +45,6 @@ const GridItem = props => (
     ))}
   </GridItemFlex>
 );
-
-const ecommerceLinks = [
-  {text: "Storefront demos", link: "/demos/storefront"},
-  {text: "Influencer demos", link: "/demos/influencer"},
-  {text: "How it works", link: "/how-it-works"}
-];
-
-const storefrontLinks = [
-  {text: "Join demodash", link: "/register"},
-  {text: "How it works", link: "/how-it-works"}
-];
-
-const influencerLinks = [
-  {text: "Join demodash", link: "/register"},
-  {text: "How it works", link: "/how-it-works"}
-];
 
 export default class FooterNav extends React.Component {
   render() {

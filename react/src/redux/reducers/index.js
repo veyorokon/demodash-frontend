@@ -2,7 +2,7 @@ import {TOGGLE_NAV} from "redux/constants";
 import {updateState} from "lib";
 
 const initialState = {
-  navOpen: false
+  navOpen: true
 };
 
 export default function rootReducer(state = initialState, action) {
