@@ -1,6 +1,5 @@
 import React from "react";
 import {Flex, Section, Box, Text, Image} from "components";
-import Testimonial from "./components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
 import bromane from "assets/testimonials/bromane.jpg";
@@ -8,7 +7,7 @@ import bromane from "assets/testimonials/bromane.jpg";
 const TitleSection = styled(Flex)``;
 
 const CardImage = styled(Image)``;
-const CardContainer = styled(Flex)`
+const Card = styled(Flex)`
   cursor: pointer;
   transition: transform 0.1s, box-shadow 0.1s;
   box-shadow: 0 5px 20px 0 rgba(2, 2, 2, 0.08);
@@ -21,50 +20,6 @@ const CardText = styled(Box)`
   font-style: italic;
   letter-spacing: 0.5px;
 `;
-
-const Card = props => (
-  <CardContainer
-    display={r("block -----> flex")}
-    flexDirection={r("column -----> row")}
-    m="0 auto"
-    mb={4} //UPDATE
-    br={2}
-    bg={"whites.0"}
-    maxWidth={r("100% -----> 102rem")}
-    h={r("auto -----> fit-content")}
-    w={r("fit-content -----> auto")}
-  >
-    <CardImage
-      width={r("25rem 28rem 30rem ---> 7")}
-      maxWidth="100%"
-      height={r("auto 7")}
-      src={props.image}
-    />
-    <Flex
-      flexDirection="column"
-      p={r("3 4 ----> 3 --> 4")}
-      w={r("25rem 28rem 30rem ---> 8")}
-      h={r("40rem -----> auto")}
-      maxWidth={r("100% -----> 85%")}
-    >
-      <CardText
-        maxWidth={r("unset -----> 85%")}
-        fs={r("1.8rem ------> 1.9rem")}
-        mb={3}
-        lineHeight={1.5}
-        fw={400}
-      >
-        {props.text}
-      </CardText>
-      <Text fs={r("1.8rem ------> 2rem")} fw={"bold"}>
-        {props.person}
-      </Text>
-      <Text mt={1} fw={300}>
-        {props.company}
-      </Text>
-    </Flex>
-  </CardContainer>
-);
 
 class Testimonials extends React.Component {
   render() {
@@ -109,20 +64,49 @@ class Testimonials extends React.Component {
               make.
             </Text>
           </TitleSection>
-          <Testimonial h={"min-content"}>
-            <Card
-              image={bromane}
-              text={`“The scope of our demo-based marketing has incresased by an order of magnitude. Instead of sending demos/samples to individiual users, they're sent to barbershops and used on dozens.”`}
-              person={"Vahid B. Eyorokon"}
-              company={"founder, Bromane"}
+          <Card
+            flexDirection={r("column -----> row")}
+            m="0 auto"
+            mb={4} //UPDATE
+            br={2}
+            bg={"whites.0"}
+            maxWidth={r("100% -----> 102rem")}
+            h={r("auto -----> fit-content")}
+            w={r("fit-content -----> auto")}
+          >
+            <CardImage
+              width={r("25rem 28rem 30rem ---> 7")}
+              maxWidth="100%"
+              height={r("auto 7")}
+              src={bromane}
             />
-            <Card
-              image={bromane}
-              text={`“Product demos made a massive difference. We've seen our sales jump simply because users had a chance to try and see our soaps in person before buying them.”`}
-              person={"Natasha Miller"}
-              company={"founder, Cherrybomb Soap"}
-            />
-          </Testimonial>
+            <Flex
+              flexDirection="column"
+              p={r("3 4 ----> 3 --> 4")}
+              w={r("25rem 28rem 30rem ---> 8")}
+              h={r("40rem -----> auto")}
+              maxWidth={r("100% -----> 85%")}
+            >
+              <CardText
+                maxWidth={r("unset -----> 85%")}
+                fs={r("1.8rem ------> 1.9rem")}
+                mb={3}
+                lineHeight={1.5}
+                fw={400}
+              >
+                “The scope of our demo-based marketing has incresased by an
+                order of magnitude. Instead of sending demos/samples to
+                individiual users, they're sent to barbershops and used on
+                dozens.”
+              </CardText>
+              <Text fs={r("1.8rem ------> 2rem")} fw={"bold"}>
+                Vahid B. Eyorokon
+              </Text>
+              <Text mt={1} fw={300}>
+                founder, Bromane
+              </Text>
+            </Flex>
+          </Card>
         </Box>
       </Section>
     );
