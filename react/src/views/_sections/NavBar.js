@@ -2,6 +2,11 @@ import React from "react";
 import {Box, Flex, Text, Link, Hidden, Image} from "components";
 import styled from "styled-components";
 import {CallToAction} from "views/_components";
+import {
+  ecommerceLinks,
+  storefrontLinks,
+  influencerLinks
+} from "views/_constants";
 import {responsive as r} from "lib";
 import menu from "assets/icons/menu.svg";
 import logo from "assets/svg/logo.svg";
@@ -56,8 +61,7 @@ const NavLink = props => (
     </Link>
   </Text>
 );
-
-const DesktopMenu = () => (
+const LoginOptions = () => (
   <>
     <NavLink text="Sign In" link={"/login"} />
     <CallToAction
@@ -76,7 +80,6 @@ const DesktopMenu = () => (
     </CallToAction>
   </>
 );
-
 const DropdownContent = styled(Box)`
   display: none;
   position: absolute;
@@ -101,7 +104,6 @@ const DropdownTitle = styled(Text)`
   display: flex;
   align-items: center;
 `;
-
 const DropdownLink = styled(Link)`
   display: flex;
   align-items: center;
@@ -158,21 +160,6 @@ const DropdownItem = props => (
   </DropdownContainer>
 );
 
-const ecommerceLinks = [
-  {text: "Storefront demos", link: "/demos/storefront"},
-  {text: "Influencer demos", link: "/demos/influencer"},
-  {text: "How it works", link: "/how-it-works"}
-];
-
-const storefrontLinks = [
-  {text: "Join demodash", link: "/register"},
-  {text: "How it works", link: "/how-it-works"}
-];
-
-const influencerLinks = [
-  {text: "Join demodash", link: "/register"},
-  {text: "How it works", link: "/how-it-works"}
-];
 const _NavBar = props => {
   const {toggleNav} = props;
   const TRANSITION = 8;
@@ -211,7 +198,7 @@ const _NavBar = props => {
         </NavContainer>
         <NavContainer justifyContent="flex-end">
           <Hidden alignItems="center" down={TRANSITION - 1}>
-            <DesktopMenu />
+            <LoginOptions />
           </Hidden>
           <Hidden alignItems="center" up={TRANSITION}>
             <Image
