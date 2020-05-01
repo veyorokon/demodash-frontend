@@ -191,7 +191,10 @@ const _NavBar = props => {
           </Text>
         </NavContainer>
 
-        <NavContainer flexGrow={0} justifyContent="space-around">
+        <NavContainer
+          flexGrow={r("0 -------> 1")}
+          justifyContent="space-around"
+        >
           <Hidden overflow="inherit" alignItems="center" down={TRANSITION - 1}>
             <DropdownItem title="For Products" links={ecommerceLinks} />
             <DropdownItem title="For Storefronts" links={storefrontLinks} />
@@ -199,11 +202,11 @@ const _NavBar = props => {
             <NavLink mr={0} text="Pricing" link={"/how-it-works#billing"} />
           </Hidden>
         </NavContainer>
-        <NavContainer flexGrow={0} justifyContent="flex-end">
+        <NavContainer flexGrow={r("0 -------> 1")} justifyContent="flex-end">
           <Hidden alignItems="center" down={TRANSITION - 1}>
             <LoginOptions />
           </Hidden>
-          <Hidden flexGrow={0} alignItems="center" up={TRANSITION}>
+          <Hidden alignItems="center" up={TRANSITION}>
             <Image
               onClick={toggleNav}
               cursor="pointer"
