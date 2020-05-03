@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import {Switch, Route} from "react-router-dom";
 import {NavBar, FooterNav, FooterMeta, FooterCopy} from "views/_sections";
-import {Drawer} from "views/_components";
+import {Drawer, ScrollTop} from "views/_components";
 import animateScrollTo from "animated-scroll-to";
 
 import routes from "routes.js";
@@ -28,6 +28,7 @@ function Landing() {
   });
   return (
     <>
+      <ScrollTop />
       <Drawer />
       <NavBar />
       {switchRoutes}
