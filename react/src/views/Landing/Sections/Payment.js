@@ -9,7 +9,7 @@ function Payments(props) {
       image={payments}
       title={"Payment processing and commission"}
       text={
-        "Commission keeps storefronts and influencers paid when they generate a sale. With demodash, billing, commission and fees are handled automatically so everyone can focus on better product demos."
+        "Commission keeps stores and influencers paid when they generate a sale. With demodash, billing, commission and fees are handled automatically so everyone can focus on better product demos."
       }
     >
       <FeatureLink

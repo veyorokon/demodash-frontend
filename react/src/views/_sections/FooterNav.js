@@ -89,7 +89,7 @@ export default class FooterNav extends React.Component {
                 {...this.props}
               />
               <GridItem
-                title="Storefronts"
+                title="Stores"
                 links={storefrontLinks}
                 {...this.props}
               />

@@ -80,9 +80,9 @@ class HowItWorks extends React.Component {
               height="100%"
             >
               <Panel
-                title={"Ship demos to storefronts"}
+                title={"Ship demos to stores"}
                 text={
-                  "Discover storefonts in your industry to maximize targeting and sales conversion. Leverage their expertise as your sales force."
+                  "Discover stores in your industry to maximize targeting and sales conversion. Leverage their expertise as your sales force."
                 }
                 svg={StoreFront}
               >
@@ -93,7 +93,7 @@ class HowItWorks extends React.Component {
               <Panel
                 title={"Process payments and commission"}
                 text={
-                  "You set product prices and commission rates to keep storefronts motivated. Sales happen at the storefront on demodash."
+                  "You set product prices and commission rates to keep stores motivated. Sales happen on the demodash online store."
                 }
                 svg={AppUser}
               >

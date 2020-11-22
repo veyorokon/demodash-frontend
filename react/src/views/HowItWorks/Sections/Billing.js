@@ -10,7 +10,7 @@ function Billing(props) {
       image={billing}
       title={"Sales, payment processing and commission"}
       text={
-        "A standard 2.9% + 0.30 cent fee is assessed for credit transactions on the demodash store. Additionally, demodash charges a 0.99 cent fee per sale. Storefronts and influencers earn the commission agreed upon and the balance of the sale is added to your account."
+        "A standard 2.9% + 0.30 cent fee is assessed for credit transactions on the demodash store. Additionally, demodash charges a 0.99 cent fee per sale. Stores and influencers earn the commission agreed upon and the balance of the sale is added to your account."
       }
     />
   );

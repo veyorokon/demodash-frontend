@@ -198,7 +198,7 @@ const _NavBar = props => {
         >
           <Hidden overflow="inherit" alignItems="center" down={TRANSITION - 1}>
             <DropdownItem title="For Products" links={ecommerceLinks} />
-            <DropdownItem title="For Storefronts" links={storefrontLinks} />
+            <DropdownItem title="For Stores" links={storefrontLinks} />
             <DropdownItem title="For Influencers" links={influencerLinks} />
             <NavLink mr={0} text="Pricing" link={"/how-it-works#billing"} />
           </Hidden>

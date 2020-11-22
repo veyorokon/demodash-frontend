@@ -115,7 +115,7 @@ function _Drawer(props) {
         </Flex>
         <Flex flexDirection="column">
           <Text mb={2} fs={r("2rem ----> 2.4rem")}>
-            For Storefronts
+            For Stores
           </Text>
           {storefrontLinks.map((link, index) => (
             <Link

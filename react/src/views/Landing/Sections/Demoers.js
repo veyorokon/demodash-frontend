@@ -78,12 +78,12 @@ class FeatureSection extends React.Component {
               borderLeftColor="transparent"
               borderRightColor={r("transparent ------> greys.1")}
               borderStyle="solid"
-              title={"Storefront demos"}
+              title={"Store demos"}
               icon={storefront}
               pl={r("8px!important ------> unset")}
               pb={r("5 -------> initial")}
               text={
-                "Get your product demos into storefronts, each attracting a highly targeted userbase."
+                "Get your product demos into stores, each attracting a highly targeted userbase."
               }
             >
               <FeatureLink
@@ -92,7 +92,7 @@ class FeatureSection extends React.Component {
                 fw={400}
                 href="/demos/storefront"
               >
-                Learn more about storefront demos.
+                Learn more about store demos.
               </FeatureLink>
             </FeatureBox>
             <FeatureBox

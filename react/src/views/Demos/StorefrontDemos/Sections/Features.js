@@ -76,7 +76,7 @@ class Solution extends React.Component {
               pl={r("8px!important ------> unset")}
               pb={r("5 -------> initial")}
               text={
-                "We are constantly adding new storefronts, each attracting a highly targeted userbase. By matching your products with the best storefronts, the people most interested in your products are the ones who see and demo them, resulting in better sales and conversion rates."
+                "New stores are constantly joining, each attracting a highly targeted userbase. By matching your products with the best stores, the people most interested in your products are the ones who see and demo them, resulting in better sales and conversion rates."
               }
             >
               <FeatureLink
@@ -92,7 +92,7 @@ class Solution extends React.Component {
               title={"Analytics"}
               icon={analytics}
               text={
-                "Track sales and commission in real-time via the dashboard, so you see how each storefront performs. By leveraging real-time data, you have the information you need to maximize sales, build brand awareness and scale your demodash campaigns to drive sales and adoption."
+                "Track sales and commission in real-time via the dashboard, so you see how each store performs. By leveraging real-time data, you have the information you need to maximize sales, build brand awareness and scale your demodash campaigns to drive sales and adoption."
               }
             >
               <FeatureLink

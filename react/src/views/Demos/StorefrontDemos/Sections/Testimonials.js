@@ -60,8 +60,8 @@ class Testimonials extends React.Component {
               textAlign="center"
               maxWidth="80rem"
             >
-              Our beta users are seeing the difference that storefront presence
-              can make.
+              Our beta users are seeing the difference that store presence can
+              make.
             </Text>
           </TitleSection>
           <Card

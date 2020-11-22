@@ -62,7 +62,7 @@ class Privacy extends React.Component {
               maxWidth="80rem"
             >
               These terms and conditions outline the rules and regulations for
-              the use of demodash.com{"'"}s website.
+              the use of demodash{"'"}s website.
             </Text>
             <Text mb={5}>
               demodash.com
@@ -119,12 +119,19 @@ class Privacy extends React.Component {
             </TextBlock>
             <TextBlock> You must not: </TextBlock>
             <ol>
-              <li>Republish material from https://demodash.com</li>
               <li>
-                Sell, rent or sub - license material from https://demodash.com
+                <Text>Republish material from https://demodash.com</Text>
               </li>
               <li>
-                Reproduce, duplicate or copy material from https://demodash.com
+                <Text>
+                  Sell, rent or sub - license material from https://demodash.com
+                </Text>
+              </li>
+              <li>
+                <Text>
+                  Reproduce, duplicate or copy material from
+                  https://demodash.com
+                </Text>
               </li>
             </ol>
             <TextBlock>
@@ -133,57 +140,87 @@ class Privacy extends React.Component {
             </TextBlock>
             <SubTitle> Hyperlinking to our Content </SubTitle>
             <ol>
-              <li>
+              <Text>
                 The following organizations may link to our Web site without
                 prior written approval:
-                <ol>
-                  <li>Government agencies;</li>
-                  <li>Search engines;</li>
-                  <li>News organizations;</li>
-                  <li>
+              </Text>
+              <ol>
+                <li>
+                  <Text>Government agencies;</Text>
+                </li>
+                <li>
+                  <Text>Search engines;</Text>
+                </li>
+                <li>
+                  <Text>News organizations;</Text>
+                </li>
+                <li>
+                  <Text>
                     Online directory distributors when they list us in the
                     directory may link to our Web site in the same manner as
                     they hyperlink to the Web sites of other listed businesses;
                     and
-                  </li>
-                  <li>
+                  </Text>
+                </li>
+                <li>
+                  <Text>
                     Systemwide Accredited Businesses except soliciting non -
                     profit organizations, charity shopping malls, and charity
                     fundraising groups which may not hyperlink to our Web site.
-                  </li>
-                </ol>
-              </li>
+                  </Text>
+                </li>
+              </ol>
             </ol>
             <ol start="2">
               <li>
-                These organizations may link to our home page, to publications
-                or to other Web site information so long as the link: (a) is not
-                in any way misleading; (b) does not falsely imply sponsorship,
-                endorsement or approval of the linking party and its products or
-                services; and(c) fits within the context of the linking party 's
-                site.
+                <Text>
+                  These organizations may link to our home page, to publications
+                  or to other Web site information so long as the link: (a) is
+                  not in any way misleading; (b) does not falsely imply
+                  sponsorship, endorsement or approval of the linking party and
+                  its products or services; and(c) fits within the context of
+                  the linking party 's site.
+                </Text>
               </li>
               <li>
-                We may consider and approve in our sole discretion other link
-                requests from the following types of organizations:
+                <Text>
+                  We may consider and approve in our sole discretion other link
+                  requests from the following types of organizations:
+                </Text>
                 <ol>
                   <li>
-                    commonly - known consumer and / or business information
-                    sources such as Chambers of Commerce, American Automobile
-                    Association, AARP and Consumers Union;
+                    <Text>
+                      commonly - known consumer and / or business information
+                      sources such as Chambers of Commerce, American Automobile
+                      Association, AARP and Consumers Union;
+                    </Text>
                   </li>
-                  <li> dot.com community sites; </li>
                   <li>
-                    associations or other groups representing charities,
-                    including charity giving sites,
+                    <Text>dot.com community sites;</Text>
                   </li>
-                  <li> online directory distributors; </li>
-                  <li> internet portals; </li>
                   <li>
-                    accounting, law and consulting firms whose primary clients
-                    are businesses; and
+                    <Text>
+                      associations or other groups representing charities,
+                      including charity giving sites,
+                    </Text>
                   </li>
-                  <li> educational institutions and trade associations.</li>
+                  <li>
+                    <Text>online directory distributors;</Text>
+                  </li>
+                  <li>
+                    <Text>internet portals;</Text>
+                  </li>
+                  <li>
+                    <Text>
+                      accounting, law and consulting firms whose primary clients
+                      are businesses; and
+                    </Text>
+                  </li>
+                  <li>
+                    <Text>
+                      educational institutions and trade associations.
+                    </Text>
+                  </li>
                 </ol>
               </li>
             </ol>
@@ -212,7 +249,7 @@ class Privacy extends React.Component {
             <TextBlock>
               If you are among the organizations listed in paragraph 2 above and
               are interested in linking to our website, you must notify us by
-              sending an e - mail to{" "}
+              sending an email to{" "}
               <a
                 href="mailto:support@demodash.com"
                 title="send an email to support@demodash.com"
@@ -230,15 +267,21 @@ class Privacy extends React.Component {
               Approved organizations may hyperlink to our Web site as follows:
             </TextBlock>
             <ol>
-              <li> By use of our corporate name; or </li>
               <li>
-                By use of the uniform resource locator(Web address) being linked
-                to; or
+                <Text>By use of our corporate name; or</Text>
               </li>
               <li>
-                By use of any other description of our Web site or material
-                being linked to that makes sense within the context and format
-                of content on the linking party 's site.
+                <Text>
+                  By use of the uniform resource locator(Web address) being
+                  linked to; or
+                </Text>
+              </li>
+              <li>
+                <Text>
+                  By use of any other description of our Web site or material
+                  being linked to that makes sense within the context and format
+                  of content on the linking party 's site.
+                </Text>
               </li>
             </ol>
             <TextBlock>
@@ -297,20 +340,28 @@ class Privacy extends React.Component {
             </TextBlock>
             <ol>
               <li>
-                limit or exclude our or your liability for death or personal
-                injury resulting from negligence;
+                <Text>
+                  limit or exclude our or your liability for death or personal
+                  injury resulting from negligence;
+                </Text>
               </li>
               <li>
-                limit or exclude our or your liability for fraud or fraudulent
-                misrepresentation;
+                <Text>
+                  limit or exclude our or your liability for fraud or fraudulent
+                  misrepresentation;
+                </Text>
               </li>
               <li>
-                limit any of our or your liabilities in any way that is not
-                permitted under applicable law; or
+                <Text>
+                  limit any of our or your liabilities in any way that is not
+                  permitted under applicable law; or
+                </Text>
               </li>
               <li>
-                exclude any of our or your liabilities that may not be excluded
-                under applicable law.
+                <Text>
+                  exclude any of our or your liabilities that may not be
+                  excluded under applicable law.
+                </Text>
               </li>
             </ol>
             <TextBlock>

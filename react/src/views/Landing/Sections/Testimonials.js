@@ -4,6 +4,7 @@ import Testimonial from "./components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
 import bromane from "assets/testimonials/bromane.jpg";
+import cherrybomb from "assets/testimonials/cherrybomb.jpg";
 
 const TitleSection = styled(Flex)``;
 
@@ -117,7 +118,7 @@ class Testimonials extends React.Component {
               company={"founder, Bromane"}
             />
             <Card
-              image={bromane}
+              image={cherrybomb}
               text={`“Product demos made a massive difference. We've seen our sales jump simply because users had a chance to try and see our soaps in person before buying them.”`}
               person={"Natasha Miller"}
               company={"founder, Cherrybomb Soap"}
