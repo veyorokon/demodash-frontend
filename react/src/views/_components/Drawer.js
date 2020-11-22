@@ -16,6 +16,8 @@ import {
   influencerLinks
 } from "views/_constants";
 
+import {DASHBOARD_HOST} from "api";
+
 function mapDispatchToProps(dispatch) {
   return {
     toggleNav: () => dispatch(toggleNav())
@@ -61,7 +63,7 @@ const DrawerContainer = styled(Grid)`
         `};
 `;
 
-const _Drawer = props => {
+function _Drawer(props) {
   const {toggleNav} = props;
   return (
     <DrawerContainer bg={"whites.0"} w={"100%"} h={"100%"} open={props.navOpen}>
@@ -155,7 +157,7 @@ const _Drawer = props => {
           justifyContent={"space-around"}
         >
           <CallToAction
-            link={"/register"}
+            link={DASHBOARD_HOST + "/register"}
             mr={r("0 --> 2")}
             w={r("100% ---> 15rem")}
             fs={r("1.4rem")}
@@ -170,7 +172,7 @@ const _Drawer = props => {
             Login
           </CallToAction>
           <CallToAction
-            link={"/register"}
+            link={DASHBOARD_HOST + "/login"}
             w={r("100% ---> 15rem")}
             fs={r("1.4rem")}
             fw={600}
@@ -187,7 +189,7 @@ const _Drawer = props => {
       </Flex>
     </DrawerContainer>
   );
-};
+}
 
 const Drawer = connect(
   mapStateToProps,

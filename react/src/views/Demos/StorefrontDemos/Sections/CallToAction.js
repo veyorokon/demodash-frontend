@@ -2,6 +2,7 @@ import React from "react";
 import {Flex, Section, Box, Text, Link} from "components";
 import {CallToAction as CTAButton} from "views/_components";
 import {responsive as r} from "lib";
+import {DASHBOARD_HOST} from "api";
 
 class CallToAction extends React.Component {
   render() {
@@ -31,7 +32,10 @@ class CallToAction extends React.Component {
             >
               Get your product demos seen
             </Text>
-            <Link w={r("100% -----> 30rem")} href="/register">
+            <Link
+              w={r("100% -----> 30rem")}
+              href={DASHBOARD_HOST + "/register"}
+            >
               <CTAButton
                 w={r("100% -----> 30rem")}
                 fs={"1.4rem"}

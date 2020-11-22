@@ -1,7 +1,7 @@
 import React from "react";
 import {HeroOverlay, CallToAction} from "views/_components";
 import {responsive as r} from "lib";
-
+import {DASHBOARD_HOST} from "api";
 import desktopMedia from "assets/images/compressed/products-desktop.jpg";
 import mobileMedia from "assets/images/compressed/products-mobile.jpg";
 
@@ -23,7 +23,7 @@ function Hero(props) {
         bg={"yellows.0"}
         br={4}
         fw={600}
-        link="/register"
+        link={DASHBOARD_HOST + "/register"}
       >
         Create Account
       </CallToAction>

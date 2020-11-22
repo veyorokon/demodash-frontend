@@ -15,6 +15,7 @@ import logo from "assets/svg/logo.svg";
 
 import {connect} from "react-redux";
 import {toggleNav} from "redux/actions";
+import {DASHBOARD_HOST} from "api";
 
 function mapDispatchToProps(dispatch) {
   return {
@@ -64,7 +65,7 @@ const NavLink = props => (
 const LoginOptions = () => (
   <>
     <CallToAction
-      link={"/register"}
+      link={DASHBOARD_HOST + "/register"}
       w={r("15rem")}
       fs={r("1.4rem")}
       fw={600}
@@ -77,7 +78,7 @@ const LoginOptions = () => (
     >
       Get Started
     </CallToAction>
-    <NavLink text="Sign In &#x2192;" link={"/login"} />
+    <NavLink text="Sign In &#x2192;" link={DASHBOARD_HOST + "/login"} />
   </>
 );
 const DropdownContent = styled(Box)`

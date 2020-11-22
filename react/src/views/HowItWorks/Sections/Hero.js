@@ -3,7 +3,7 @@ import {ImageFeature} from "views/_components";
 import deliveries from "assets/svg/deliveries.svg";
 import {CallToAction} from "views/_components";
 import {responsive as r} from "lib";
-
+import {DASHBOARD_HOST} from "api";
 function Hero(props) {
   return (
     <ImageFeature
@@ -23,7 +23,7 @@ function Hero(props) {
         bg={"yellows.0"}
         br={4}
         fw={600}
-        link="/register"
+        link={DASHBOARD_HOST + "/register"}
       >
         Create Account
       </CallToAction>

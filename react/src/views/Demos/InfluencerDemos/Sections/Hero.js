@@ -4,6 +4,7 @@ import {responsive as r} from "lib";
 
 import desktopMedia from "assets/images/compressed/influencer-demo-desktop.jpg";
 import mobileMedia from "assets/images/compressed/influencer-demo-mobile.jpg";
+import {DASHBOARD_HOST} from "api";
 
 function Hero(props) {
   return (
@@ -22,7 +23,7 @@ function Hero(props) {
         bg={"yellows.0"}
         br={4}
         fw={600}
-        link="/register"
+        link={DASHBOARD_HOST + "/register"}
       >
         Create Account
       </CallToAction>

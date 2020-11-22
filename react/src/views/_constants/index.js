@@ -1,3 +1,5 @@
+import {DASHBOARD_HOST} from "api";
+
 export const ecommerceLinks = [
   {text: "Storefront demos", link: "/demos/storefront"},
   {text: "Influencer demos", link: "/demos/influencer"},
@@ -5,11 +7,11 @@ export const ecommerceLinks = [
 ];
 
 export const storefrontLinks = [
-  {text: "Join demodash", link: "/register"},
+  {text: "Join demodash", link: DASHBOARD_HOST + "/register"},
   {text: "How it works", link: "/how-it-works"}
 ];
 
 export const influencerLinks = [
-  {text: "Join demodash", link: "/register"},
+  {text: "Join demodash", link: DASHBOARD_HOST + "/register"},
   {text: "How it works", link: "/how-it-works"}
 ];
