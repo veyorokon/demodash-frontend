@@ -13,7 +13,7 @@ COPY public public
 
 RUN npm run build
 
-# Stage 1, based on Nginx build app ready for production with Nginx
+# Stage 1, based on Nginx build app ready for production with Nginx.
 FROM bitnami/nginx:1.16
 ARG APP_DIR
 ENV APP_DIR ${APP_DIR:-/app}

@@ -8,7 +8,6 @@ build:
     gitCommit:
   local:
     useBuildkit: true
-
 deploy:
   kubectl:
     manifests:

@@ -27,7 +27,7 @@ class FooterCopy extends React.Component {
               textAlign={r("center ------> left")}
               maxWidth="80rem"
             >
-              &copy; Copyright 2020 demodash. All rights reserved.
+              &copy; Copyright 2021 demodash. All rights reserved.
             </Text>
           </Flex>
         </Box>

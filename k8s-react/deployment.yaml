@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: demodash-landing
-  namespace: live
+  namespace: default
 spec:
   replicas: 1
   selector:
@@ -17,4 +17,4 @@ spec:
         - name: main
           image: registry.demodash.com/react/demodash_landing
           ports:
-          - containerPort: 80
+          - containerPort: 8080
