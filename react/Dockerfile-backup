@@ -2,8 +2,11 @@
 FROM node:10-alpine as build-stage
 WORKDIR /opt/app
 
-ENV REACT_APP_API_HOST="https://api.demodash.com" \
-  REACT_APP_DASHBOARD_HOST="https://dash.demodash.com"
+ARG REACT_APP_API_HOST
+ARG REACT_APP_DASHBOARD_HOST
+
+#ENV REACT_APP_API_HOST="https://api.demodash.com" \
+#  REACT_APP_DASHBOARD_HOST="https://dash.demodash.com"
 
 COPY package-lock.json package-lock.json
 COPY package.json package.json
