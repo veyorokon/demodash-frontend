@@ -14,8 +14,11 @@ COPY public public
 RUN npm run build
 
 # Stage 1, based on Nginx build app ready for production with Nginx
-FROM nginx:alpine
+FROM bitnami/nginx:1.16
+ARG APP_DIR
+ENV APP_DIR ${APP_DIR:-/app}
+COPY nginx/nginx_server/block.conf /opt/bitnami/nginx/conf/server_blocks/nginx_server_block.conf
+WORKDIR /app
 
-COPY --from=build-stage /opt/app/build/ /usr/share/nginx/html
-# Copy the default nginx.conf
-COPY nginx/nginx.conf /etc/nginx/nginx.conf
+# use dist from previous stage
+COPY --from=build-stage /opt/app/build/ .

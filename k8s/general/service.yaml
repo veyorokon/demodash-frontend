@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: kubeshare-frontend
-  namespace: staging
+  name: demodash-landing
+  namespace: live
 spec:
   selector:
-    app: kubeshare-frontend
+    app: demodash-landing
   ports:
-    - name: kubeshare-frontend-http
+    - name: demodash-landing-http
       port: 80
       targetPort: 80

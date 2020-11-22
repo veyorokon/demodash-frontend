@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kubeshare-frontend
-  namespace: staging
+  name: demodash-landing
+  namespace: live
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: kubeshare-frontend
+      app: demodash-landing
   template:
     metadata:
       labels:
-        app: kubeshare-frontend
+        app: demodash-landing
     spec:
       containers:
         - name: main
-          image: docker-registry.kubeshare.com/nodejs/kubeshare_frontend
+          image: registry.demodash.com/react/demodash_landing
           ports:
           - containerPort: 80

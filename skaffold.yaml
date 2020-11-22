@@ -2,7 +2,7 @@ apiVersion: skaffold/v1beta15
 kind: Config
 build:
   artifacts:
-    - image: docker-registry.kubeshare.com/nodejs/kubeshare_frontend
+    - image: registry.demodash.com/react/demodash_landing
       context: react
   tagPolicy:
     gitCommit:
