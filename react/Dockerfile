@@ -17,7 +17,7 @@ RUN npm run build
 FROM bitnami/nginx:1.16
 ARG APP_DIR
 ENV APP_DIR ${APP_DIR:-/app}
-COPY nginx/nginx_server/block.conf /opt/bitnami/nginx/conf/server_blocks/nginx_server_block.conf
+COPY nginx/nginx_server_block.conf /opt/bitnami/nginx/conf/server_blocks/nginx_server_block.conf
 WORKDIR /app
 
 # use dist from previous stage
