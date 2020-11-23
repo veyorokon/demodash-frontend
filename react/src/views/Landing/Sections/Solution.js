@@ -41,8 +41,8 @@ class Solution extends React.Component {
               textAlign="center"
               maxWidth="80rem"
             >
-              Efficiently distribute product demos where they can be seen and
-              demoed the most.
+              If a picture is worth a thousand words, then a demo is worth a
+              thousand users. That's the power of influencer marketing.
             </Text>
           </Flex>
         </Box>
