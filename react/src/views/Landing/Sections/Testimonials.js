@@ -113,7 +113,7 @@ class Testimonials extends React.Component {
           <Testimonial h={"min-content"}>
             <Card
               image={bromane}
-              text={`“The scope of our demo-based marketing has incresased by an order of magnitude. Instead of sending demos/samples to individiual users, they're sent to barbershops and used on dozens.”`}
+              text={`“The scope of our demo-based marketing has incresased by an order of magnitude. Instead of sending demos/samples to individual users, they're sent to barbershops and used on dozens.”`}
               person={"Vahid B. Eyorokon"}
               company={"founder, Bromane"}
             />
