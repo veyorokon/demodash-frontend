@@ -6,7 +6,6 @@ build:
       context: react
       docker:
         buildArgs:
-          env:
           REACT_APP_API_HOST: 'https://api.demodash.com'
           REACT_APP_DASHBOARD_HOST: 'https://dash.demodash.com'
   tagPolicy:
