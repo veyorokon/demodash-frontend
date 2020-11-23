@@ -18,9 +18,4 @@ spec:
           image: registry.demodash.com/react/demodash_landing
           ports:
           - containerPort: 8080
-          # env:
-          # - name: REACT_APP_API_HOST
-          #   value: "api.demodash.com"
-          # - name: REACT_APP_DASHBOARD_HOST
-          #   value: "dash.demodash.com"
-          # args: ["$(REACT_APP_API_HOST)", "$(REACT_APP_DASHBOARD_HOST)"]
+          

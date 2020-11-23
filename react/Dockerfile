@@ -2,18 +2,17 @@
 FROM node:10-alpine as build-stage
 WORKDIR /opt/app
 
-ENV REACT_APP_API_HOST="https://api.demodash.com" \
-  REACT_APP_DASHBOARD_HOST="https://dash.demodash.com"
-
-COPY package-lock.json package-lock.json
-COPY package.json package.json
-COPY jsconfig.json jsconfig.json
+COPY *.json .
 RUN npm install --silent \
   && npm audit fix
 
 COPY src src
 COPY public public
 
+ARG REACT_APP_API_HOST
+ARG REACT_APP_DASHBOARD_HOST
+ENV REACT_APP_API_HOST ${REACT_APP_API_HOST} \
+  REACT_APP_DASHBOARD_HOST ${REACT_APP_DASHBOARD_HOST}
 RUN npm run build
 
 # Stage 1, based on Nginx build app ready for production with Nginx.

@@ -10,7 +10,7 @@ function Discover(props) {
       image={interfaceSearch}
       title={"Targeting your industry"}
       text={`When launching a product on demodash, you start by being
-      connected with storefronts and influencers related to your product's industry. Targeting improves conversion rates by ensuring the people most
+      connected with stores and influencers related to your product's industry. Targeting improves conversion rates by ensuring the people most
       interested in your product are the ones who see the demo.`}
     />
   );
