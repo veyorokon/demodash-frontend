@@ -7,9 +7,9 @@ function About(props) {
     <ImageFeature
       imageAlign="left"
       image={productDemo}
-      title={"Your next thousand users"}
+      title={"Experiences that scale"}
       text={
-        "Product demos are a powerful tool because they can be experienced at scale. With demodash, it's easy to distrubute product demos to influencers and stores where they can be seen or demoed the most."
+        "Demos are a powerful tool because they're experiences that scale. With demodash, it's easy to distrubute product demos to influencers and stores where they can be seen or demoed the most."
       }
     />
   );

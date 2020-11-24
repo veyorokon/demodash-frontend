@@ -28,7 +28,7 @@ class Solution extends React.Component {
               mb={2}
               letterSpacing={"-.8px"}
             >
-              Demos are experiences at scale
+              Your next thousand users
             </Text>
             <Text
               mt={3}
@@ -41,8 +41,8 @@ class Solution extends React.Component {
               textAlign="center"
               maxWidth="80rem"
             >
-              If a picture is worth a thousand words, then a demo is worth a
-              thousand users. That's the power of influencer marketing.
+              A picture is worth a thousand words and a demo is worth a thousand
+              users. With demodash, you make it happen.
             </Text>
           </Flex>
         </Box>
