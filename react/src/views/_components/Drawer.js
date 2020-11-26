@@ -157,7 +157,7 @@ function _Drawer(props) {
           justifyContent={"space-around"}
         >
           <CallToAction
-            link={DASHBOARD_HOST + "/register"}
+            link={DASHBOARD_HOST + "/login"}
             mr={r("0 --> 2")}
             w={r("100% ---> 15rem")}
             fs={r("1.4rem")}
@@ -172,7 +172,7 @@ function _Drawer(props) {
             Login
           </CallToAction>
           <CallToAction
-            link={DASHBOARD_HOST + "/login"}
+            link={DASHBOARD_HOST + "/register"}
             w={r("100% ---> 15rem")}
             fs={r("1.4rem")}
             fw={600}
