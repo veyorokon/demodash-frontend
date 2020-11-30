@@ -83,11 +83,7 @@ export default class FooterNav extends React.Component {
               gridTemplateColumns={r("repeat(2,1fr) ----> repeat(3,1fr)")}
               w={r("100% -----> 65%")}
             >
-              <GridItem
-                title="Products"
-                links={ecommerceLinks}
-                {...this.props}
-              />
+              <GridItem title="Brands" links={ecommerceLinks} {...this.props} />
               <GridItem
                 title="Stores"
                 links={storefrontLinks}

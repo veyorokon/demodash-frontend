@@ -93,7 +93,7 @@ class HowItWorks extends React.Component {
               <Panel
                 title={"Process payments and commission"}
                 text={
-                  "You set product prices and commission rates to keep influencers motivated. Sales happen on the influencer's demodash store."
+                  "Brands set product prices and commission rates to keep influencers motivated. Sales happen on the influencer's demodash store."
                 }
                 svg={AppUser}
               >
@@ -108,7 +108,7 @@ class HowItWorks extends React.Component {
               <Panel
                 title={"Ship purchases to customers"}
                 text={
-                  "You'll get notified of any new sales. When a sale goes through, you just ship the purchased products directly to the end user!"
+                  "Brands get notified of any new sales. When a sale goes through, they just ship the purchased products directly to the end user!"
                 }
                 svg={ShipPackage}
               >

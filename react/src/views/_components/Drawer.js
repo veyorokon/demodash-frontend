@@ -96,7 +96,7 @@ function _Drawer(props) {
       <Flex p={3} flexDirection="column">
         <Flex flexDirection="column">
           <Text mb={2} fs={r("2rem ----> 2.4rem")}>
-            For Products
+            For Brands
           </Text>
           {ecommerceLinks.map((link, index) => (
             <Link

@@ -15,7 +15,7 @@ function Hero(props) {
       subTitle={"THE PRODUCT DEMO PLATFORM"}
       title={"Demos get users"}
       textSize={r("2rem ---> 2.2rem ----> 2.4rem")}
-      text={`The easiest platform for managing influencer marketing campaigns. With demodash, you ship demos to demoers and purchases to customers.`}
+      text={`The easiest platform for managing influencer marketing campaigns. With demodash, brands ship demos to demoers and purchases to customers.`}
     >
       <CallToAction
         width={r("100% ---> 20rem")}
