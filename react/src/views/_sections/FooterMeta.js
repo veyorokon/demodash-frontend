@@ -74,7 +74,10 @@ class FooterMeta extends React.Component {
               <MetaTag text={"Home"} link={"/"} />
               <MetaTag text={"Privacy"} link={"/legal/privacy"} />
               <MetaTag text={"Terms"} link={"/legal/terms"} />
-              <MetaTag text={"Contact Us"} link={"/"} />
+              <MetaTag
+                text={"Contact Us"}
+                link={"mailto:support@demodash.com"}
+              />
             </MetaGroup>
             <MetaGroup justifyContent={responsiveRowJustify}>
               <MetaIcon icon={facebook} link={"https://facebook.com"} />
