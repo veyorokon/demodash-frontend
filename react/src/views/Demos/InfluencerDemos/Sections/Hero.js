@@ -15,7 +15,7 @@ function Hero(props) {
       mobileMedia={mobileMedia}
       subTitle={"BRAND VISIBILITY"}
       title={"Find influencers for your product demo"}
-      text={`With your products being demoed by influencers they can't help but be seen and purchased by more users.`}
+      text={`With products being demoed by influencers, those products are seen and purchased by more users.`}
     >
       <CallToAction
         width={r("100% ---> 20rem")}

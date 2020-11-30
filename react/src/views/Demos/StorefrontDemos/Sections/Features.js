@@ -76,7 +76,7 @@ class Solution extends React.Component {
               pl={r("8px!important ------> unset")}
               pb={r("5 -------> initial")}
               text={
-                "New stores are constantly joining, each attracting a highly targeted userbase. By matching your products with the best stores, the people most interested in your products are the ones who see and demo them, resulting in better sales and conversion rates."
+                "New stores are constantly joining, each attracting a highly targeted userbase. By matching brands with the best stores, the people most interested in those products are the ones who see and demo them, resulting in better sales and conversion rates."
               }
             >
               <FeatureLink
