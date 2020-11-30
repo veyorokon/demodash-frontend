@@ -41,8 +41,8 @@ class Solution extends React.Component {
               textAlign="center"
               maxWidth="80rem"
             >
-              A picture is worth a thousand words and a demo is worth a thousand
-              users. With demodash, you make it happen.
+              A picture is worth a thousand words and with demodash, we believe
+              a demo is worth a thousand users.
             </Text>
           </Flex>
         </Box>
