@@ -3,6 +3,7 @@ import {Switch, Route} from "react-router-dom";
 import {NavBar, FooterNav, FooterMeta, FooterCopy} from "views/_sections";
 import {Drawer, ScrollTop} from "views/_components";
 import animateScrollTo from "animated-scroll-to";
+import {connect} from "react-redux";
 
 import routes from "routes.js";
 
@@ -14,7 +15,7 @@ const switchRoutes = (
   </Switch>
 );
 
-function Landing() {
+function _Landing(props) {
   useEffect(() => {
     const anchor = window.location.hash.toLowerCase();
     if (anchor) {
@@ -26,9 +27,11 @@ function Landing() {
       }
     }
   });
+
+  const {navOpen} = props;
   return (
     <>
-      <ScrollTop />
+      {!navOpen && <ScrollTop />}
       <Drawer />
       <NavBar />
       {switchRoutes}
@@ -38,5 +41,17 @@ function Landing() {
     </>
   );
 }
+
+const mapStateToProps = state => {
+  const {navOpen} = state;
+  return {
+    navOpen
+  };
+};
+
+const Landing = connect(
+  mapStateToProps,
+  null
+)(_Landing);
 
 export default Landing;

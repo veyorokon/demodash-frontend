@@ -30,6 +30,7 @@ const backgroundPosition = configure("backgroundPosition");
 const backgroundPositionX = configure("backgroundPositionX", "bpx");
 const backgroundPositionY = configure("backgroundPositionY", "bpy");
 const backgroundSize = configure("backgroundSize");
+const boxShadow = configure("boxShadow", [], "shadows");
 
 const color = configure("color", "color", "colors");
 const fill = configure("fill");
@@ -41,6 +42,7 @@ const lineHeight = configure("lineHeight", "lh");
 const textTransform = configure("textTransform");
 const cursor = configure("cursor");
 
+const fontFamily = configure("fontFamily", ["fm"], "fonts");
 const typography = compose(
   fontWeight,
   fontSize,
@@ -48,7 +50,8 @@ const typography = compose(
   textAlign,
   textTransform,
   cursor,
-  alignSelf
+  alignSelf,
+  fontFamily
 );
 
 const marginTop = configure("marginTop", ["marginTop", "mt"], "space");
@@ -112,6 +115,17 @@ const borderRight = configure("borderRight");
 const borderLeft = configure("borderLeft");
 const borderBottom = configure("borderBottom");
 const borderTop = configure("borderTop");
+const borderColor = configure("borderColor", [], "colors");
+
+const borderFields = compose(
+  border,
+  borderStyle,
+  borderRight,
+  borderLeft,
+  borderBottom,
+  borderTop,
+  borderColor
+);
 
 const borderRightColor = configure("borderRightColor", [], "colors");
 const borderLeftColor = configure("borderLeftColor", [], "colors");
@@ -162,6 +176,7 @@ const animationFields = compose(
 
 const order = configure("order");
 const flexGrow = configure("flexGrow");
+const flexBasis = configure("flexBasis");
 const flexDirection = configure("flexDirection");
 const flexWrap = configure("flexWrap");
 const justifyContent = configure("justifyContent");
@@ -174,6 +189,7 @@ const flexFields = compose(
   flexDirection,
   flexWrap,
   justifyContent,
+  flexBasis,
   alignItems
 );
 
@@ -266,5 +282,8 @@ export {
   gridRowGap,
   gridFields,
   order,
-  backgroundColor
+  backgroundColor,
+  boxShadow,
+  borderFields,
+  fontFamily
 };

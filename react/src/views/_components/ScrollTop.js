@@ -1,9 +1,10 @@
 import React, {Component} from "react";
-import {Box, Image, Flex} from "components";
+import {Box, Icon, Flex} from "components";
 import {responsive as r} from "lib";
 import styled from "styled-components";
+import animateScrollTo from "animated-scroll-to";
 
-import arrowUp from "assets/svg/arrowup.svg";
+import ArrowUp from "assets/icons/ArrowUp";
 
 const ScrollDiv = styled(Box)`
   cursor: pointer;
@@ -42,10 +43,7 @@ export default class ScrollTop extends Component {
   }
 
   scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
+    animateScrollTo((0, 0));
   }
 
   render() {
@@ -54,7 +52,9 @@ export default class ScrollTop extends Component {
       <ScrollDiv bg={"whites.0"} br={"5px"}>
         {is_visible && (
           <Flex p={2} onClick={this.scrollToTop}>
-            <Image h={r("1.8rem 2rem --> 3rem")} src={arrowUp} />
+            <Icon h={r("1.8rem")}>
+              <ArrowUp />
+            </Icon>
           </Flex>
         )}
       </ScrollDiv>

@@ -69,7 +69,10 @@ import {
   alignSelf,
   fill,
   order,
-  backgroundColor
+  backgroundColor,
+  boxShadow,
+  borderFields,
+  fontFamily
 } from "./fields";
 
 export default theme;
@@ -143,5 +146,8 @@ export {
   alignSelf,
   fill,
   order,
-  backgroundColor
+  backgroundColor,
+  boxShadow,
+  borderFields,
+  fontFamily
 };

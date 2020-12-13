@@ -1,5 +1,5 @@
 import React from "react";
-import {Box, Flex, Text, Link, Hidden, Image} from "components";
+import {Box, Flex, Text, Link, Hidden, Icon, Image} from "components";
 import styled from "styled-components";
 import {CallToAction} from "views/_components";
 import {
@@ -9,9 +9,7 @@ import {
 } from "views/_constants";
 import {responsive as r} from "lib";
 import menu from "assets/icons/menu.svg";
-import logo from "assets/svg/logo.svg";
-// import storefront from "assets/svg/nav/store.svg";
-// import influencer from "assets/svg/nav/influencer.svg";
+import Logo from "assets/icons/Logo";
 
 import {connect} from "react-redux";
 import {toggleNav} from "redux/actions";
@@ -35,8 +33,6 @@ const Nav = styled(Box)`
     padding-top: 6.4rem;
   }
 `;
-
-const NavFlex = styled(Flex)``;
 
 const NavContainer = styled(Flex)`
   height: 100%;
@@ -166,7 +162,7 @@ const _NavBar = props => {
   const TRANSITION = 8;
   return (
     <Nav>
-      <NavFlex
+      <Flex
         alignItems="center"
         justifyContent={"space-between"}
         w="auto"
@@ -176,10 +172,14 @@ const _NavBar = props => {
       >
         <NavContainer alignItems="center" w={"10rem"}>
           <Hidden alignItems="center" down={TRANSITION}>
-            <Image mr={3} cursor="pointer" h={"3rem"} w={"auto"} src={logo} />
+            <Icon mr={3} cursor="pointer" h={"3rem"} w={"auto"}>
+              <Logo />
+            </Icon>
           </Hidden>
           <Hidden alignItems="center" up={8}>
-            <Image mr={3} cursor="pointer" h={"3rem"} w={"auto"} src={logo} />
+            <Icon mr={3} cursor="pointer" h={"3rem"} w={"auto"}>
+              <Logo />
+            </Icon>
           </Hidden>
           <Text
             lineHeight={"1.5"}
@@ -217,7 +217,7 @@ const _NavBar = props => {
             />
           </Hidden>
         </NavContainer>
-      </NavFlex>
+      </Flex>
     </Nav>
   );
 };
