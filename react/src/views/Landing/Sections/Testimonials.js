@@ -11,12 +11,6 @@ const TitleSection = styled(Flex)``;
 const CardImage = styled(Image)``;
 const CardContainer = styled(Flex)`
   cursor: pointer;
-  transition: transform 0.1s, box-shadow 0.1s;
-  box-shadow: 0 5px 20px 0 rgba(2, 2, 2, 0.08);
-  &:hover {
-    transform: scale(1.02);
-    box-shadow: 0 1rem 2rem rgba(2, 2, 2, 0.09);
-  }
 `;
 const CardText = styled(Box)`
   font-style: italic;
@@ -27,13 +21,13 @@ const Card = props => (
   <CardContainer
     display={r("block -----> flex")}
     flexDirection={r("column -----> row")}
-    m="0 auto"
-    mb={4} //UPDATE
+    m="2.1rem auto"
     br={2}
     bg={"whites.0"}
     maxWidth={r("100% -----> 102rem")}
     h={r("auto -----> fit-content")}
     w={r("fit-content -----> auto")}
+    {...props}
   >
     <CardImage
       width={r("25rem 28rem 30rem ---> 7")}
@@ -106,7 +100,7 @@ class Testimonials extends React.Component {
               textAlign="center"
               maxWidth="80rem"
             >
-              Our beta users are seeing the difference that demos at scale can
+              Our alpha users are seeing the difference that demos at scale can
               make.
             </Text>
           </TitleSection>

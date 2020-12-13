@@ -8,6 +8,8 @@
 
 import React from "react";
 import {Box, Flex} from "components";
+import SwipeableViews from "react-swipeable-views";
+
 import styled, {css} from "styled-components";
 
 const Menu = styled(Flex)`
@@ -48,12 +50,22 @@ const PanelNavigation = styled(Flex)`
   }
 `;
 
+const Swipable = styled(SwipeableViews)`
+  transition: transform 0.1s, box-shadow 0.1s;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  &:hover {
+    transform: scale(1.02);
+  }
+`;
+
 const Hide = styled(Box)`
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   visibility: hidden;
   height: 0;
   width: 0;
   opacity: 0;
+  overflow-y: hidden;
   ${props =>
     props.showing &&
     css`
@@ -63,7 +75,6 @@ const Hide = styled(Box)`
       visibility: visible;
     `}
 `;
-
 class NavigationTabs extends React.Component {
   constructor(props) {
     super(props);
@@ -100,11 +111,16 @@ class NavigationTabs extends React.Component {
             />
           ))}
         </PanelNavigation>
-        {this.props.children.map((elem, index) => (
-          <Hide key={index} showing={selected === index}>
-            {elem}
-          </Hide>
-        ))}
+        <Swipable
+          index={selected}
+          onChangeIndex={index => this.handleChange(index)}
+        >
+          {this.props.children.map((elem, index) => (
+            <Hide key={index} showing={selected === index}>
+              {elem}
+            </Hide>
+          ))}
+        </Swipable>
       </React.Fragment>
     );
   }
