@@ -7,11 +7,11 @@ export const ecommerceLinks = [
 ];
 
 export const storefrontLinks = [
-  {text: "Join demodash", link: DASHBOARD_HOST + "/register"},
+  {text: "Join demodash", link: DASHBOARD_HOST + "/register#storefront"},
   {text: "How it works", link: "/how-it-works"}
 ];
 
 export const influencerLinks = [
-  {text: "Join demodash", link: DASHBOARD_HOST + "/register"},
+  {text: "Join demodash", link: DASHBOARD_HOST + "/register#influencer"},
   {text: "How it works", link: "/how-it-works"}
 ];
