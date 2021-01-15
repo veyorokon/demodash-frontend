@@ -12,9 +12,20 @@ spec:
   tls:
   - hosts:
     - demodash.com
+    - www.demodash.com
     secretName: demodash-com
   rules:
   - host: demodash.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: demodash-landing
+            port:
+              number: 8080
+  - host: www.demodash.com
     http:
       paths:
       - path: /
