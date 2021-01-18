@@ -87,7 +87,7 @@ class Testimonials extends React.Component {
               mb={2}
               letterSpacing={"-.8px"}
             >
-              What our beta users say
+              What our alpha users say
             </Text>
             <Text
               mt={2}
