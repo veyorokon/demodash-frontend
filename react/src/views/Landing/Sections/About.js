@@ -9,7 +9,7 @@ function About(props) {
       image={productDemo}
       title={"Experiences that scale"}
       text={
-        "Demos are a powerful tool because they're experiences that scale. With demodash, it's easy to distrubute product demos to influencers and stores where they can be seen or demoed the most."
+        "Demos are a powerful tool because they're experiences that scale. With demodash, it's easy to distribute product demos to stores and influencers where they can be seen or demoed the most."
       }
     />
   );
